@@ -562,6 +562,7 @@
 		57B3FFEF177AD9BC00775FC9 /* JoinShow */ = {
 			isa = PBXGroup;
 			children = (
+				577C495517BDFC8500C7FC56 /* XYQuickDevelop */,
 				57D5B88417B8ABBB009212F7 /* AppDelegate */,
 				57E852D317B224CD00C664F4 /* JsonToNSObject */,
 				57B3FFF0177AD9BC00775FC9 /* Supporting Files */,
@@ -587,7 +588,6 @@
 		57D5B88417B8ABBB009212F7 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				577C495517BDFC8500C7FC56 /* XYQuickDevelop */,
 				57B3FFF8177AD9BC00775FC9 /* AppDelegate.h */,
 				57B3FFF9177AD9BC00775FC9 /* AppDelegate.m */,
 				57B30001177AD9BC00775FC9 /* ViewController.h */,

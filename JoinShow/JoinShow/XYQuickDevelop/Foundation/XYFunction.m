@@ -655,8 +655,8 @@
                                                                      otherButtonTitles:@"Update",nil];
                                [alert showWithCompletionHandler:^(NSInteger buttonIndex) {
                                    if (buttonIndex == 0) {
-                                       if (blockstayStill) {
-                                           blockstayStill();
+                                       if (blockStayStill) {
+                                           blockStayStill();
                                        }
                                    }else if (buttonIndex == 1){
                                        [self openURL:[NSURL URLWithString:strURL]];
@@ -687,8 +687,8 @@
         BOOL b = [self compareVersionFromOldVersion:localVersion newVersion:versionAppStore];
         
         if (b) {
-            if (blocklocalIsOld) {
-                blocklocalIsOld(versionAppStore);
+            if (blockLocalIsOld) {
+                blockLocalIsOld(versionAppStore);
             }
         }else{
             if (blockSame) {
