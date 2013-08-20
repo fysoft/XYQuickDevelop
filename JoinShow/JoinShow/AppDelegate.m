@@ -36,9 +36,6 @@
     NSString *str = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
     NSArray *array  = [str jsonStringToNSObjectsWithKey:nil andClass:[BookInfo class]];
     */
-    
-    NSString *path = [Common dataFilePath:@"a/b/c.jpg" ofType:filePathOption_documents];
-    [Common createDirectoryAtPath:path];
     return YES;
 }
 

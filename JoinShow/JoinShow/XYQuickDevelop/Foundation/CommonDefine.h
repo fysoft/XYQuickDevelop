@@ -16,11 +16,12 @@
 
 #ifdef DEBUG
 #define NSLogD(format, ...) NSLog(format, ## __VA_ARGS__)
-#define XYLogDebug(fmt,...) NSLog( @"debug:%s.%d "fmt, __FUNCTION__, __LINE__, ##__VA_ARGS__)
+#define NSLogDD NSLogD(@"%s", __FUNCTION__);
+//#define XYLogDebug(fmt,...) NSLog( @"debug:%s.%d "fmt, __FUNCTION__, __LINE__, ##__VA_ARGS__)
 //Log错误信息
-#define XYLogError(fmt,...) NSLog( @"error:%s.%d "fmt, __FUNCTION__, __LINE__, ##__VA_ARGS__)
+//#define XYLogError(fmt,...) NSLog( @"error:%s.%d "fmt, __FUNCTION__, __LINE__, ##__VA_ARGS__)
 //Log异常信息
-#define XYLogException(fmt,...) NSLog( @"warn:%s.%d "fmt, __FUNCTION__, __LINE__, ##__VA_ARGS__)
+//#define XYLogException(fmt,...) NSLog( @"warn:%s.%d "fmt, __FUNCTION__, __LINE__, ##__VA_ARGS__)
 
 #else
 #define NSLogD(format, ...)
