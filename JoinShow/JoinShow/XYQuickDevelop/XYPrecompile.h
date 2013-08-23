@@ -13,6 +13,7 @@
 #define __USED_MBProgressHUD__      (0)
 #define __USED_ASIHTTPRequest__     (0)
 #define __USED_CocosDenshion__      (0)
+#define __XY_PERFORMANCE__          (0)
 
 #define __OPEN_Statistics__         (0)
 
@@ -26,6 +27,7 @@
 
 #import "CommonDefine.h"
 #import "XYCommon.h"
+#import "XYPerformance.h"
 
 // 第三方支持
 #if (1 == __USED_FMDatabase__)

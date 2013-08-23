@@ -3,7 +3,7 @@
 //  TWP_SkyBookShelf
 //
 //  Created by Heaven on 13-7-10.
-//  模仿 bee Framework
+//  Copy from bee Framework
 //
 
 #pragma mark -

@@ -180,7 +180,7 @@
         // curTime < duration
         state = SpriteStatePlaying;
         NSInteger index = _isReverseOrder ? fromIndex - (NSInteger)(_curTime / animInterval) : (NSInteger)(_curTime / animInterval) + fromIndex;
-        NSLogD(@"%s, index:%d:, count:%d", __FUNCTION__, index, _imageNameArray.count);
+       // NSLogD(@"%s, index:%d:, count:%d", __FUNCTION__, index, _imageNameArray.count);
         // 判断范围
         BOOL b;
         if (_isReverseOrder) {

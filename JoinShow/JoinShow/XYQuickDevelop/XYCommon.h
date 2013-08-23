@@ -9,6 +9,7 @@
 #import "XYPrecompile.h"
 #import "XYFunction.h"
 #import "XYThread.h"
+#import "XYPerformance.h"
 
 #import "XYExtension.h"
 #import "XYExternal.h"
