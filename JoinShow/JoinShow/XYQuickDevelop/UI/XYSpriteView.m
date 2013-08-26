@@ -307,7 +307,7 @@
 -(void)setIsTransformUD:(BOOL)b{
     if (_isTransformUD == b) return;
     _isTransformUD = b;
-    float f = _isTransformUD ? -1 : 1;
+    float f = _isTransformLR ? -1 : 1;
     
     if (_isTransformUD){
         CATransform3D stransform = CATransform3DMakeScale(f, -1.0f, 1.0f);
