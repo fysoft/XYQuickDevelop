@@ -29,10 +29,64 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="h1E-RR-eqo"/>
+                    <connections>
+                        <segue destination="uej-ya-UBt" kind="push" identifier="AnimationVC" id="f9U-az-oJ1"/>
+                        <segue destination="u6i-df-1A3" kind="push" identifier="MessVC" id="WQj-4n-Q1Z"/>
+                        <segue destination="qzB-8S-awF" kind="push" identifier="TestVC" id="DeR-Fe-khK"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v6q-Q2-YJN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="939" y="-211"/>
+            <point key="canvasLocation" x="-269" y="-239"/>
+        </scene>
+        <!--TestVC-->
+        <scene sceneID="HQU-cI-rQg">
+            <objects>
+                <viewController id="qzB-8S-awF" customClass="TestVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hox-S5-D7R">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eIS-vQ-bgo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="72t-jR-RSd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="274" y="-2190"/>
+        </scene>
+        <!--MessVC-->
+        <scene sceneID="kZH-Uf-CJx">
+            <objects>
+                <viewController id="u6i-df-1A3" customClass="MessVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tJs-AT-vuV">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsW-ID-Fud">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="显示背景遮罩">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ClickBtnShade:" destination="u6i-df-1A3" eventType="touchUpInside" id="fwz-kx-Tfg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jsW-ID-Fud" firstAttribute="leading" secondItem="tJs-AT-vuV" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="6Kh-T5-dzl"/>
+                            <constraint firstItem="jsW-ID-Fud" firstAttribute="top" secondItem="tJs-AT-vuV" secondAttribute="top" constant="20" symbolic="YES" type="default" id="ilD-ZO-1zI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vjv-pI-owc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g1O-bA-MFf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="290" y="-659"/>
         </scene>
         <!--View Controller - Setting-->
         <scene sceneID="x2f-Va-FIc">
@@ -47,7 +101,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="POo-N9-tYn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="413" y="533"/>
+            <point key="canvasLocation" x="-403" y="701"/>
+        </scene>
+        <!--AnimationVC - Item-->
+        <scene sceneID="aUm-1t-d0N">
+            <objects>
+                <viewController id="uej-ya-UBt" customClass="AnimationVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qAV-xF-Ssm">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="U7f-tE-o3i"/>
+                    <navigationItem key="navigationItem" id="lRu-8i-GMI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ps3-4y-gXU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="282" y="-1431"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="paa-7x-nlN">
@@ -66,11 +136,12 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sOM-r1-afO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-393" y="-219"/>
+            <point key="canvasLocation" x="-1161" y="-239"/>
         </scene>
         <!--Navigation Controller - Dome-->
         <scene sceneID="xqk-sK-eoU">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qc2-TQ-3Gh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="zU8-h0-QWo" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Dome" id="fxi-bU-Jlf"/>
                     <toolbarItems/>
@@ -79,20 +150,18 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="BQk-ca-cha">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="VON-WD-2Cb" kind="relationship" relationship="rootViewController" id="18w-C9-hqi"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qc2-TQ-3Gh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="413" y="-211"/>
+            <point key="canvasLocation" x="-667" y="-239"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="DomeTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DomeTableViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

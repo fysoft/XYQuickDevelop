@@ -196,6 +196,8 @@
 		571CBBC417C702D1007CB842 /* p31b0178.png in Resources */ = {isa = PBXBuildFile; fileRef = 571CBB1017C702D1007CB842 /* p31b0178.png */; };
 		571CBBC517C702D1007CB842 /* p31b0179.png in Resources */ = {isa = PBXBuildFile; fileRef = 571CBB1117C702D1007CB842 /* p31b0179.png */; };
 		571CBBC617C702D1007CB842 /* p31b0180.png in Resources */ = {isa = PBXBuildFile; fileRef = 571CBB1217C702D1007CB842 /* p31b0180.png */; };
+		57383F3817D2EF8B0001079C /* MessVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 57383F3717D2EF8B0001079C /* MessVC.m */; };
+		57383F3B17D2F5F20001079C /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 57383F3A17D2F5F20001079C /* TestVC.m */; };
 		57525A4517AB7DEA0094D835 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57525A4417AB7DEA0094D835 /* QuartzCore.framework */; };
 		577C499A17BDFC8500C7FC56 /* NSObject+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C495817BDFC8500C7FC56 /* NSObject+XY.m */; };
 		577C499B17BDFC8500C7FC56 /* UIView+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C495A17BDFC8500C7FC56 /* UIView+XY.m */; };
@@ -451,6 +453,10 @@
 		571CBB1017C702D1007CB842 /* p31b0178.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p31b0178.png; sourceTree = "<group>"; };
 		571CBB1117C702D1007CB842 /* p31b0179.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p31b0179.png; sourceTree = "<group>"; };
 		571CBB1217C702D1007CB842 /* p31b0180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p31b0180.png; sourceTree = "<group>"; };
+		57383F3617D2EF8B0001079C /* MessVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessVC.h; sourceTree = "<group>"; };
+		57383F3717D2EF8B0001079C /* MessVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessVC.m; sourceTree = "<group>"; };
+		57383F3917D2F5F20001079C /* TestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC.h; sourceTree = "<group>"; };
+		57383F3A17D2F5F20001079C /* TestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC.m; sourceTree = "<group>"; };
 		57525A4417AB7DEA0094D835 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		577C495717BDFC8500C7FC56 /* NSObject+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XY.h"; sourceTree = "<group>"; };
 		577C495817BDFC8500C7FC56 /* NSObject+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XY.m"; sourceTree = "<group>"; };
@@ -573,6 +579,10 @@
 				571CBA4917C6FCC0007CB842 /* DomeTableViewController.m */,
 				571CBA5B17C7000A007CB842 /* AnimationVC.h */,
 				571CBA5C17C7000A007CB842 /* AnimationVC.m */,
+				57383F3617D2EF8B0001079C /* MessVC.h */,
+				57383F3717D2EF8B0001079C /* MessVC.m */,
+				57383F3917D2F5F20001079C /* TestVC.h */,
+				57383F3A17D2F5F20001079C /* TestVC.m */,
 				571CBA4A17C6FCC0007CB842 /* ViewController.h */,
 				571CBA4B17C6FCC0007CB842 /* ViewController.m */,
 			);
@@ -1403,6 +1413,8 @@
 				571CBA5917C6FCC0007CB842 /* Test2View.m in Sources */,
 				571CBA5A17C6FCC0007CB842 /* TestView.m in Sources */,
 				571CBA5D17C7000A007CB842 /* AnimationVC.m in Sources */,
+				57383F3817D2EF8B0001079C /* MessVC.m in Sources */,
+				57383F3B17D2F5F20001079C /* TestVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

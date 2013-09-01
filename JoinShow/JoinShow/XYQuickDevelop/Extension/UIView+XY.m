@@ -55,4 +55,27 @@
     
     if (aBlock) aBlock();
 }
+/////////////////////////////////////////////////////////////
+
+-(void) addShadeWithTarget:(id)target action:(SEL)action color:(UIColor *)aColor alpha:(float)aAlpha{
+    UIView *tmpView = [[UIView alloc] initWithFrame:self.frame];
+    tmpView.tag = UIView_shadeTag;
+    if (aColor) {
+        tmpView.backgroundColor = aColor;
+    } else {
+        tmpView.backgroundColor = [UIColor blackColor];
+    }
+    tmpView.alpha = aAlpha;
+    [self addSubview:tmpView];
+    [tmpView release];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:target action:action];
+    [tmpView addGestureRecognizer:tap];
+    [tap release];
+    
+}
+-(void) removeShade{
+    UIView *view = [self viewWithTag:UIView_shadeTag];
+    [view removeFromSuperview];
+}
 @end

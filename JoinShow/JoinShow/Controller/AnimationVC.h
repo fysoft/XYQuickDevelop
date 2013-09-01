@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AnimationVC : UIViewController<XYSpriteDelegate, UINavigationControllerDelegate>
+@interface AnimationVC : UIViewController<XYSpriteDelegate>
 
 @end

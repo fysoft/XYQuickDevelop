@@ -33,8 +33,9 @@
 -(id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
     if (self) {
-        self.list = @[@{@"title": @"帧动画", @"className": @"AnimationVC"},
-                      @{@"title": @"帧动画", @"className": @"AnimationVC"}];
+        self.list = @[@{@"title": @"测试", @"className": @"TestVC"},
+                      @{@"title": @"帧动画", @"className": @"AnimationVC"},
+                      @{@"title": @"零散", @"className": @"MessVC"}];
     }
     return self;
 }
@@ -133,13 +134,19 @@
 {
     // Navigation logic may go here. Create and push another view controller.
     NSDictionary *dic = [self.list objectAtIndex:indexPath.row];
+    /*
     UIViewController *detailViewController = [[NSClassFromString([dic objectForKey:@"className"]) alloc] initWithNibName:nil bundle:nil];
     detailViewController.title = [dic objectForKey:@"title"];
     // ...
     // Pass the selected object to the new view controller.
     [self.navigationController pushViewController:detailViewController animated:YES];
     [detailViewController release];
+     */
+    [self performSegueWithIdentifier:[dic objectForKey:@"className"] sender:dic];
     
 }
-
-@end
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    UIViewController *vc = segue.destinationViewController;
+    vc.title = [sender objectForKey:@"title"];
+}@end

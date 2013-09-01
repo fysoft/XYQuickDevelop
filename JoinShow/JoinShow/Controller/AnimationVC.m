@@ -36,7 +36,7 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    self.navigationController.delegate = self;
+  //  self.navigationController.delegate = self;
     
 	// Do any additional setup after loading the view.
     UILabel *tmpLab = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 200, 30)];
@@ -80,7 +80,9 @@
         labText.text = [NSString stringWithFormat:@"%d", count];
     }
 }
+/*
 #pragma mark - UINavigationControllerDelegate
 - (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
 }
+ */
 @end

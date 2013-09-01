@@ -6,6 +6,8 @@
 //
 //
 
+#define UIView_shadeTag 26601
+
 #import <UIKit/UIKit.h>
 
 @interface UIView (XY)
@@ -14,5 +16,8 @@
 -(void) addTapGestureWithBlock:(void(^)(void))aBlock;
 
 -(void) removeTapGesture;
+
+-(void) addShadeWithTarget:(id)target action:(SEL)action color:(UIColor *)aColor alpha:(float)aAlpha;
+-(void) removeShade;
 
 @end
