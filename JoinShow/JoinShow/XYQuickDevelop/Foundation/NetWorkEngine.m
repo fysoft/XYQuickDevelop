@@ -61,5 +61,9 @@
     }];
     [self enqueueOperation:op];
 }
+
+-(void) cancelOperationsContainingURLString:(NSString*)string{
+     [NetworkEngine cancelOperationsContainingURLString:string];
+}
 @end
 #endif

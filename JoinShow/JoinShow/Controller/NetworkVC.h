@@ -22,5 +22,6 @@
 - (IBAction)clickGet:(id)sender;
 - (IBAction)clickPost:(id)sender;
 - (IBAction)clickDownload:(id)sender;
+- (IBAction)clickStopDownload:(id)sender;
 
 @end

@@ -6,6 +6,7 @@
 //
 //
 
+// 一大堆零散的方法
 #import "XYPrecompile.h"
 
 @class MBProgressHUD;

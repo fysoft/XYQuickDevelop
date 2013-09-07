@@ -6,6 +6,7 @@
 //  Copyright (c) 2013年 Heaven. All rights reserved.
 //  Copy from bee Framework
 
+// 性能分析
 #import <Foundation/Foundation.h>
 #import "CommonDefine.h"
 #pragma mark -

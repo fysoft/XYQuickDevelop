@@ -75,8 +75,14 @@ if (_delegate && [_delegate respondsToSelector:@selector(__x)]) { \
 if (_delegate && [_delegate respondsToSelector:@selector(__x)]) { \
 [_delegate __x];} 
 
+/**************************************************************/
+// NSUserDefaults
+#define USER_DEFAULT [NSUserDefaults standardUserDefaults]
+/**************************************************************/
 
-
+// UIImage
+#define LoadImage_cache(_pointer) [UIImage imageNamed:_pointer]
+#define LoadImage_nocache(file, ext) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:file ofType:ext]]
 
 /**************************************************************/
 #pragma mark- 以下待筛选
@@ -122,11 +128,6 @@ if (_delegate && [_delegate respondsToSelector:@selector(__x)]) { \
 #else
 // compiling without ARC
 #endif
-
-
-#define USER_DEFAULT [NSUserDefaults standardUserDefaults]
-#define ImageNamed(_pointer) [UIImage imageNamed:[UIUtil imageName:_pointer]]
-
 
 
 #pragma mark - common functions

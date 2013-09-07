@@ -29,7 +29,7 @@
                 _networkEngine = [[NetworkEngine alloc] initWithHostName:@"www.webxml.com.cn/" customHeaderFields:nil];
         [_networkEngine useCache];
         
-        _networkEngine3 = [[NetworkEngine alloc] initWithHostName:@"www.webxml.com.cn/" customHeaderFields:nil];
+        _networkEngine3 = [[NetworkEngine alloc] initWithHostName:@"developer.apple.com" customHeaderFields:nil];
         [_networkEngine3 useCache];
     }
     return  self;
@@ -107,7 +107,12 @@
          NSLog(@"MKNetwork request error : %@", [err localizedDescription]);
         SHOWMSG(nil, @"Download failed", nil);
     }];
-    
-    
+}
+
+- (IBAction)clickStopDownload:(id)sender {
+    // 取消所有该主机的队列
+ //  [self.networkEngine3 cancelAllOperations];
+    // 取消 请求
+    [self.networkEngine3 cancelOperationsContainingURLString:@"http://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/NSURLRequest_Class.pdf"];
 }
 @end

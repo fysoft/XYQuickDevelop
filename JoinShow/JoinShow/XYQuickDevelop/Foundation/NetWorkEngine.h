@@ -9,23 +9,26 @@
 #import "MKNetworkEngine.h"
 @class MKNetworkEngine;
 @interface NetworkEngine : MKNetworkEngine
-
+// get
 -(void) addGetRequestWithPath:(NSString *)path
                        params:(NSMutableDictionary *)params
                       succeed:(void (^)(MKNetworkOperation *operation))blockS
                        failed:(void (^)(MKNetworkOperation *errorOp, NSError* err))blockF;
-
+// post
 #pragma mark post待完善
 -(void) addPostRequestWithPath:(NSString *)path
                         params:(NSMutableDictionary *)params
                        succeed:(void (^)(MKNetworkOperation *operation))blockS
                         failed:(void (^)(MKNetworkOperation *errorOp, NSError* err))blockF;
 
+// download
 -(MKNetworkOperation *) downLoadForm:(NSString *)remoteURL toFile:(NSString*)filePath;
 -(void) addDownload:(MKNetworkOperation *)op
            progress:(void(^)(double progress))blockP
             succeed:(void (^)(MKNetworkOperation *operation))blockS
              failed:(void (^)(MKNetworkOperation *errorOp, NSError* err))blockF;
 
+// cancel
+-(void) cancelOperationsContainingURLString:(NSString*)string;
 @end
 
