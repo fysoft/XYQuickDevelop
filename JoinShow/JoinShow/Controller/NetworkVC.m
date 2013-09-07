@@ -26,8 +26,11 @@
 -(id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
     if (self) {
-                _networkEngine = [[XYNetworkEngine alloc] initWithHostName:@"www.webxml.com.cn/" customHeaderFields:nil];
+                _networkEngine = [[NetworkEngine alloc] initWithHostName:@"www.webxml.com.cn/" customHeaderFields:nil];
         [_networkEngine useCache];
+        
+        _networkEngine3 = [[NetworkEngine alloc] initWithHostName:@"www.webxml.com.cn/" customHeaderFields:nil];
+        [_networkEngine3 useCache];
     }
     return  self;
 }
@@ -41,6 +44,8 @@
     NSLogDD;
     self.networkEngine = nil;
     self.networkEngine2 = nil;
+    self.networkEngine3 = nil;
+    [_progressDownload release];
     [super dealloc];
 }
 - (void)didReceiveMemoryWarning
@@ -85,5 +90,24 @@
      failed:^(MKNetworkOperation *errorOp, NSError *err) {
          NSLog(@"MKNetwork request error : %@", [err localizedDescription]);
      }];
+}
+
+- (IBAction)clickDownload:(id)sender {
+    NSString *locPath = [Common dataFilePath:@"DownloadedFile.pdf" ofType:filePathOption_documents];
+    
+     id down = [self.networkEngine3 downLoadForm:@"http://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/NSURLRequest_Class.pdf" toFile:locPath];
+    
+    [self.networkEngine3 addDownload:down progress:^(double progress) {
+        NSLogD(@"%.2f", progress*100.0);
+        _progressDownload.progress = progress;
+    } succeed:^(MKNetworkOperation *operation) {
+        _progressDownload.progress = 0;
+        SHOWMSG(nil, @"Download succeed", @"ok");
+    } failed:^(MKNetworkOperation *errorOp, NSError *err) {
+         NSLog(@"MKNetwork request error : %@", [err localizedDescription]);
+        SHOWMSG(nil, @"Download failed", nil);
+    }];
+    
+    
 }
 @end

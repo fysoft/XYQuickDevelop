@@ -6,9 +6,9 @@
 //  Copyright (c) 2013年 Heaven. All rights reserved.
 //
 
-#import "XYNetworkEngine.h"
+#import "NetworkEngine.h"
 #if (1 ==  __USED_MKNetworkKit__)
-@implementation XYNetworkEngine
+@implementation NetworkEngine
 
 -(void) addGetRequestWithPath:(NSString *)path
                        params:(NSMutableDictionary *)params
@@ -38,6 +38,28 @@
     }];
     [self enqueueOperation:op];
 }
-
+-(MKNetworkOperation *) downLoadForm:(NSString *)remoteURL toFile:(NSString *)filePath
+{
+    MKNetworkOperation *op = [self operationWithURLString:remoteURL];
+    
+    [op addDownloadStream:[NSOutputStream outputStreamToFileAtPath:filePath
+                                                            append:YES]];
+    return op;
+}
+-(void) addDownload:(MKNetworkOperation *)op
+           progress:(void(^)(double progress))blockP
+            succeed:(void (^)(MKNetworkOperation *operation))blockS
+             failed:(void (^)(MKNetworkOperation *errorOp, NSError* err))blockF
+{
+    [op onDownloadProgressChanged:^(double progress) {
+     if (blockP) blockP(progress);
+    }];
+    [op addCompletionHandler:^(MKNetworkOperation *operation) {
+        if (blockS) blockS(operation);
+    }errorHandler:^(MKNetworkOperation *errorOp, NSError *err) {
+        if (blockF) blockF(errorOp, err);
+    }];
+    [self enqueueOperation:op];
+}
 @end
 #endif

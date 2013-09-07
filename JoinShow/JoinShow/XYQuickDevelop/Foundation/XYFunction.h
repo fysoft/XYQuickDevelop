@@ -218,7 +218,7 @@ typedef enum {
  * msg 信息
  * strCancel 取消按钮标题
  */
-#define SHOWMSG(a, b, c) [Common showAlertViewTitle:a message:b cancelButtonTitle:c]
+#define SHOWMSG(title, msg, cancel) [Common showAlertViewTitle:title message:msg cancelButtonTitle:cancel]
 +(void) showAlertViewTitle:(NSString *)aTitle message:(NSString *)msg cancelButtonTitle:(NSString *)strCancel;
 
 /****************************************************************/

@@ -8,7 +8,7 @@
 
 #import "MKNetworkEngine.h"
 @class MKNetworkEngine;
-@interface XYNetworkEngine : MKNetworkEngine
+@interface NetworkEngine : MKNetworkEngine
 
 -(void) addGetRequestWithPath:(NSString *)path
                        params:(NSMutableDictionary *)params
@@ -20,6 +20,12 @@
                         params:(NSMutableDictionary *)params
                        succeed:(void (^)(MKNetworkOperation *operation))blockS
                         failed:(void (^)(MKNetworkOperation *errorOp, NSError* err))blockF;
+
+-(MKNetworkOperation *) downLoadForm:(NSString *)remoteURL toFile:(NSString*)filePath;
+-(void) addDownload:(MKNetworkOperation *)op
+           progress:(void(^)(double progress))blockP
+            succeed:(void (^)(MKNetworkOperation *operation))blockS
+             failed:(void (^)(MKNetworkOperation *errorOp, NSError* err))blockF;
 
 @end
 

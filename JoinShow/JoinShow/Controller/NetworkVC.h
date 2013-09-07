@@ -7,11 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
-@class XYNetworkEngine;
+@class NetworkEngine;
 @interface NetworkVC : UIViewController
-@property (nonatomic, retain) XYNetworkEngine *networkEngine;
-@property (nonatomic, retain) XYNetworkEngine *networkEngine2;
+
+// get
+@property (nonatomic, retain) NetworkEngine *networkEngine;
+// post
+@property (nonatomic, retain) NetworkEngine *networkEngine2;
+// download
+@property (nonatomic, retain) NetworkEngine *networkEngine3;
+
+@property (retain, nonatomic) IBOutlet UIProgressView *progressDownload;
+
 - (IBAction)clickGet:(id)sender;
 - (IBAction)clickPost:(id)sender;
+- (IBAction)clickDownload:(id)sender;
 
 @end

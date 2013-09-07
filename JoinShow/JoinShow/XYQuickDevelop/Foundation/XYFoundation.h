@@ -9,12 +9,11 @@
 #ifndef JoinShow_XYFoundation_h
 #define JoinShow_XYFoundation_h
 
+#endif
 
 #import "CommonDefine.h"
 #import "UmengManager.h"
 #import "XYFunction.h"
 #import "XYThread.h"
 #import "XYPerformance.h"
-#import "XYNetworkEngine.h"
-
-#endif
+#import "NetworkEngine.h"

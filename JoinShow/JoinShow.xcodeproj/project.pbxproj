@@ -258,7 +258,7 @@
 		57E852DF17B224CD00C664F4 /* NSData+IJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E852DA17B224CD00C664F4 /* NSData+IJson.m */; };
 		57E852E017B224CD00C664F4 /* NSString+IJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E852DC17B224CD00C664F4 /* NSString+IJson.m */; };
 		57E852E217B224E500C664F4 /* json2.json in Resources */ = {isa = PBXBuildFile; fileRef = 57E852E117B224E500C664F4 /* json2.json */; };
-		57F3965F17DB6F490060D6CE /* XYNetWorkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F3965E17DB6F490060D6CE /* XYNetWorkEngine.m */; };
+		57F3965F17DB6F490060D6CE /* NetWorkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F3965E17DB6F490060D6CE /* NetWorkEngine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -585,8 +585,8 @@
 		57E852DB17B224CD00C664F4 /* NSString+IJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IJson.h"; sourceTree = "<group>"; };
 		57E852DC17B224CD00C664F4 /* NSString+IJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IJson.m"; sourceTree = "<group>"; };
 		57E852E117B224E500C664F4 /* json2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = json2.json; sourceTree = "<group>"; };
-		57F3965D17DB6F490060D6CE /* XYNetWorkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYNetWorkEngine.h; sourceTree = "<group>"; };
-		57F3965E17DB6F490060D6CE /* XYNetWorkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYNetWorkEngine.m; sourceTree = "<group>"; };
+		57F3965D17DB6F490060D6CE /* NetWorkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkEngine.h; sourceTree = "<group>"; };
+		57F3965E17DB6F490060D6CE /* NetWorkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkEngine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1043,8 +1043,8 @@
 				577C498F17BDFC8500C7FC56 /* XYThread.m */,
 				571CBA2817C6F59E007CB842 /* XYPerformance.h */,
 				571CBA2917C6F59E007CB842 /* XYPerformance.m */,
-				57F3965D17DB6F490060D6CE /* XYNetWorkEngine.h */,
-				57F3965E17DB6F490060D6CE /* XYNetWorkEngine.m */,
+				57F3965D17DB6F490060D6CE /* NetWorkEngine.h */,
+				57F3965E17DB6F490060D6CE /* NetWorkEngine.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -1530,7 +1530,7 @@
 				5722181C17DB33F6003504E8 /* MKNetworkOperation.m in Sources */,
 				5722181D17DB33F6003504E8 /* Reachability.m in Sources */,
 				5722182817DB365B003504E8 /* NetworkVC.m in Sources */,
-				57F3965F17DB6F490060D6CE /* XYNetWorkEngine.m in Sources */,
+				57F3965F17DB6F490060D6CE /* NetWorkEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
