@@ -12,7 +12,7 @@
 #import "XYUI.h"
 #import <UIKit/UIKit.h>
 
-@interface XYSpriteManager : NSObject{
+@interface XYSpriteManager : NSObject<XYTimerDelegate>{
 }
 
 XY_SINGLETON(XYSpriteManager)
@@ -23,6 +23,7 @@ XY_SINGLETON(XYSpriteManager)
 @property (nonatomic, readonly)   NSMutableDictionary       *sprites;       // 精灵
 
 -(void) startTimer;      // 开期定时器
+-(void) pauseTimer;
 -(void) stopTimer;
 
 

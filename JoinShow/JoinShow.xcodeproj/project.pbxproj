@@ -213,6 +213,7 @@
 		5722182817DB365B003504E8 /* NetworkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5722182717DB365B003504E8 /* NetworkVC.m */; };
 		57383F3817D2EF8B0001079C /* MessVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 57383F3717D2EF8B0001079C /* MessVC.m */; };
 		57383F3B17D2F5F20001079C /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 57383F3A17D2F5F20001079C /* TestVC.m */; };
+		573D546317DB9C31008FFDE4 /* XYTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 573D546217DB9C31008FFDE4 /* XYTimer.m */; };
 		57525A4517AB7DEA0094D835 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57525A4417AB7DEA0094D835 /* QuartzCore.framework */; };
 		577C499A17BDFC8500C7FC56 /* NSObject+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C495817BDFC8500C7FC56 /* NSObject+XY.m */; };
 		577C499B17BDFC8500C7FC56 /* UIView+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C495A17BDFC8500C7FC56 /* UIView+XY.m */; };
@@ -501,6 +502,8 @@
 		57383F3717D2EF8B0001079C /* MessVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessVC.m; sourceTree = "<group>"; };
 		57383F3917D2F5F20001079C /* TestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC.h; sourceTree = "<group>"; };
 		57383F3A17D2F5F20001079C /* TestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC.m; sourceTree = "<group>"; };
+		573D546117DB9C31008FFDE4 /* XYTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTimer.h; sourceTree = "<group>"; };
+		573D546217DB9C31008FFDE4 /* XYTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTimer.m; sourceTree = "<group>"; };
 		57525A4417AB7DEA0094D835 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		577C495717BDFC8500C7FC56 /* NSObject+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XY.h"; sourceTree = "<group>"; };
 		577C495817BDFC8500C7FC56 /* NSObject+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XY.m"; sourceTree = "<group>"; };
@@ -1045,6 +1048,8 @@
 				571CBA2917C6F59E007CB842 /* XYPerformance.m */,
 				57F3965D17DB6F490060D6CE /* NetWorkEngine.h */,
 				57F3965E17DB6F490060D6CE /* NetWorkEngine.m */,
+				573D546117DB9C31008FFDE4 /* XYTimer.h */,
+				573D546217DB9C31008FFDE4 /* XYTimer.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -1531,6 +1536,7 @@
 				5722181D17DB33F6003504E8 /* Reachability.m in Sources */,
 				5722182817DB365B003504E8 /* NetworkVC.m in Sources */,
 				57F3965F17DB6F490060D6CE /* NetWorkEngine.m in Sources */,
+				573D546317DB9C31008FFDE4 /* XYTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,8 +3,14 @@
 {XY} 是一个常用方法与常用第三方库的集合.
 
 ### 
-XYSpriteView 是帧动画精灵类.
-XYSpriteManager 是一个精灵管理类.里面实现了定时器
+XYSpriteView 帧动画精灵类.
+### 
+XYSpriteManager 精灵管理类.
+### 
+XYTimer 定时器类.默认只有一个定时.
+### 
+NetWorkEngine 网络通讯类.
+
 
 
 ## External 使用的第三方库
