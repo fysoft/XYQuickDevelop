@@ -28,6 +28,10 @@ XYSpriteManager 是一个精灵管理类.里面实现了定时器
 * 友盟
 
 
+###MKNetWorkKit
+* arc
+* 网络请求
+
 ##UI
 ###RTLabel
 * arc 

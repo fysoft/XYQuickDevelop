@@ -27,7 +27,7 @@
 
 #import "CommonDefine.h"
 #import "XYCommon.h"
-#import "XYPerformance.h"
+
 
 // 第三方支持
 #if (1 == __USED_FMDatabase__)

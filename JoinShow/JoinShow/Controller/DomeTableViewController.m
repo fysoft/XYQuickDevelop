@@ -33,9 +33,10 @@
 -(id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
     if (self) {
-        self.list = @[@{@"title": @"测试", @"className": @"TestVC"},
-                      @{@"title": @"帧动画", @"className": @"AnimationVC"},
-                      @{@"title": @"零散", @"className": @"MessVC"}];
+        self.list = @[@{@"title": @"Test", @"className": @"TestVC"},
+                      @{@"title": @"Frame Animation", @"className": @"AnimationVC"},
+                      @{@"title": @"Something", @"className": @"MessVC"},
+                      @{@"title": @"network", @"className": @"NetworkVC"}];
     }
     return self;
 }
