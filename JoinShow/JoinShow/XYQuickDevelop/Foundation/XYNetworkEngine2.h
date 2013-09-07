@@ -1,5 +1,5 @@
 //
-//  XYNetWorkEngine.h
+//  NetworkEngineBase.h
 //  JoinShow
 //
 //  Created by Heaven on 13-9-7.
@@ -7,7 +7,7 @@
 //
 
 #import "MKNetworkEngine.h"
-@class MKNetworkEngine;
+#if (1 ==  __USED_MKNetworkKit__)
 @interface XYNetworkEngine : MKNetworkEngine
 
 -(void) addGetRequestWithPath:(NSString *)path
@@ -17,9 +17,9 @@
 
 #pragma mark post待完善
 -(void) addPostRequestWithPath:(NSString *)path
-                        params:(NSMutableDictionary *)params
-                       succeed:(void (^)(MKNetworkOperation *operation))blockS
-                        failed:(void (^)(MKNetworkOperation *errorOp, NSError* err))blockF;
+                       params:(NSMutableDictionary *)params
+                      succeed:(void (^)(MKNetworkOperation *operation))blockS
+                       failed:(void (^)(MKNetworkOperation *errorOp, NSError* err))blockF;
 
 @end
-
+#endif

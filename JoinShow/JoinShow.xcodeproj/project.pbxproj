@@ -211,8 +211,6 @@
 		5722182317DB34CC003504E8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5722182217DB34CC003504E8 /* CFNetwork.framework */; };
 		5722182517DB34E1003504E8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5722182417DB34E1003504E8 /* Security.framework */; };
 		5722182817DB365B003504E8 /* NetworkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5722182717DB365B003504E8 /* NetworkVC.m */; };
-		5722183417DB6A36003504E8 /* XYNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5722183317DB6A35003504E8 /* XYNetworkEngine.m */; };
-		5722183517DB6A36003504E8 /* XYNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5722183317DB6A35003504E8 /* XYNetworkEngine.m */; };
 		57383F3817D2EF8B0001079C /* MessVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 57383F3717D2EF8B0001079C /* MessVC.m */; };
 		57383F3B17D2F5F20001079C /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 57383F3A17D2F5F20001079C /* TestVC.m */; };
 		57525A4517AB7DEA0094D835 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57525A4417AB7DEA0094D835 /* QuartzCore.framework */; };
@@ -260,6 +258,7 @@
 		57E852DF17B224CD00C664F4 /* NSData+IJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E852DA17B224CD00C664F4 /* NSData+IJson.m */; };
 		57E852E017B224CD00C664F4 /* NSString+IJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E852DC17B224CD00C664F4 /* NSString+IJson.m */; };
 		57E852E217B224E500C664F4 /* json2.json in Resources */ = {isa = PBXBuildFile; fileRef = 57E852E117B224E500C664F4 /* json2.json */; };
+		57F3965F17DB6F490060D6CE /* XYNetWorkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F3965E17DB6F490060D6CE /* XYNetWorkEngine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -498,8 +497,6 @@
 		5722182617DB365B003504E8 /* NetworkVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkVC.h; sourceTree = "<group>"; };
 		5722182717DB365B003504E8 /* NetworkVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkVC.m; sourceTree = "<group>"; };
 		5722182C17DB382B003504E8 /* XYFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYFoundation.h; sourceTree = "<group>"; };
-		5722183217DB6A35003504E8 /* XYNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYNetworkEngine.h; sourceTree = "<group>"; };
-		5722183317DB6A35003504E8 /* XYNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYNetworkEngine.m; sourceTree = "<group>"; };
 		57383F3617D2EF8B0001079C /* MessVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessVC.h; sourceTree = "<group>"; };
 		57383F3717D2EF8B0001079C /* MessVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessVC.m; sourceTree = "<group>"; };
 		57383F3917D2F5F20001079C /* TestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC.h; sourceTree = "<group>"; };
@@ -588,6 +585,8 @@
 		57E852DB17B224CD00C664F4 /* NSString+IJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IJson.h"; sourceTree = "<group>"; };
 		57E852DC17B224CD00C664F4 /* NSString+IJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IJson.m"; sourceTree = "<group>"; };
 		57E852E117B224E500C664F4 /* json2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = json2.json; sourceTree = "<group>"; };
+		57F3965D17DB6F490060D6CE /* XYNetWorkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYNetWorkEngine.h; sourceTree = "<group>"; };
+		57F3965E17DB6F490060D6CE /* XYNetWorkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYNetWorkEngine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1044,8 +1043,8 @@
 				577C498F17BDFC8500C7FC56 /* XYThread.m */,
 				571CBA2817C6F59E007CB842 /* XYPerformance.h */,
 				571CBA2917C6F59E007CB842 /* XYPerformance.m */,
-				5722183217DB6A35003504E8 /* XYNetworkEngine.h */,
-				5722183317DB6A35003504E8 /* XYNetworkEngine.m */,
+				57F3965D17DB6F490060D6CE /* XYNetWorkEngine.h */,
+				57F3965E17DB6F490060D6CE /* XYNetWorkEngine.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -1476,7 +1475,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				57B3001B177AD9BC00775FC9 /* JoinShowTests.m in Sources */,
-				5722183517DB6A36003504E8 /* XYNetworkEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1532,7 +1530,7 @@
 				5722181C17DB33F6003504E8 /* MKNetworkOperation.m in Sources */,
 				5722181D17DB33F6003504E8 /* Reachability.m in Sources */,
 				5722182817DB365B003504E8 /* NetworkVC.m in Sources */,
-				5722183417DB6A36003504E8 /* XYNetworkEngine.m in Sources */,
+				57F3965F17DB6F490060D6CE /* XYNetWorkEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

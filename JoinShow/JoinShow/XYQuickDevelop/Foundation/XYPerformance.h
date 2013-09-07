@@ -7,14 +7,14 @@
 //  Copy from bee Framework
 
 #import <Foundation/Foundation.h>
-
+#import "CommonDefine.h"
 #pragma mark -
 
 #if (1 ==  __XY_PERFORMANCE__)
 
-#define PERF_TAG( __X )		[NSString stringWithFormat:@"%s %s", __PRETTY_FUNCTION__, __X]
-#define PERF_TAG1( __X )	[NSString stringWithFormat:@"enter %s %s", __PRETTY_FUNCTION__, __X]
-#define PERF_TAG2( __X )	[NSString stringWithFormat:@"leave %s %s", __PRETTY_FUNCTION__, __X]
+#define PERF_TAG( __X )		[NSString stringWithFormat:@"%s %s", __X]
+#define PERF_TAG1( __X )	[NSString stringWithFormat:@"enter %s %s", __X]
+#define PERF_TAG2( __X )	[NSString stringWithFormat:@"leave %s %s", __X]
 
 #define	PERF_MARK( __X ) \
 [XYPerformance markTag:PERF_TAG(#__X)];

@@ -7,7 +7,6 @@
 //
 
 #import "NetworkVC.h"
-#import "XYNetworkEngine.h"
 
 @interface NetworkVC ()
 
@@ -41,6 +40,7 @@
 {
     NSLogDD;
     self.networkEngine = nil;
+    self.networkEngine2 = nil;
     [super dealloc];
 }
 - (void)didReceiveMemoryWarning

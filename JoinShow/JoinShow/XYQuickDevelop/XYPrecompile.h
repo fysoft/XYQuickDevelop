@@ -12,6 +12,7 @@
 #define __USED_FMDatabase__         (0)
 #define __USED_MBProgressHUD__      (0)
 #define __USED_ASIHTTPRequest__     (0)
+#define __USED_MKNetworkKit__       (1)
 #define __USED_CocosDenshion__      (0)
 #define __XY_PERFORMANCE__          (0)
 
