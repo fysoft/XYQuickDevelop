@@ -15,3 +15,7 @@
 
 // 网络请求
 #import "MKNetworkKit.h"
+// json to object , object to json
+#import "YYJSONHelper.h"
+// cocos2d 音频引擎
+#import "SimpleAudioEngine.h"

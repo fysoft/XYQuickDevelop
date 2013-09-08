@@ -259,6 +259,10 @@
 		57E852DF17B224CD00C664F4 /* NSData+IJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E852DA17B224CD00C664F4 /* NSData+IJson.m */; };
 		57E852E017B224CD00C664F4 /* NSString+IJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E852DC17B224CD00C664F4 /* NSString+IJson.m */; };
 		57E852E217B224E500C664F4 /* json2.json in Resources */ = {isa = PBXBuildFile; fileRef = 57E852E117B224E500C664F4 /* json2.json */; };
+		57F134D717DC37A800C5DCDC /* YYJSONHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F134D617DC37A800C5DCDC /* YYJSONHelper.m */; };
+		57F134DA17DC393600C5DCDC /* JsonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F134D917DC393600C5DCDC /* JsonVC.m */; };
+		57F134DF17DC39F200C5DCDC /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F134DC17DC39F200C5DCDC /* Player.m */; };
+		57F134E017DC39F200C5DCDC /* Shot.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F134DE17DC39F200C5DCDC /* Shot.m */; };
 		57F3965F17DB6F490060D6CE /* NetWorkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F3965E17DB6F490060D6CE /* NetWorkEngine.m */; };
 /* End PBXBuildFile section */
 
@@ -588,6 +592,14 @@
 		57E852DB17B224CD00C664F4 /* NSString+IJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IJson.h"; sourceTree = "<group>"; };
 		57E852DC17B224CD00C664F4 /* NSString+IJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IJson.m"; sourceTree = "<group>"; };
 		57E852E117B224E500C664F4 /* json2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = json2.json; sourceTree = "<group>"; };
+		57F134D517DC37A800C5DCDC /* YYJSONHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYJSONHelper.h; sourceTree = "<group>"; };
+		57F134D617DC37A800C5DCDC /* YYJSONHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYJSONHelper.m; sourceTree = "<group>"; };
+		57F134D817DC393600C5DCDC /* JsonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonVC.h; sourceTree = "<group>"; };
+		57F134D917DC393600C5DCDC /* JsonVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonVC.m; sourceTree = "<group>"; };
+		57F134DB17DC39F200C5DCDC /* Shot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shot.h; sourceTree = "<group>"; };
+		57F134DC17DC39F200C5DCDC /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		57F134DD17DC39F200C5DCDC /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		57F134DE17DC39F200C5DCDC /* Shot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shot.m; sourceTree = "<group>"; };
 		57F3965D17DB6F490060D6CE /* NetWorkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkEngine.h; sourceTree = "<group>"; };
 		57F3965E17DB6F490060D6CE /* NetWorkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkEngine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -638,6 +650,8 @@
 				5722182717DB365B003504E8 /* NetworkVC.m */,
 				57383F3917D2F5F20001079C /* TestVC.h */,
 				57383F3A17D2F5F20001079C /* TestVC.m */,
+				57F134D817DC393600C5DCDC /* JsonVC.h */,
+				57F134D917DC393600C5DCDC /* JsonVC.m */,
 				571CBA4A17C6FCC0007CB842 /* ViewController.h */,
 				571CBA4B17C6FCC0007CB842 /* ViewController.m */,
 			);
@@ -647,6 +661,10 @@
 		571CBA4C17C6FCC0007CB842 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				57F134DB17DC39F200C5DCDC /* Shot.h */,
+				57F134DC17DC39F200C5DCDC /* Player.m */,
+				57F134DD17DC39F200C5DCDC /* Player.h */,
+				57F134DE17DC39F200C5DCDC /* Shot.m */,
 				571CBA4D17C6FCC0007CB842 /* BookInfo.h */,
 				571CBA4E17C6FCC0007CB842 /* BookInfo.m */,
 			);
@@ -982,6 +1000,7 @@
 		577C496A17BDFC8500C7FC56 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				57F134D417DC37A800C5DCDC /* YYJSON */,
 				572217FC17DB33F6003504E8 /* MKNetworkKit */,
 				577C496B17BDFC8500C7FC56 /* CocosDenshion */,
 				577C497517BDFC8500C7FC56 /* OpenUDID */,
@@ -1186,6 +1205,15 @@
 				57E852D817B224CD00C664F4 /* JSONKit.m */,
 			);
 			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		57F134D417DC37A800C5DCDC /* YYJSON */ = {
+			isa = PBXGroup;
+			children = (
+				57F134D517DC37A800C5DCDC /* YYJSONHelper.h */,
+				57F134D617DC37A800C5DCDC /* YYJSONHelper.m */,
+			);
+			path = YYJSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1537,6 +1565,10 @@
 				5722182817DB365B003504E8 /* NetworkVC.m in Sources */,
 				57F3965F17DB6F490060D6CE /* NetWorkEngine.m in Sources */,
 				573D546317DB9C31008FFDE4 /* XYTimer.m in Sources */,
+				57F134D717DC37A800C5DCDC /* YYJSONHelper.m in Sources */,
+				57F134DA17DC393600C5DCDC /* JsonVC.m in Sources */,
+				57F134DF17DC39F200C5DCDC /* Player.m in Sources */,
+				57F134E017DC39F200C5DCDC /* Shot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

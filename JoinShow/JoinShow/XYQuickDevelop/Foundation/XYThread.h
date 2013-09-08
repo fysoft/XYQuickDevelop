@@ -5,7 +5,7 @@
 //  Created by Heaven on 13-7-10.
 //  Copy from bee Framework
 //
-// GCD
+
 #pragma mark -
 
 #undef	FOREGROUND_BEGIN
@@ -24,9 +24,6 @@
 #define BACKGROUND_COMMIT		}];
 
 #pragma mark -
-
-#import "XYCommon.h"
-
 
 @interface XYGCD : NSObject
 

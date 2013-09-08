@@ -36,7 +36,8 @@
         self.list = @[@{@"title": @"Test", @"className": @"TestVC"},
                       @{@"title": @"Frame Animation", @"className": @"AnimationVC"},
                       @{@"title": @"Something", @"className": @"MessVC"},
-                      @{@"title": @"network", @"className": @"NetworkVC"}];
+                      @{@"title": @"Network", @"className": @"NetworkVC"},
+                      @{@"title": @"Json", @"className": @"JsonVC"}];
     }
     return self;
 }

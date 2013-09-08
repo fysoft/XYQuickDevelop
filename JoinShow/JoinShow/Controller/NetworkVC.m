@@ -62,7 +62,7 @@
      params:dic
      succeed:^(MKNetworkOperation *operation) {
          if([operation isCachedResponse]) {
-             NSLog(@"Data from cache %@", @"a");
+             NSLog(@"Data from cache %@", [operation responseString]);
          }
          else {
              NSLog(@"Data from server %@", @"a");
@@ -77,14 +77,14 @@
     NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithDictionary:@{@"theCityName": @"深圳"}];
     
     [self.networkEngine
-     addPostRequestWithPath:@"WeatherWebservice.asmx/getWeatherbyCityName"
+     addPostRequestWithPath:@"/WebServices/WeatherWebservice.asmx/getWeatherbyCityName"
      params:dic
      succeed:^(MKNetworkOperation *operation) {
          if([operation isCachedResponse]) {
-             NSLog(@"Data from cache %@", @"a");
+             NSLog(@"Data from cache %@", [operation responseString]);
          }
          else {
-             NSLog(@"Data from server %@", @"a");
+             NSLog(@"Data from server %@", [operation responseString]);
          }
      }
      failed:^(MKNetworkOperation *errorOp, NSError *err) {
