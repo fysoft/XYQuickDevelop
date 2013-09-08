@@ -254,10 +254,6 @@
 		57BE89B917AA525200FCD864 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57BE89B817AA525200FCD864 /* AVFoundation.framework */; };
 		57BE89BB17AA52E700FCD864 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57BE89BA17AA52E700FCD864 /* AudioToolbox.framework */; };
 		57BE89BD17AA531200FCD864 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57BE89BC17AA531100FCD864 /* OpenAL.framework */; };
-		57E852DD17B224CD00C664F4 /* BaseNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E852D517B224CD00C664F4 /* BaseNSObject.m */; };
-		57E852DE17B224CD00C664F4 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E852D817B224CD00C664F4 /* JSONKit.m */; };
-		57E852DF17B224CD00C664F4 /* NSData+IJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E852DA17B224CD00C664F4 /* NSData+IJson.m */; };
-		57E852E017B224CD00C664F4 /* NSString+IJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E852DC17B224CD00C664F4 /* NSString+IJson.m */; };
 		57E852E217B224E500C664F4 /* json2.json in Resources */ = {isa = PBXBuildFile; fileRef = 57E852E117B224E500C664F4 /* json2.json */; };
 		57F134D717DC37A800C5DCDC /* YYJSONHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F134D617DC37A800C5DCDC /* YYJSONHelper.m */; };
 		57F134DA17DC393600C5DCDC /* JsonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F134D917DC393600C5DCDC /* JsonVC.m */; };
@@ -583,14 +579,6 @@
 		57BE89B817AA525200FCD864 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		57BE89BA17AA52E700FCD864 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		57BE89BC17AA531100FCD864 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
-		57E852D417B224CD00C664F4 /* BaseNSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNSObject.h; sourceTree = "<group>"; };
-		57E852D517B224CD00C664F4 /* BaseNSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNSObject.m; sourceTree = "<group>"; };
-		57E852D717B224CD00C664F4 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		57E852D817B224CD00C664F4 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		57E852D917B224CD00C664F4 /* NSData+IJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+IJson.h"; sourceTree = "<group>"; };
-		57E852DA17B224CD00C664F4 /* NSData+IJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+IJson.m"; sourceTree = "<group>"; };
-		57E852DB17B224CD00C664F4 /* NSString+IJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IJson.h"; sourceTree = "<group>"; };
-		57E852DC17B224CD00C664F4 /* NSString+IJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IJson.m"; sourceTree = "<group>"; };
 		57E852E117B224E500C664F4 /* json2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = json2.json; sourceTree = "<group>"; };
 		57F134D517DC37A800C5DCDC /* YYJSONHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYJSONHelper.h; sourceTree = "<group>"; };
 		57F134D617DC37A800C5DCDC /* YYJSONHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYJSONHelper.m; sourceTree = "<group>"; };
@@ -1150,7 +1138,6 @@
 			children = (
 				577C495517BDFC8500C7FC56 /* XYQuickDevelop */,
 				57D5B88417B8ABBB009212F7 /* AppDelegate */,
-				57E852D317B224CD00C664F4 /* JsonToNSObject */,
 				57B3FFF0177AD9BC00775FC9 /* Supporting Files */,
 			);
 			path = JoinShow;
@@ -1182,29 +1169,6 @@
 				571CBA3217C6FB55007CB842 /* AppDelegate.m */,
 			);
 			name = AppDelegate;
-			sourceTree = "<group>";
-		};
-		57E852D317B224CD00C664F4 /* JsonToNSObject */ = {
-			isa = PBXGroup;
-			children = (
-				57E852D417B224CD00C664F4 /* BaseNSObject.h */,
-				57E852D517B224CD00C664F4 /* BaseNSObject.m */,
-				57E852D617B224CD00C664F4 /* JSONKit */,
-				57E852D917B224CD00C664F4 /* NSData+IJson.h */,
-				57E852DA17B224CD00C664F4 /* NSData+IJson.m */,
-				57E852DB17B224CD00C664F4 /* NSString+IJson.h */,
-				57E852DC17B224CD00C664F4 /* NSString+IJson.m */,
-			);
-			path = JsonToNSObject;
-			sourceTree = "<group>";
-		};
-		57E852D617B224CD00C664F4 /* JSONKit */ = {
-			isa = PBXGroup;
-			children = (
-				57E852D717B224CD00C664F4 /* JSONKit.h */,
-				57E852D817B224CD00C664F4 /* JSONKit.m */,
-			);
-			path = JSONKit;
 			sourceTree = "<group>";
 		};
 		57F134D417DC37A800C5DCDC /* YYJSON */ = {
@@ -1516,10 +1480,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				57B3FFF6177AD9BC00775FC9 /* main.m in Sources */,
-				57E852DD17B224CD00C664F4 /* BaseNSObject.m in Sources */,
-				57E852DE17B224CD00C664F4 /* JSONKit.m in Sources */,
-				57E852DF17B224CD00C664F4 /* NSData+IJson.m in Sources */,
-				57E852E017B224CD00C664F4 /* NSString+IJson.m in Sources */,
 				577C499A17BDFC8500C7FC56 /* NSObject+XY.m in Sources */,
 				577C499B17BDFC8500C7FC56 /* UIView+XY.m in Sources */,
 				577C499C17BDFC8500C7FC56 /* BUIControl.m in Sources */,
