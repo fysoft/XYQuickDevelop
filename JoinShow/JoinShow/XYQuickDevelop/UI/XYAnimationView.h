@@ -46,7 +46,7 @@
 - (void)setState:(int)s;
 
 // 手势
-#pragma mark-手势待完善 
+#pragma mark -todo, 手势
 // 轻击手势
 @property (nonatomic, retain) UITapGestureRecognizer *tapGesture;
 -(void)addGestureTap;

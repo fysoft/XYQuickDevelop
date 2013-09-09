@@ -133,7 +133,7 @@ typedef enum {
  */
 + (NSMutableArray *) allFilesAtPath:(NSString *)direString type:(NSString*)fileType operation:(int)operation;
 
-#pragma mark -分享facebook,发email待完善
+#pragma mark  -todo, 分享facebook,发EMail
 /***************************************************************/
 // 分享至Twitter的方法
 /*

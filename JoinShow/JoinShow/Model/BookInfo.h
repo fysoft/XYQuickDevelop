@@ -19,7 +19,6 @@
 #define kUserVersion 23
 #define kIsPurchased 25
 
-//#import "Bee.h"
 #import <Foundation/Foundation.h>
 
 @interface BookInfo : NSObject{

@@ -15,7 +15,7 @@
                       succeed:(void (^)(MKNetworkOperation *operation))blockS
                        failed:(void (^)(MKNetworkOperation *errorOp, NSError* err))blockF;
 // post
-#pragma mark post待完善
+#pragma mark -todo, post
 -(void) addPostRequestWithPath:(NSString *)path
                         params:(NSMutableDictionary *)params
                        succeed:(void (^)(MKNetworkOperation *operation))blockS
