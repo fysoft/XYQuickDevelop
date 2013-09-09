@@ -80,6 +80,9 @@
         labText.text = [NSString stringWithFormat:@"%d", count];
     }
 }
+-(void) spriteWillStart:(XYSpriteView *)aSprite{
+    NSLogDD
+}
 /*
 #pragma mark - UINavigationControllerDelegate
 - (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated{

@@ -67,13 +67,21 @@ return __singleton__; \
 
 /**************************************************************/
 // delegate
-#define DelegateSelf( __x ) \
-if (_delegate && [_delegate respondsToSelector:@selector(__x)]) { \
+/*
+#define DelegateSelf( __fun ) \
+if (_delegate && [_delegate respondsToSelector:@selector( __fun )]) { \
     [_delegate __x self];} 
+ */
+#define DelegateSelf( __fun ) Delegate( __fun, self)
 
+/*
 #define Delegate( __x ) \
 if (_delegate && [_delegate respondsToSelector:@selector(__x)]) { \
 [_delegate __x];} 
+ */
+#define Delegate( __fun, ...) \
+if (_delegate && [_delegate respondsToSelector:@selector( __fun )]) { \
+objc_msgSend(_delegate, @selector( __fun ), ## __VA_ARGS__);}
 
 /**************************************************************/
 // NSUserDefaults

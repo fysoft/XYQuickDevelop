@@ -80,8 +80,9 @@
     state = SpriteStateStop;
 }
 -(void)stop{
-    DelegateSelf(spriteWillStop:)
+  //  DelegateSelf(spriteWillStop:)
     state = SpriteStateStop;
+    DelegateSelf(spriteDidStop:)
 }
 
 // if fileType == nil, support png, jpg
@@ -190,9 +191,12 @@
         }
         if (lastImgIndex != index && b) {
             _curImageIndex = index;
+            /*
             if (_delegate && [_delegate respondsToSelector:@selector(spriteOnIndex:sprite:)]) {
-                [_delegate spriteOnIndex:_curImageIndex sprite:self];
-            }
+               // [_delegate spriteOnIndex:_curImageIndex sprite:self];
+                objc_msgSend(_delegate, @selector(spriteOnIndex:sprite:), _curImageIndex, self);
+            }*/
+            Delegate(spriteOnIndex:sprite:, _curImageIndex, self);
             [self showImgWithIndex:_curImageIndex];
         }
         

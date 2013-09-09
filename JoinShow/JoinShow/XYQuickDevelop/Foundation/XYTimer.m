@@ -56,8 +56,6 @@ DEF_SINGLETON(XYTimer)
 }
 -(void) runDefaultTimer:(NSTimer *)timer{
     _accumulatorTime += timer.timeInterval;
-    if (_delegate && [_delegate respondsToSelector:@selector(onTimer:)]) { 
-        [_delegate onTimer:_accumulatorTime];
-    }
+    Delegate(onTimer:, _accumulatorTime)
 }
 @end

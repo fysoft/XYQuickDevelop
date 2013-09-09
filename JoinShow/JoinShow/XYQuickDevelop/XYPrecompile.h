@@ -25,6 +25,7 @@
 #import <mach/mach.h>
 #import <mach/mach_host.h>
 #import <objc/runtime.h>
+#import <objc/message.h>
 
 #import "CommonDefine.h"
 #import "XYCommon.h"

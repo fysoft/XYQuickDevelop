@@ -10,7 +10,6 @@
 		571CBA2A17C6F59E007CB842 /* XYPerformance.m in Sources */ = {isa = PBXBuildFile; fileRef = 571CBA2917C6F59E007CB842 /* XYPerformance.m */; };
 		571CBA3317C6FB55007CB842 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 571CBA3217C6FB55007CB842 /* AppDelegate.m */; };
 		571CBA5517C6FCC0007CB842 /* DomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571CBA4917C6FCC0007CB842 /* DomeTableViewController.m */; };
-		571CBA5617C6FCC0007CB842 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571CBA4B17C6FCC0007CB842 /* ViewController.m */; };
 		571CBA5717C6FCC0007CB842 /* BookInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 571CBA4E17C6FCC0007CB842 /* BookInfo.m */; };
 		571CBA5817C6FCC0007CB842 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571CBA4F17C6FCC0007CB842 /* Storyboard.storyboard */; };
 		571CBA5917C6FCC0007CB842 /* Test2View.m in Sources */ = {isa = PBXBuildFile; fileRef = 571CBA5217C6FCC0007CB842 /* Test2View.m */; };
@@ -279,8 +278,6 @@
 		571CBA3217C6FB55007CB842 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		571CBA4817C6FCC0007CB842 /* DomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DomeTableViewController.h; sourceTree = "<group>"; };
 		571CBA4917C6FCC0007CB842 /* DomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DomeTableViewController.m; sourceTree = "<group>"; };
-		571CBA4A17C6FCC0007CB842 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		571CBA4B17C6FCC0007CB842 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		571CBA4D17C6FCC0007CB842 /* BookInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookInfo.h; sourceTree = "<group>"; };
 		571CBA4E17C6FCC0007CB842 /* BookInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookInfo.m; sourceTree = "<group>"; };
 		571CBA4F17C6FCC0007CB842 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
@@ -640,8 +637,6 @@
 				57383F3A17D2F5F20001079C /* TestVC.m */,
 				57F134D817DC393600C5DCDC /* JsonVC.h */,
 				57F134D917DC393600C5DCDC /* JsonVC.m */,
-				571CBA4A17C6FCC0007CB842 /* ViewController.h */,
-				571CBA4B17C6FCC0007CB842 /* ViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1505,7 +1500,6 @@
 				571CBA2A17C6F59E007CB842 /* XYPerformance.m in Sources */,
 				571CBA3317C6FB55007CB842 /* AppDelegate.m in Sources */,
 				571CBA5517C6FCC0007CB842 /* DomeTableViewController.m in Sources */,
-				571CBA5617C6FCC0007CB842 /* ViewController.m in Sources */,
 				571CBA5717C6FCC0007CB842 /* BookInfo.m in Sources */,
 				571CBA5917C6FCC0007CB842 /* Test2View.m in Sources */,
 				571CBA5A17C6FCC0007CB842 /* TestView.m in Sources */,

@@ -98,9 +98,9 @@ typedef enum{
 @optional
 
 -(void) spriteFinished:(XYSpriteView *)aSprite;
--(void) spriteFailed:(XYSpriteView *)aSprite;
+//-(void) spriteFailed:(XYSpriteView *)aSprite;
 -(void) spriteWillStart:(XYSpriteView *)aSprite;
--(void) spriteWillStop:(XYSpriteView *)aSprite;
+-(void) spriteDidStop:(XYSpriteView *)aSprite;
 -(void) spriteOnIndex:(int)aIndex  sprite:(XYSpriteView *)aSprite;
 
 @end

@@ -8,8 +8,6 @@
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
-
 @implementation AppDelegate
 
 - (void)dealloc
@@ -28,6 +26,7 @@
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     */
+
     return YES;
 }
 

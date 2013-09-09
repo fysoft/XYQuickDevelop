@@ -51,6 +51,12 @@ typedef enum {
  * kType 文件所在目录类型. kCommon_dataFilePath_documents documents文件夹里,kCommon_dataFilePath_tmp Tmp文件夹里,kCommon_dataFilePath_app app文件夹里.
  */
 + (NSString *) dataFilePath:(NSString *)file ofType:(FilePathOption)kType;
+/****************************************************************/
+/** 创建目录
+ * api parameters 说明
+ * aPath 目录路径
+ */
++(void) createDirectoryAtPath:(NSString *)aPath;
 
 /***************************************************************/
 // Unicode格式的字符串编码转成中文的方法(如\u7E8C)转换成中文,unicode编码以\u开头
@@ -267,16 +273,7 @@ typedef enum {
  * mark 标记
  */
 +(void) printUsedAndFreeMemoryWithMark:(NSString *)mark;
-#pragma mark - 背景不是最上层
-/****************************************************************/
-/** 显示,移除 遮罩背景
- * api parameters 说明
- * mark 标记
- 
-+(void) showBackgroundView;
-+(void) removeBackgroundView;
- */
-//+(UIView *) setBackgroundViewHidden:(BOOL)b;
+
 /****************************************************************/
 #if (1 ==  __USED_ASIHTTPRequest__)
 /** 检查软件更新
@@ -311,11 +308,4 @@ typedef enum {
  * aObject 对象
  */
 +(NSMutableDictionary *) dictionaryOfObject:(id)aObject;
-
-/****************************************************************/
-/** 创建目录
- * api parameters 说明
- * aPath 目录路径
- */
-+(void) createDirectoryAtPath:(NSString *)aPath;
 @end

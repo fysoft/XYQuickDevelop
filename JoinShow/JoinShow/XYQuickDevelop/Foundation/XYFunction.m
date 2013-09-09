@@ -52,7 +52,20 @@
     }
     return pathFile;
 }
-
+/***************************************************************/
++(void) createDirectoryAtPath:(NSString *)aPath{
+    if ( NO == [[NSFileManager defaultManager] fileExistsAtPath:aPath isDirectory:NULL] )
+    {
+        BOOL ret = [[NSFileManager defaultManager] createDirectoryAtPath:aPath
+                                             withIntermediateDirectories:YES
+                                                              attributes:nil
+                                                                   error:nil];
+        if ( NO == ret ) {
+            NSLogD(@"%s, create %@ failed", __PRETTY_FUNCTION__, aPath);
+            return;
+        }
+    }
+}
 /***************************************************************/
 +(NSString *) replaceUnicode:(NSString *)unicodeStr
 {
@@ -455,11 +468,17 @@
     id nextResponder = [rootView nextResponder];
     
     if ([nextResponder isKindOfClass:[UIViewController class]])
+    {
         result = nextResponder;
+    }
     else if ([topWindow respondsToSelector:@selector(rootViewController)] && topWindow.rootViewController != nil)
+    {
         result = topWindow.rootViewController;
+    }
     else
+    {
         NSAssert(NO, @"Could not find a root view controller.");
+    }
     
     return result;
 }
@@ -607,46 +626,6 @@
 }
 
 /***************************************************************/
-/*
- +(void) showBackgroundView{
- [Common setBackgroundViewHidden:NO];
- }
- +(void) removeBackgroundView{
- [Common setBackgroundViewHidden:YES];
- }
- +(void) setBackgroundViewHidden:(BOOL)b{
- static UIControl *tmpView2 = nil;
- if (b) {
- if (tmpView2) {
- [tmpView2 removeFromSuperview];
- tmpView2 = nil;
- }
- 
- }else{
- UIView *tmpView = [Common getCurrentViewController].view;
- CGRect rect;
- if (UIInterfaceOrientationIsPortrait([UIApplication sharedApplication].statusBarOrientation)) {
- // 竖屏
- rect = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
- }else{
- // 横屏
- rect = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width);
- }
- if (tmpView2) {
- tmpView2.frame = rect;
- }else{
- tmpView2 = [[UIControl alloc] initWithFrame:rect];
- tmpView2.backgroundColor = RGBACOLOR(0, 0, 0, 0.8);
- tmpView2.userInteractionEnabled = YES;
- [tmpView2 addTarget:self action:@selector(removeBackgroundView) forControlEvents:UIControlEventTouchUpInside];
- }
- [tmpView addSubview:tmpView2];
- [tmpView2 release];
- }
- }
- */
-
-/***************************************************************/
 #if (1 ==  __USED_ASIHTTPRequest__)
 +(void) checkUpdateInAppStore:(NSString *)appID curVersion:(NSString *)aVersion appURLString:(NSString *)strURL
                          same:(void(^)(void))blockSame
@@ -730,18 +709,6 @@
         return NO;
     } else {
         return NO;
-    }
-}
-/***************************************************************/
-+(void) createDirectoryAtPath:(NSString *)aPath{
-    if ( NO == [[NSFileManager defaultManager] fileExistsAtPath:aPath isDirectory:NULL] )
-    {
-        BOOL ret = [[NSFileManager defaultManager] createDirectoryAtPath:aPath
-                                             withIntermediateDirectories:YES
-                                                              attributes:nil
-                                                                   error:nil];
-        if ( NO == ret )
-            return;
     }
 }
 @end
