@@ -21,9 +21,8 @@
 
 //#import "Bee.h"
 #import <Foundation/Foundation.h>
-#import "BaseNSObject.h"
 
-@interface BookInfo : BaseNSObject{
+@interface BookInfo : NSObject{
 }
 
 @property (nonatomic, copy) NSString *Level;

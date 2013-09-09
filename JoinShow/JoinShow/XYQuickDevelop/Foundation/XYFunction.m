@@ -362,6 +362,15 @@
     return output;
 }
 /***************************************************************/
++(NSString *) UUID{
+    CFUUIDRef puuid = CFUUIDCreate( nil );
+    CFStringRef uuidString = CFUUIDCreateString(nil, puuid);
+    NSString *result = (NSString *)CFStringCreateCopy(nil, uuidString);
+    CFRelease(puuid);
+    CFRelease(uuidString);
+    return [result autorelease];
+}
+/***************************************************************/
 +(void) openURL:(NSURL *)url{
     NSURL *tmpURL = url;
     if ([url isKindOfClass:[NSString class]]) {
