@@ -253,12 +253,15 @@
 		57BE89B917AA525200FCD864 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57BE89B817AA525200FCD864 /* AVFoundation.framework */; };
 		57BE89BB17AA52E700FCD864 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57BE89BA17AA52E700FCD864 /* AudioToolbox.framework */; };
 		57BE89BD17AA531200FCD864 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57BE89BC17AA531100FCD864 /* OpenAL.framework */; };
+		57E7857817DE459E0056C589 /* ConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E7857717DE459E0056C589 /* ConfigManager.m */; };
+		57E7857B17DE564E0056C589 /* DataLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E7857A17DE564E0056C589 /* DataLite.m */; };
 		57E852E217B224E500C664F4 /* json2.json in Resources */ = {isa = PBXBuildFile; fileRef = 57E852E117B224E500C664F4 /* json2.json */; };
 		57F134D717DC37A800C5DCDC /* YYJSONHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F134D617DC37A800C5DCDC /* YYJSONHelper.m */; };
 		57F134DA17DC393600C5DCDC /* JsonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F134D917DC393600C5DCDC /* JsonVC.m */; };
 		57F134DF17DC39F200C5DCDC /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F134DC17DC39F200C5DCDC /* Player.m */; };
 		57F134E017DC39F200C5DCDC /* Shot.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F134DE17DC39F200C5DCDC /* Shot.m */; };
 		57F3965F17DB6F490060D6CE /* NetWorkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F3965E17DB6F490060D6CE /* NetWorkEngine.m */; };
+		57FC192E17DEBF8F00B5E6F9 /* DataLiteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FC192D17DEBF8F00B5E6F9 /* DataLiteVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -576,6 +579,10 @@
 		57BE89B817AA525200FCD864 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		57BE89BA17AA52E700FCD864 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		57BE89BC17AA531100FCD864 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		57E7857617DE459E0056C589 /* ConfigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigManager.h; sourceTree = "<group>"; };
+		57E7857717DE459E0056C589 /* ConfigManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigManager.m; sourceTree = "<group>"; };
+		57E7857917DE564E0056C589 /* DataLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataLite.h; sourceTree = "<group>"; };
+		57E7857A17DE564E0056C589 /* DataLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataLite.m; sourceTree = "<group>"; };
 		57E852E117B224E500C664F4 /* json2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = json2.json; sourceTree = "<group>"; };
 		57F134D517DC37A800C5DCDC /* YYJSONHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYJSONHelper.h; sourceTree = "<group>"; };
 		57F134D617DC37A800C5DCDC /* YYJSONHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYJSONHelper.m; sourceTree = "<group>"; };
@@ -587,6 +594,8 @@
 		57F134DE17DC39F200C5DCDC /* Shot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shot.m; sourceTree = "<group>"; };
 		57F3965D17DB6F490060D6CE /* NetWorkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkEngine.h; sourceTree = "<group>"; };
 		57F3965E17DB6F490060D6CE /* NetWorkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkEngine.m; sourceTree = "<group>"; };
+		57FC192C17DEBF8F00B5E6F9 /* DataLiteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataLiteVC.h; sourceTree = "<group>"; };
+		57FC192D17DEBF8F00B5E6F9 /* DataLiteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataLiteVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -637,6 +646,8 @@
 				57383F3A17D2F5F20001079C /* TestVC.m */,
 				57F134D817DC393600C5DCDC /* JsonVC.h */,
 				57F134D917DC393600C5DCDC /* JsonVC.m */,
+				57FC192C17DEBF8F00B5E6F9 /* DataLiteVC.h */,
+				57FC192D17DEBF8F00B5E6F9 /* DataLiteVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -650,6 +661,8 @@
 				57F134DE17DC39F200C5DCDC /* Shot.m */,
 				571CBA4D17C6FCC0007CB842 /* BookInfo.h */,
 				571CBA4E17C6FCC0007CB842 /* BookInfo.m */,
+				57E7857617DE459E0056C589 /* ConfigManager.h */,
+				57E7857717DE459E0056C589 /* ConfigManager.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1052,6 +1065,8 @@
 				57F3965E17DB6F490060D6CE /* NetWorkEngine.m */,
 				573D546117DB9C31008FFDE4 /* XYTimer.h */,
 				573D546217DB9C31008FFDE4 /* XYTimer.m */,
+				57E7857917DE564E0056C589 /* DataLite.h */,
+				57E7857A17DE564E0056C589 /* DataLite.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -1523,6 +1538,9 @@
 				57F134DA17DC393600C5DCDC /* JsonVC.m in Sources */,
 				57F134DF17DC39F200C5DCDC /* Player.m in Sources */,
 				57F134E017DC39F200C5DCDC /* Shot.m in Sources */,
+				57E7857817DE459E0056C589 /* ConfigManager.m in Sources */,
+				57E7857B17DE564E0056C589 /* DataLite.m in Sources */,
+				57FC192E17DEBF8F00B5E6F9 /* DataLiteVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

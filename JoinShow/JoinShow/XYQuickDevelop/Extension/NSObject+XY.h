@@ -17,4 +17,6 @@
 -(void) performBlock:(void(^)(void))aBlock mark:(id)mark afterDelay:(NSTimeInterval(^)(void))aBlockTime loop:(BOOL)loop isRunNow:(BOOL)now;
 //-(void) removePerformWithMark:(NSString *)mark;
 -(void) removePerformRandomDelay;
+
+
 @end

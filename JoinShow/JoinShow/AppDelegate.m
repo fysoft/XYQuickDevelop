@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ConfigManager.h"
 
 @implementation AppDelegate
 
@@ -26,7 +27,7 @@
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     */
-
+#pragma mark - some test
     return YES;
 }
 

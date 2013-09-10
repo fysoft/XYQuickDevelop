@@ -37,7 +37,8 @@
                       @{@"title": @"Frame Animation", @"className": @"AnimationVC"},
                       @{@"title": @"Something", @"className": @"MessVC"},
                       @{@"title": @"Network", @"className": @"NetworkVC"},
-                      @{@"title": @"Json", @"className": @"JsonVC"}];
+                      @{@"title": @"Json", @"className": @"JsonVC"},
+                      @{@"title": @"DataLite", @"className": @"DataLiteVC"}];
     }
     return self;
 }

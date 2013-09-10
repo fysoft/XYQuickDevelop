@@ -23,7 +23,7 @@
 }
 
 /*
-+ (void)initialize{
++ (void) load{
 }
  */
 
