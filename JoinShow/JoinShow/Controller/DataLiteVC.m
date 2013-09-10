@@ -36,8 +36,10 @@ DEF_DataLite_object(DataLiteTitle)
     
     self.DataLiteTitle = nil;
     NSLogD(@"%@", self.DataLiteTitle);
-    self.DataLiteTitle = @"test3";
+    self.DataLiteTitle = @"test1";
     NSLogD(@"%@", self.DataLiteTitle);
+    
+    XY_DataLite_synchronize
 }
 
 - (void)didReceiveMemoryWarning

@@ -13,22 +13,29 @@
 #import "DataLite.h"
 
 @implementation DataLite
-
-DEF_SINGLETON(DataLite)
+//DEF_SINGLETON(DataLite)
 
 DEF_DataLite_object(StrTest)
-/*
+
 #pragma mark - todo 多类型判断
--(void) setStrTest:(NSString *)str{
-    if (str == nil) {
-        [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"StrTest"];
+
++(id) readObjectForKey:(NSString *)key{
+    return  [[NSUserDefaults standardUserDefaults] stringForKey:key];
+}
++(void) writeObject:(id)aObject forKey:(NSString *)key{
+    [[self class] writeObject:aObject forKey:key synchronize:NO];
+}
++(void) writeObject:(id)aObject forKey:(NSString *)key synchronize:(BOOL)bSync{
+    if (aObject == nil) {
+        [[NSUserDefaults standardUserDefaults] removeObjectForKey:key];
     }else{
-        [[NSUserDefaults standardUserDefaults] setObject:str forKey:@"StrTest"];
+        [[NSUserDefaults standardUserDefaults] setObject:aObject forKey:key];
+    }
+    if (bSync) {
+        [[self class] synchronize];
     }
 }
-
- -(NSString *) StrTest{
- return  [[NSUserDefaults standardUserDefaults] stringForKey:@"StrTest"];
- }
- */
++(void) synchronize{
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
 @end
