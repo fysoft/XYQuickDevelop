@@ -8,8 +8,6 @@
 
 #pragma mark -to kvo
 
-
-
 #import "DataLite.h"
 
 @implementation DataLite
@@ -20,11 +18,9 @@ DEF_DataLite_object(StrTest)
 #pragma mark - todo 多类型判断
 
 +(id) readObjectForKey:(NSString *)key{
-    return  [[NSUserDefaults standardUserDefaults] stringForKey:key];
+    return [[NSUserDefaults standardUserDefaults] objectForKey:key];
 }
-+(void) writeObject:(id)aObject forKey:(NSString *)key{
-    [[self class] writeObject:aObject forKey:key synchronize:NO];
-}
+
 +(void) writeObject:(id)aObject forKey:(NSString *)key synchronize:(BOOL)bSync{
     if (aObject == nil) {
         [[NSUserDefaults standardUserDefaults] removeObjectForKey:key];

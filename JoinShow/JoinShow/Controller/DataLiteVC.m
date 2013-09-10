@@ -14,7 +14,7 @@
 
 @implementation DataLiteVC
 
-DEF_DataLite_object(DataLiteTitle)
+DEF_DataLite_object_autoSynchronize(DataLiteTitle)
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,7 +39,6 @@ DEF_DataLite_object(DataLiteTitle)
     self.DataLiteTitle = @"test1";
     NSLogD(@"%@", self.DataLiteTitle);
     
-    XY_DataLite_synchronize
 }
 
 - (void)didReceiveMemoryWarning
