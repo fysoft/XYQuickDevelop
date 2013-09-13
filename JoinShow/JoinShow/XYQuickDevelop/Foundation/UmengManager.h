@@ -5,9 +5,9 @@
 //  Created by Heaven on 13-8-7.
 //  Copyright (c) 2013年 Heaven. All rights reserved.
 //
-// 目前用的是友盟
-#import "XYCommon.h"
 
+// 友盟信息统计管理类
+#import "XYCommon.h"
 
 #ifdef UMENG
 #import "MobClick.h"

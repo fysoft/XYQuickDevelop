@@ -25,6 +25,11 @@ DEF_SINGLETON(XYTimer)
     [_timers release];
     [super dealloc];
 }
+- (void)setDelegate:(id)iDelegate
+{
+    _delegate = iDelegate;
+    //classIsa = (int)object_getClass(_delegate);
+}
 -(void) startTimerWithInterval:(NSTimeInterval)ti{
     NSTimer *timer = [_timers objectForKey:XYTimer_default];
     if (timer) {
@@ -56,6 +61,9 @@ DEF_SINGLETON(XYTimer)
 }
 -(void) runDefaultTimer:(NSTimer *)timer{
     _accumulatorTime += timer.timeInterval;
-    Delegate(onTimer:, _accumulatorTime)
+  //  if ((int)object_getClass(_delegate) == classIsa) {
+        Delegate(onTimer:, _accumulatorTime)
+  //  }
+    
 }
 @end

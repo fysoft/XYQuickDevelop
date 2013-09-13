@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DataLiteVC : UIViewController
-XY_DataLite_string(DataLiteTitle)
+XY_DataLite_string(TestTitle)
+XY_DataLite_string(TestSting)
+XY_DataLite_string(TestDic)
 @end

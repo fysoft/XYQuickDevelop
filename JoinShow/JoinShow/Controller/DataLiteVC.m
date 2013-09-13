@@ -14,7 +14,9 @@
 
 @implementation DataLiteVC
 
-DEF_DataLite_object_autoSynchronize(DataLiteTitle)
+DEF_DataLite_object(TestTitle, YES, nil, nil)
+DEF_DataLite_object(TestSting, YES, @"DataLiteSting", nil)
+DEF_DataLite_object(TestDic, YES, nil, @"default_TestDic.plist")
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,10 +36,14 @@ DEF_DataLite_object_autoSynchronize(DataLiteTitle)
     [self.view addSubview:tempLabel];
     [tempLabel release];
     
-    self.DataLiteTitle = nil;
-    NSLogD(@"%@", self.DataLiteTitle);
-    self.DataLiteTitle = @"test1";
-    NSLogD(@"%@", self.DataLiteTitle);
+    self.TestTitle = nil;
+    NSLogD(@"%@", self.TestTitle);
+    self.TestTitle = @"test1";
+    NSLogD(@"%@", self.TestTitle);
+    
+    NSLogD(@"%@", self.TestSting);
+    
+    NSLogD(@"%@", self.TestDic);
     
 }
 

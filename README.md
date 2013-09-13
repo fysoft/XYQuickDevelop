@@ -12,6 +12,9 @@ XYTimer 定时器类.默认只有一个定时.
 NetWorkEngine 网络通讯类.
 ### 
 DataLite 轻量形数据持久化, 基于NSUserDefaults
+### 
+todo
+消息传递
 
 
 ## External 使用的第三方库

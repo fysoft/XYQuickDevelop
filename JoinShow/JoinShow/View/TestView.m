@@ -29,7 +29,7 @@
 */
 
 -(void)dealloc{
-    NSLogD(@"%s, %@", __FUNCTION__, [super class]);
+   // NSLogDD
     [super dealloc];
 }
 

@@ -328,7 +328,7 @@
         NSString *propertyName = [NSString stringWithCString:name encoding:NSUTF8StringEncoding];
         
         //   const char *attr = property_getAttributes(properties[i]);
-        // NSLogD(@"%s\n%@, %s", __FUNCTION__, propertyName, attr);
+        // NSLogD(@"%@, %s", propertyName, attr);
         [array addObject:propertyName];
     }
     free( properties );

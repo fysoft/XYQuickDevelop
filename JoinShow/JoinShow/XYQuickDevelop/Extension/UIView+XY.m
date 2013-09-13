@@ -13,9 +13,10 @@
 @implementation UIView (XY)
 
 #undef	UIView_key_tapBlock
-#define UIView_key_tapBlock	"TapBlock"
+#define UIView_key_tapBlock	"UIView.tapBlock"
 
 
+// objc_setAssociatedObject 对象在dealloc会自动释放
 -(void) UIView_dealloc{
     objc_removeAssociatedObjects(self);
     XY_swizzleInstanceMethod([self class], @selector(UIView_dealloc), @selector(dealloc));

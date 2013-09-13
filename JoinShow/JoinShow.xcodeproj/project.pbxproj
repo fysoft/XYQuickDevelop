@@ -261,6 +261,8 @@
 		57F134DF17DC39F200C5DCDC /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F134DC17DC39F200C5DCDC /* Player.m */; };
 		57F134E017DC39F200C5DCDC /* Shot.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F134DE17DC39F200C5DCDC /* Shot.m */; };
 		57F3965F17DB6F490060D6CE /* NetWorkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F3965E17DB6F490060D6CE /* NetWorkEngine.m */; };
+		57FB837C17E2A543004B70B6 /* UIView+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FB837B17E2A543004B70B6 /* UIView+Test.m */; };
+		57FB838017E2F3CD004B70B6 /* default_TestDic.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57FB837F17E2F3CD004B70B6 /* default_TestDic.plist */; };
 		57FC192E17DEBF8F00B5E6F9 /* DataLiteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FC192D17DEBF8F00B5E6F9 /* DataLiteVC.m */; };
 /* End PBXBuildFile section */
 
@@ -594,6 +596,9 @@
 		57F134DE17DC39F200C5DCDC /* Shot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shot.m; sourceTree = "<group>"; };
 		57F3965D17DB6F490060D6CE /* NetWorkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkEngine.h; sourceTree = "<group>"; };
 		57F3965E17DB6F490060D6CE /* NetWorkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkEngine.m; sourceTree = "<group>"; };
+		57FB837A17E2A543004B70B6 /* UIView+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Test.h"; sourceTree = "<group>"; };
+		57FB837B17E2A543004B70B6 /* UIView+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Test.m"; sourceTree = "<group>"; };
+		57FB837F17E2F3CD004B70B6 /* default_TestDic.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = default_TestDic.plist; sourceTree = "<group>"; };
 		57FC192C17DEBF8F00B5E6F9 /* DataLiteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataLiteVC.h; sourceTree = "<group>"; };
 		57FC192D17DEBF8F00B5E6F9 /* DataLiteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataLiteVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -912,6 +917,7 @@
 		57525A4C17AB9E300094D835 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				57FB837F17E2F3CD004B70B6 /* default_TestDic.plist */,
 				57E852E117B224E500C664F4 /* json2.json */,
 				571CBA5E17C702D0007CB842 /* p31b */,
 			);
@@ -938,6 +944,8 @@
 				577C495817BDFC8500C7FC56 /* NSObject+XY.m */,
 				577C495917BDFC8500C7FC56 /* UIView+XY.h */,
 				577C495A17BDFC8500C7FC56 /* UIView+XY.m */,
+				57FB837A17E2A543004B70B6 /* UIView+Test.h */,
+				57FB837B17E2A543004B70B6 /* UIView+Test.m */,
 				577C495B17BDFC8500C7FC56 /* XYExtension.h */,
 			);
 			path = Extension;
@@ -1455,6 +1463,7 @@
 				571CBBC417C702D1007CB842 /* p31b0178.png in Resources */,
 				571CBBC517C702D1007CB842 /* p31b0179.png in Resources */,
 				571CBBC617C702D1007CB842 /* p31b0180.png in Resources */,
+				57FB838017E2F3CD004B70B6 /* default_TestDic.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1541,6 +1550,7 @@
 				57E7857817DE459E0056C589 /* ConfigManager.m in Sources */,
 				57E7857B17DE564E0056C589 /* DataLite.m in Sources */,
 				57FC192E17DEBF8F00B5E6F9 /* DataLiteVC.m in Sources */,
+				57FB837C17E2A543004B70B6 /* UIView+Test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

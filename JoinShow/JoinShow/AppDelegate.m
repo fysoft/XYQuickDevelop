@@ -28,6 +28,8 @@
     [self.window makeKeyAndVisible];
     */
 #pragma mark - some test
+    NSLogD(@"start");
+    NSLogDD;
     return YES;
 }
 

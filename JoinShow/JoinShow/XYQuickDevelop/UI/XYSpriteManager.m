@@ -83,7 +83,7 @@ DEF_SINGLETON(XYSpriteManager);
 }
 #define mark - 
 -(void) onTimer:(NSTimeInterval)ti{
-    NSLogD(@"%f", ti);
+  //  NSLogD(@"%f", ti);
     [self updateSprites];
 }
 #pragma mark -

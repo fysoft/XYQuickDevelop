@@ -307,5 +307,5 @@ typedef enum {
  * api parameters 说明
  * aObject 对象
  */
-+(NSMutableDictionary *) dictionaryOfObject:(id)aObject;
+//+(NSMutableDictionary *) dictionaryOfObject:(id)aObject;
 @end

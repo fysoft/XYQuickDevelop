@@ -10,31 +10,29 @@
 #import "XYExtension.h"
 
 #undef	NSObject_key_performSelector
-#define NSObject_key_performSelector	"PerformSelector"
+#define NSObject_key_performSelector	"NSObject.performSelector"
 #undef	NSObject_key_performTarget
-#define NSObject_key_performTarget	"PerformTarget"
+#define NSObject_key_performTarget	"NSObject.performTarget"
 #undef	NSObject_key_performBlock
-#define NSObject_key_performBlock	"PerformBlock"
+#define NSObject_key_performBlock	"NSObject.performBlock"
 #undef	NSObject_key_loop
-#define NSObject_key_loop	"Loop"
+#define NSObject_key_loop	"NSObject.loop"
 #undef	NSObject_key_afterDelay
-#define NSObject_key_afterDelay	"AfterDelay"
+#define NSObject_key_afterDelay	"NSObject.afterDelay"
 #undef	NSObject_key_object
-#define NSObject_key_object	"Object"
+#define NSObject_key_object	"NSObject.object"
 
 
 @implementation NSObject (XY)
-/*
+
 -(void) NSObject_dealloc{
     objc_removeAssociatedObjects(self);
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     XY_swizzleInstanceMethod([self class], @selector(NSObject_dealloc), @selector(dealloc));
 	[self dealloc];
 }
 
--(void) replaceMethod_dealloc{
-    XY_swizzleInstanceMethod([self class], @selector(dealloc), @selector(NSObject_dealloc));
-}
-*/
+////////////////////////  perform  ////////////////////////
 -(void) performSelector:(SEL)aSelector  target:(id)target  mark:(id)mark afterDelay:(NSTimeInterval(^)(void))aBlockTime loop:(BOOL)loop isRunNow:(BOOL)now{
     if (!aBlockTime) return;
     
@@ -107,5 +105,19 @@
     objc_setAssociatedObject(self, NSObject_key_afterDelay, nil, OBJC_ASSOCIATION_ASSIGN);
     objc_setAssociatedObject(self, NSObject_key_object, nil, OBJC_ASSOCIATION_ASSIGN);
     objc_setAssociatedObject(self, NSObject_key_loop, nil, OBJC_ASSOCIATION_ASSIGN);
+}
+////////////////////////  NSNotificationCenter  ////////////////////////
+-(void) registerMessage:(NSString*)aMsg selector:(SEL)aSel source:(id)anObject{
+    if (aMsg == nil || aSel == nil) return;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:aSel name:aMsg object:anObject];
+    XY_swizzleInstanceMethod([self class], @selector(dealloc), @selector(NSObject_dealloc));
+}
+-(void) unregisterMessage:(NSString*)aMsg{
+    if (aMsg == nil) return;
+    [[NSNotificationCenter defaultCenter] removeObserver:aMsg];
+}
+-(void) sendMessage:(NSString *)aMsg data:(NSDictionary *)aDic{
+    if (aMsg == nil) return;
+    [[NSNotificationCenter defaultCenter] postNotificationName:aMsg object:self userInfo:aDic];
 }
 @end

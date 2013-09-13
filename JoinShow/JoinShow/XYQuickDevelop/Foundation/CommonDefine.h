@@ -10,24 +10,16 @@
 /*
  * 说明 仅在debug下才显示nslog
  */
-#undef	XYLogDebug
-#undef	XYLogError
-#undef	XYLogException
 
 #ifdef DEBUG
-#define NSLogD(format, ...) NSLog(format, ## __VA_ARGS__)
-#define NSLogDD NSLogD(@"%s", __PRETTY_FUNCTION__);
-//#define XYLogDebug(fmt,...) NSLog( @"debug:%s.%d "fmt, __FUNCTION__, __LINE__, ##__VA_ARGS__)
-//Log错误信息
-//#define XYLogError(fmt,...) NSLog( @"error:%s.%d "fmt, __FUNCTION__, __LINE__, ##__VA_ARGS__)
-//Log异常信息
-//#define XYLogException(fmt,...) NSLog( @"warn:%s.%d "fmt, __FUNCTION__, __LINE__, ##__VA_ARGS__)
+#undef	NSLogD
+#undef	NSLogDD
+#define NSLogD(fmt, ...) {NSLog((@"%s [Line %d] DEBUG: \n" fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);}
+#define NSLogDD NSLogD(@"%@", @"");
 
 #else
 #define NSLogD(format, ...)
-#define XYLogDebug(fmt,...)
-#define XYLogError(fmt,...) NSLog( @"error:%s.%d "fmt, __FUNCTION__, __LINE__, ##__VA_ARGS__)
-#define XYLogException(fmt,...) NSLog( @"warn:%s.%d "fmt, __FUNCTION__, __LINE__, ##__VA_ARGS__)
+#define NSLogDD
 #endif
 
 /**************************************************************/
@@ -79,6 +71,7 @@ if (_delegate && [_delegate respondsToSelector:@selector( __fun )]) { \
 if (_delegate && [_delegate respondsToSelector:@selector(__x)]) { \
 [_delegate __x];} 
  */
+#pragma mark - to  delegate被注册KVO时,isa会变, 判断delegate被释放?
 #define Delegate( __fun, ...) \
 if (_delegate && [_delegate respondsToSelector:@selector( __fun )]) { \
 objc_msgSend(_delegate, @selector( __fun ), ## __VA_ARGS__);}

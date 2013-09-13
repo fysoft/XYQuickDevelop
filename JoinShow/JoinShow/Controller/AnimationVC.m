@@ -65,7 +65,7 @@
 }
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    [[XYSpriteManager sharedInstance] stopTimer];
+  //  [[XYSpriteManager sharedInstance] stopTimer];
 }
 - (void)didReceiveMemoryWarning
 {

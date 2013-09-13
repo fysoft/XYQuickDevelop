@@ -10,6 +10,8 @@
 
 @interface NSObject (XY)
 #pragma mark -todo 拆分参数
+
+////////////////////////  perform  ////////////////////////
 // 目前只支持添加一个随机时间执行
 // 不用时需要移除
 -(void) performSelector:(SEL)aSelector target:(id)target mark:(id)mark afterDelay:(NSTimeInterval(^)(void))aBlockTime loop:(BOOL)loop isRunNow:(BOOL)now;
@@ -18,5 +20,9 @@
 //-(void) removePerformWithMark:(NSString *)mark;
 -(void) removePerformRandomDelay;
 
+////////////////////////  NSNotificationCenter  ////////////////////////
+-(void) registerMessage:(NSString*)aMsg selector:(SEL)aSel source:(id)anObject;
+-(void) unregisterMessage:(NSString*)aMsg;
+-(void) sendMessage:(NSString *)aMsg data:(NSDictionary *)aDic;
 
 @end

@@ -18,7 +18,9 @@
 @end
 
 
-@interface XYTimer : NSObject
+@interface XYTimer : NSObject{
+  //  int classIsa;
+}
 XY_SINGLETON(XYTimer)
 @property (nonatomic, readonly) NSMutableDictionary *timers;
 @property (nonatomic, assign) id<XYTimerDelegate> delegate;

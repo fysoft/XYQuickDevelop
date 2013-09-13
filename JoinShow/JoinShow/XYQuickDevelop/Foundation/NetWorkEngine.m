@@ -10,6 +10,16 @@
 #if (1 ==  __USED_MKNetworkKit__)
 @implementation NetworkEngine
 
+-(id) initWithDefaultSettings {
+    if (self = [super initWithHostName:@"testbed1.mknetworkkit.com" customHeaderFields:@{@"x-client-identifier" : @"iOS"}]) {
+        
+    }
+    return self;
+}
++(id) defaultSettings{
+    NetworkEngine *eg = [[[NetworkEngine alloc] initWithDefaultSettings] autorelease];
+    return eg;
+}
 -(void) addGetRequestWithPath:(NSString *)path
                        params:(NSMutableDictionary *)params
                       succeed:(void (^)(MKNetworkOperation *operation))blockS
@@ -31,6 +41,10 @@
                         failed:(void (^)(MKNetworkOperation *errorOp, NSError* err))blockF{
     
     MKNetworkOperation *op = [self operationWithPath:path params:params httpMethod:@"POST"];
+    // 冻结请求,  after connection is restored!
+    // get 请求不能冻结
+  //  [op setFreezable:YES];
+    
     [op addCompletionHandler:^(MKNetworkOperation *operation) {
         if (blockS) blockS(operation);
     }errorHandler:^(MKNetworkOperation *errorOp, NSError *err) {
@@ -65,5 +79,27 @@
 -(void) cancelOperationsContainingURLString:(NSString*)string{
      [NetworkEngine cancelOperationsContainingURLString:string];
 }
+
+#pragma mark -
+#pragma mark KVO for network Queue
+/*
++ (void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object
+                         change:(NSDictionary *)change context:(void *)context
+{
+    if (object == _sharedNetworkQueue && [keyPath isEqualToString:@"operationCount"]) {
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:kMKNetworkEngineOperationCountChanged
+                                                            object:[NSNumber numberWithInteger:(NSInteger)[_sharedNetworkQueue operationCount]]];
+#if TARGET_OS_IPHONE
+        [UIApplication sharedApplication].networkActivityIndicatorVisible =
+        ([_sharedNetworkQueue.operations count] > 0);
+#endif
+    }
+    else {
+        [super observeValueForKeyPath:keyPath ofObject:object
+                               change:change context:context];
+    }
+}
+*/
 @end
 #endif
