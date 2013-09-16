@@ -38,7 +38,8 @@
                       @{@"title": @"Something", @"className": @"MessVC"},
                       @{@"title": @"Network", @"className": @"NetworkVC"},
                       @{@"title": @"Json", @"className": @"JsonVC"},
-                      @{@"title": @"DataLite", @"className": @"DataLiteVC"}];
+                      @{@"title": @"DataLite", @"className": @"DataLiteVC"},
+                      @{@"title": @"Database", @"className": @"DatabaseVC"}];
     }
     return self;
 }

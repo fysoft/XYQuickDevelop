@@ -711,5 +711,13 @@
         return NO;
     }
 }
+/***************************************************************/
++(UIImage *) imageFromImage:(UIImage *)image inRect:(CGRect)rect{
+    CGImageRef sourceImageRef = [image CGImage];
+    CGImageRef newImageRef = CGImageCreateWithImageInRect(sourceImageRef, rect);
+    UIImage *newImage = [UIImage imageWithCGImage:newImageRef];
+    CGImageRelease(newImageRef);
+    return newImage;
+}
 @end
 

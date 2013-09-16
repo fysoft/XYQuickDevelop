@@ -9,6 +9,7 @@
 #import "TestVC.h"
 #import "UIView+Test.h"
 #import "TestView.h"
+#import "AutoSizeView.h"
 
 @interface TestVC ()
 
@@ -36,6 +37,13 @@
     self.array = nil;
     [super dealloc];
 }
+/*
+- (void)loadView
+{
+
+}
+*/
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -43,7 +51,7 @@
   //  [XYTimer sharedInstance].delegate = self;
   //  [[XYTimer sharedInstance] startTimerWithInterval:1];
     
-    TestView *tempView = [[TestView alloc] initWithFrame:CGRectMake(100, 0, 40, 40)];
+    TestView *tempView = [[TestView alloc] initWithFrame:CGRectMake(100, 000, 40, 40)];
     tempView.backgroundColor = [UIColor grayColor];
     tempView.userInteractionEnabled = YES;
     [tempView addTapGestureWithBlock:^{
@@ -96,4 +104,31 @@ void objc_setAssociatedObject(id object, void *key, id value, objc_AssociationPo
     }
 }
  */
+
+// 自动布局
+/*
+- (void)loadView
+{
+    //initalize
+    AutoSizeView *view = [[AutoSizeView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 108.0)];
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 64.0) style:UITableViewStylePlain];
+    
+    //config view
+    [view setBackgroundColor:[UIColor colorWithWhite:47.0/255.0 alpha:1.0]];
+    [tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+    [tableView setDelegate:self];
+    [tableView setDataSource:self];
+    [tableView setAutoresizingMask:UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth];
+    tableView.backgroundColor = [UIColor colorWithRed:226.0/255.0 green:231.0/255.0 blue:237.0/255.0 alpha:1.0];
+    
+    //assgin view
+    self.view = view;
+    self.tableView = tableView;
+    [view release];
+    [tableView release];
+    
+    //addsubview
+    [self.view addSubview:self.tableView];
+}
+*/
 @end

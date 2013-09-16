@@ -37,6 +37,7 @@
                         <segue destination="8ud-g3-1KC" kind="push" identifier="NetworkVC" id="TkI-HH-JJn"/>
                         <segue destination="vat-fs-THh" kind="push" identifier="JsonVC" id="B9s-62-jZ9"/>
                         <segue destination="gta-pL-g3S" kind="push" identifier="DataLiteVC" id="A6X-a4-BDC"/>
+                        <segue destination="5k6-n1-nlt" kind="push" identifier="DatabaseVC" id="cw5-M5-J7I"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v6q-Q2-YJN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -79,7 +80,7 @@
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Je5-Bd-1bE">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="MEj-ik-KkG"/>
+                                    <constraint firstAttribute="width" constant="150" id="q0d-NY-Vpf"/>
                                 </constraints>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IpS-jw-U4V">
@@ -111,16 +112,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Je5-Bd-1bE" firstAttribute="top" secondItem="4W2-Rm-ClR" secondAttribute="top" constant="170" id="1MM-KG-7kv"/>
-                            <constraint firstItem="IpS-jw-U4V" firstAttribute="top" secondItem="4W2-Rm-ClR" secondAttribute="top" constant="110" id="F9A-Na-19s"/>
-                            <constraint firstItem="IpS-jw-U4V" firstAttribute="leading" secondItem="4W2-Rm-ClR" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="IfK-PZ-hEW"/>
-                            <constraint firstItem="Je5-Bd-1bE" firstAttribute="leading" secondItem="4W2-Rm-ClR" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Jj8-DB-I8i"/>
-                            <constraint firstItem="nGJ-GA-2NJ" firstAttribute="leading" secondItem="4W2-Rm-ClR" secondAttribute="leading" constant="80" id="KfB-Fh-nBd"/>
-                            <constraint firstItem="VB5-wG-BvX" firstAttribute="leading" secondItem="4W2-Rm-ClR" secondAttribute="leading" constant="134" id="N22-iq-RBV"/>
-                            <constraint firstItem="VB5-wG-BvX" firstAttribute="baseline" secondItem="IpS-jw-U4V" secondAttribute="baseline" type="default" id="W7Z-qc-CDC"/>
-                            <constraint firstItem="nTn-fu-85s" firstAttribute="leading" secondItem="4W2-Rm-ClR" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="crf-0l-5qp"/>
-                            <constraint firstItem="nTn-fu-85s" firstAttribute="top" secondItem="4W2-Rm-ClR" secondAttribute="top" constant="20" symbolic="YES" type="default" id="khB-TB-ddK"/>
-                            <constraint firstItem="nGJ-GA-2NJ" firstAttribute="top" secondItem="4W2-Rm-ClR" secondAttribute="top" constant="20" symbolic="YES" type="default" id="x6P-0T-e9f"/>
+                            <constraint firstItem="Je5-Bd-1bE" firstAttribute="top" secondItem="4W2-Rm-ClR" secondAttribute="top" constant="170" id="6sS-5R-yoU"/>
+                            <constraint firstItem="IpS-jw-U4V" firstAttribute="top" secondItem="4W2-Rm-ClR" secondAttribute="top" constant="110" id="Ibo-1u-uH8"/>
+                            <constraint firstItem="IpS-jw-U4V" firstAttribute="baseline" secondItem="VB5-wG-BvX" secondAttribute="baseline" type="default" id="QWm-Jo-Qhd"/>
+                            <constraint firstItem="VB5-wG-BvX" firstAttribute="leading" secondItem="4W2-Rm-ClR" secondAttribute="leading" constant="134" id="Wlt-3S-cts"/>
+                            <constraint firstItem="nTn-fu-85s" firstAttribute="leading" secondItem="4W2-Rm-ClR" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="eRT-gj-r63"/>
+                            <constraint firstItem="nGJ-GA-2NJ" firstAttribute="top" secondItem="4W2-Rm-ClR" secondAttribute="top" constant="20" symbolic="YES" type="default" id="euo-0V-7HL"/>
+                            <constraint firstItem="IpS-jw-U4V" firstAttribute="leading" secondItem="4W2-Rm-ClR" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="gFh-MH-cAu"/>
+                            <constraint firstItem="nGJ-GA-2NJ" firstAttribute="leading" secondItem="4W2-Rm-ClR" secondAttribute="leading" constant="80" id="li8-Bf-xGm"/>
+                            <constraint firstItem="nTn-fu-85s" firstAttribute="top" secondItem="4W2-Rm-ClR" secondAttribute="top" constant="20" symbolic="YES" type="default" id="qo5-yu-Xl1"/>
+                            <constraint firstItem="Je5-Bd-1bE" firstAttribute="leading" secondItem="4W2-Rm-ClR" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="wWM-4y-7BC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9bq-Sh-Gae"/>
@@ -169,11 +170,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ohE-BH-0n4" firstAttribute="top" secondItem="8DQ-N3-Mnq" secondAttribute="top" constant="20" symbolic="YES" type="default" id="5no-ze-sL8"/>
-                            <constraint firstItem="bWj-lw-2cC" firstAttribute="leading" secondItem="8DQ-N3-Mnq" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Mqj-Cb-rSp"/>
-                            <constraint firstAttribute="trailing" secondItem="ohE-BH-0n4" secondAttribute="trailing" constant="73" id="SHR-81-e2k"/>
-                            <constraint firstItem="ohE-BH-0n4" firstAttribute="baseline" secondItem="bWj-lw-2cC" secondAttribute="baseline" type="default" id="Y44-2c-Xvf"/>
-                            <constraint firstItem="bWj-lw-2cC" firstAttribute="top" secondItem="8DQ-N3-Mnq" secondAttribute="top" constant="20" symbolic="YES" type="default" id="vkS-nN-CoA"/>
+                            <constraint firstAttribute="trailing" secondItem="ohE-BH-0n4" secondAttribute="trailing" constant="73" id="OoW-UY-QQW"/>
+                            <constraint firstItem="ohE-BH-0n4" firstAttribute="top" secondItem="8DQ-N3-Mnq" secondAttribute="top" constant="20" symbolic="YES" type="default" id="TOJ-l5-9Zh"/>
+                            <constraint firstItem="bWj-lw-2cC" firstAttribute="top" secondItem="8DQ-N3-Mnq" secondAttribute="top" constant="20" symbolic="YES" type="default" id="YES-mC-QyB"/>
+                            <constraint firstItem="bWj-lw-2cC" firstAttribute="leading" secondItem="8DQ-N3-Mnq" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="gB1-94-2JE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KqK-PL-bgV"/>
@@ -195,13 +195,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wsN-oK-ugp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="290" y="1419"/>
+            <point key="canvasLocation" x="306" y="1427"/>
+        </scene>
+        <!--DatabaseVC-->
+        <scene sceneID="F8o-U8-rQi">
+            <objects>
+                <viewController id="5k6-n1-nlt" customClass="DatabaseVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mpi-v5-OhG">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yMD-2z-aAI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sLU-Hr-SyK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="311" y="2107"/>
         </scene>
         <!--TestVC-->
         <scene sceneID="HQU-cI-rQg">
             <objects>
                 <viewController id="qzB-8S-awF" customClass="TestVC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hox-S5-D7R">
+                    <view key="view" contentMode="scaleToFill" id="hox-S5-D7R" customClass="AutoSizeView">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -234,10 +249,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="oDJ-dg-kkK" firstAttribute="leading" secondItem="SZx-FJ-Asn" secondAttribute="leading" type="default" id="aOL-sH-nBz"/>
-                            <constraint firstItem="SZx-FJ-Asn" firstAttribute="leading" secondItem="hox-S5-D7R" secondAttribute="leading" constant="14" id="cBo-Hz-Yno"/>
-                            <constraint firstItem="oDJ-dg-kkK" firstAttribute="top" secondItem="hox-S5-D7R" secondAttribute="top" constant="80" id="g0k-mo-G11"/>
-                            <constraint firstItem="SZx-FJ-Asn" firstAttribute="top" secondItem="hox-S5-D7R" secondAttribute="top" constant="20" symbolic="YES" type="default" id="sg3-Tn-7Xa"/>
+                            <constraint firstItem="SZx-FJ-Asn" firstAttribute="leading" secondItem="hox-S5-D7R" secondAttribute="leading" constant="14" id="5Wb-XP-D9m"/>
+                            <constraint firstItem="SZx-FJ-Asn" firstAttribute="top" secondItem="hox-S5-D7R" secondAttribute="top" constant="20" symbolic="YES" type="default" id="LqP-ZL-QZu"/>
+                            <constraint firstItem="oDJ-dg-kkK" firstAttribute="leading" secondItem="SZx-FJ-Asn" secondAttribute="leading" type="default" id="Lus-9V-TBh"/>
+                            <constraint firstItem="oDJ-dg-kkK" firstAttribute="top" secondItem="hox-S5-D7R" secondAttribute="top" constant="80" id="ltD-xD-mHS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eIS-vQ-bgo"/>
@@ -270,8 +285,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jsW-ID-Fud" firstAttribute="leading" secondItem="tJs-AT-vuV" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="6Kh-T5-dzl"/>
-                            <constraint firstItem="jsW-ID-Fud" firstAttribute="top" secondItem="tJs-AT-vuV" secondAttribute="top" constant="20" symbolic="YES" type="default" id="ilD-ZO-1zI"/>
+                            <constraint firstItem="jsW-ID-Fud" firstAttribute="top" secondItem="tJs-AT-vuV" secondAttribute="top" constant="20" symbolic="YES" type="default" id="SVa-CB-jpT"/>
+                            <constraint firstItem="jsW-ID-Fud" firstAttribute="leading" secondItem="tJs-AT-vuV" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="paK-oD-Y56"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vjv-pI-owc"/>

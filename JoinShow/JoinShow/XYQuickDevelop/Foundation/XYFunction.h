@@ -308,4 +308,12 @@ typedef enum {
  * aObject 对象
  */
 //+(NSMutableDictionary *) dictionaryOfObject:(id)aObject;
+
+/****************************************************************/
+/** 截取图片
+ * api parameters 说明
+ * image 原图
+ * rect 截取的范围
+ */
++(UIImage *) imageFromImage:(UIImage *)image inRect:(CGRect)rect;
 @end
