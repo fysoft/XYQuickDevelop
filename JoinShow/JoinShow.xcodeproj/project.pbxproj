@@ -203,7 +203,6 @@
 		5722181917DB33F6003504E8 /* UIAlertView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5722180917DB33F6003504E8 /* UIAlertView+MKNetworkKitAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		5722181A17DB33F6003504E8 /* UIImageView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5722180B17DB33F6003504E8 /* UIImageView+MKNetworkKitAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		5722181B17DB33F6003504E8 /* MKNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5722180D17DB33F6003504E8 /* MKNetworkEngine.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		5722181C17DB33F6003504E8 /* MKNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5722181017DB33F6003504E8 /* MKNetworkOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		5722181D17DB33F6003504E8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5722181317DB33F6003504E8 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		5722181F17DB3427003504E8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5722181E17DB3427003504E8 /* SystemConfiguration.framework */; };
 		5722182117DB34BD003504E8 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5722182017DB34BD003504E8 /* ImageIO.framework */; };
@@ -261,6 +260,7 @@
 		57E7857817DE459E0056C589 /* ConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E7857717DE459E0056C589 /* ConfigManager.m */; };
 		57E7857B17DE564E0056C589 /* DataLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E7857A17DE564E0056C589 /* DataLite.m */; };
 		57E852E217B224E500C664F4 /* json2.json in Resources */ = {isa = PBXBuildFile; fileRef = 57E852E117B224E500C664F4 /* json2.json */; };
+		57EF503017E83605001B89BB /* MKNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EF502F17E83605001B89BB /* MKNetworkOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		57F134D717DC37A800C5DCDC /* YYJSONHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F134D617DC37A800C5DCDC /* YYJSONHelper.m */; };
 		57F134DA17DC393600C5DCDC /* JsonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F134D917DC393600C5DCDC /* JsonVC.m */; };
 		57F134DF17DC39F200C5DCDC /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F134DC17DC39F200C5DCDC /* Player.m */; };
@@ -510,8 +510,6 @@
 		5722180C17DB33F6003504E8 /* MKNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkEngine.h; sourceTree = "<group>"; };
 		5722180D17DB33F6003504E8 /* MKNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkEngine.m; sourceTree = "<group>"; };
 		5722180E17DB33F6003504E8 /* MKNetworkKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkKit.h; sourceTree = "<group>"; };
-		5722180F17DB33F6003504E8 /* MKNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkOperation.h; sourceTree = "<group>"; };
-		5722181017DB33F6003504E8 /* MKNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkOperation.m; sourceTree = "<group>"; };
 		5722181217DB33F6003504E8 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		5722181317DB33F6003504E8 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		5722181E17DB3427003504E8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -616,6 +614,8 @@
 		57E7857917DE564E0056C589 /* DataLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataLite.h; sourceTree = "<group>"; };
 		57E7857A17DE564E0056C589 /* DataLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataLite.m; sourceTree = "<group>"; };
 		57E852E117B224E500C664F4 /* json2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = json2.json; sourceTree = "<group>"; };
+		57EF502E17E83605001B89BB /* MKNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkOperation.h; sourceTree = "<group>"; };
+		57EF502F17E83605001B89BB /* MKNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkOperation.m; sourceTree = "<group>"; };
 		57F134D517DC37A800C5DCDC /* YYJSONHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYJSONHelper.h; sourceTree = "<group>"; };
 		57F134D617DC37A800C5DCDC /* YYJSONHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYJSONHelper.m; sourceTree = "<group>"; };
 		57F134D817DC393600C5DCDC /* JsonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonVC.h; sourceTree = "<group>"; };
@@ -943,8 +943,8 @@
 				5722180C17DB33F6003504E8 /* MKNetworkEngine.h */,
 				5722180D17DB33F6003504E8 /* MKNetworkEngine.m */,
 				5722180E17DB33F6003504E8 /* MKNetworkKit.h */,
-				5722180F17DB33F6003504E8 /* MKNetworkOperation.h */,
-				5722181017DB33F6003504E8 /* MKNetworkOperation.m */,
+				57EF502E17E83605001B89BB /* MKNetworkOperation.h */,
+				57EF502F17E83605001B89BB /* MKNetworkOperation.m */,
 				5722181117DB33F6003504E8 /* Reachability */,
 			);
 			path = MKNetworkKit;
@@ -1704,7 +1704,6 @@
 				5722181917DB33F6003504E8 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
 				5722181A17DB33F6003504E8 /* UIImageView+MKNetworkKitAdditions.m in Sources */,
 				5722181B17DB33F6003504E8 /* MKNetworkEngine.m in Sources */,
-				5722181C17DB33F6003504E8 /* MKNetworkOperation.m in Sources */,
 				5722181D17DB33F6003504E8 /* Reachability.m in Sources */,
 				5722182817DB365B003504E8 /* NetworkVC.m in Sources */,
 				57F3965F17DB6F490060D6CE /* NetWorkEngine.m in Sources */,
@@ -1735,6 +1734,7 @@
 				57F690D817E6CE2500D9A437 /* FMResultSet.m in Sources */,
 				57F690DD17E6CFBF00D9A437 /* DatabaseVC.m in Sources */,
 				57F690E017E6CFFA00D9A437 /* LKTestModels.m in Sources */,
+				57EF503017E83605001B89BB /* MKNetworkOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

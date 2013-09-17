@@ -10,8 +10,8 @@
 #import "LKTestModels.h"
 
 @interface DatabaseVC ()
-@property(strong,nonatomic)NSMutableString* ms;
-@property(unsafe_unretained,nonatomic)UITextView* tv;
+@property(strong, nonatomic) NSMutableString* ms;
+@property(unsafe_unretained, nonatomic) UITextView* tv;
 @end
 
 @implementation DatabaseVC

@@ -86,9 +86,10 @@
 {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+
+    // Configure the cell...
     NSDictionary *dic = [self.list objectAtIndex:indexPath.row];
     cell.textLabel.text = [dic objectForKey:@"title"];
-    // Configure the cell...
     
     return cell;
 }
