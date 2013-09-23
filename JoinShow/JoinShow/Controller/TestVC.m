@@ -60,6 +60,12 @@
     [tempView test];
     [self.view addSubview:tempView];
     [tempView release];
+    
+    if (IOS7_OR_LATER) {
+        NSLogD(@"1")
+    }else{
+        NSLogD(@"2")
+    }
 }
 
 - (void)didReceiveMemoryWarning

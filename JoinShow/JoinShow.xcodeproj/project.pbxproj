@@ -213,11 +213,11 @@
 		57383F3B17D2F5F20001079C /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 57383F3A17D2F5F20001079C /* TestVC.m */; };
 		573D546317DB9C31008FFDE4 /* XYTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 573D546217DB9C31008FFDE4 /* XYTimer.m */; };
 		57525A4517AB7DEA0094D835 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57525A4417AB7DEA0094D835 /* QuartzCore.framework */; };
+		576DA3CC17F031EC002AF08A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 576DA3CB17F031EC002AF08A /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		577C499A17BDFC8500C7FC56 /* NSObject+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C495817BDFC8500C7FC56 /* NSObject+XY.m */; };
 		577C499B17BDFC8500C7FC56 /* UIView+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C495A17BDFC8500C7FC56 /* UIView+XY.m */; };
 		577C499C17BDFC8500C7FC56 /* BUIControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C496117BDFC8500C7FC56 /* BUIControl.m */; };
 		577C499D17BDFC8500C7FC56 /* BUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C496317BDFC8500C7FC56 /* BUIView.m */; };
-		577C499E17BDFC8500C7FC56 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C496617BDFC8500C7FC56 /* MBProgressHUD.m */; };
 		577C499F17BDFC8500C7FC56 /* RTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C496917BDFC8500C7FC56 /* RTLabel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		577C49A017BDFC8500C7FC56 /* CDAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C496D17BDFC8500C7FC56 /* CDAudioManager.m */; };
 		577C49A117BDFC8500C7FC56 /* CDOpenALSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C497017BDFC8500C7FC56 /* CDOpenALSupport.m */; };
@@ -527,6 +527,8 @@
 		573D546117DB9C31008FFDE4 /* XYTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTimer.h; sourceTree = "<group>"; };
 		573D546217DB9C31008FFDE4 /* XYTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTimer.m; sourceTree = "<group>"; };
 		57525A4417AB7DEA0094D835 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		576DA3CA17F031EC002AF08A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		576DA3CB17F031EC002AF08A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		577C495717BDFC8500C7FC56 /* NSObject+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XY.h"; sourceTree = "<group>"; };
 		577C495817BDFC8500C7FC56 /* NSObject+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XY.m"; sourceTree = "<group>"; };
 		577C495917BDFC8500C7FC56 /* UIView+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XY.h"; sourceTree = "<group>"; };
@@ -537,8 +539,6 @@
 		577C496117BDFC8500C7FC56 /* BUIControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUIControl.m; sourceTree = "<group>"; };
 		577C496217BDFC8500C7FC56 /* BUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUIView.h; sourceTree = "<group>"; };
 		577C496317BDFC8500C7FC56 /* BUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUIView.m; sourceTree = "<group>"; };
-		577C496517BDFC8500C7FC56 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		577C496617BDFC8500C7FC56 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		577C496817BDFC8500C7FC56 /* RTLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTLabel.h; sourceTree = "<group>"; };
 		577C496917BDFC8500C7FC56 /* RTLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTLabel.m; sourceTree = "<group>"; };
 		577C496C17BDFC8500C7FC56 /* CDAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAudioManager.h; sourceTree = "<group>"; };
@@ -1056,8 +1056,8 @@
 		577C496417BDFC8500C7FC56 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				577C496517BDFC8500C7FC56 /* MBProgressHUD.h */,
-				577C496617BDFC8500C7FC56 /* MBProgressHUD.m */,
+				576DA3CA17F031EC002AF08A /* MBProgressHUD.h */,
+				576DA3CB17F031EC002AF08A /* MBProgressHUD.m */,
 			);
 			path = MBProgressHUD;
 			sourceTree = "<group>";
@@ -1674,7 +1674,6 @@
 				577C499B17BDFC8500C7FC56 /* UIView+XY.m in Sources */,
 				577C499C17BDFC8500C7FC56 /* BUIControl.m in Sources */,
 				577C499D17BDFC8500C7FC56 /* BUIView.m in Sources */,
-				577C499E17BDFC8500C7FC56 /* MBProgressHUD.m in Sources */,
 				577C499F17BDFC8500C7FC56 /* RTLabel.m in Sources */,
 				577C49A017BDFC8500C7FC56 /* CDAudioManager.m in Sources */,
 				577C49A117BDFC8500C7FC56 /* CDOpenALSupport.m in Sources */,
@@ -1701,6 +1700,7 @@
 				571CBA5A17C6FCC0007CB842 /* TestView.m in Sources */,
 				571CBA5D17C7000A007CB842 /* AnimationVC.m in Sources */,
 				57383F3817D2EF8B0001079C /* MessVC.m in Sources */,
+				576DA3CC17F031EC002AF08A /* MBProgressHUD.m in Sources */,
 				57383F3B17D2F5F20001079C /* TestVC.m in Sources */,
 				5722181417DB33F6003504E8 /* NSAlert+MKNetworkKitAdditions.m in Sources */,
 				5722181517DB33F6003504E8 /* NSData+MKBase64.m in Sources */,
@@ -1847,6 +1847,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JoinShow/JoinShow-Prefix.pch";
 				INFOPLIST_FILE = "JoinShow/JoinShow-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../XYQuickDevelop/External/Utilities/UMAnalytics_Sdk_2.2.0.OpenUDID\"",
@@ -1874,6 +1875,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JoinShow/JoinShow-Prefix.pch";
 				INFOPLIST_FILE = "JoinShow/JoinShow-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../XYQuickDevelop/External/Utilities/UMAnalytics_Sdk_2.2.0.OpenUDID\"",
