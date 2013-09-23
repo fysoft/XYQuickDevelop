@@ -19,3 +19,4 @@
 #import "NetworkEngine.h"
 #import "XYTimer.h"
 #import "DataLite.h"
+#import "XYSystemInfo.h"

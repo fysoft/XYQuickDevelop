@@ -240,6 +240,7 @@
 		57901EC317E6C63800B8E8FF /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57901EBE17E6C63800B8E8FF /* TPKeyboardAvoidingCollectionView.m */; };
 		57901EC417E6C63800B8E8FF /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57901EC017E6C63800B8E8FF /* TPKeyboardAvoidingScrollView.m */; };
 		57901EC517E6C63800B8E8FF /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57901EC217E6C63800B8E8FF /* TPKeyboardAvoidingTableView.m */; };
+		579609BE17F00A4B00BB7AFE /* XYSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 579609BD17F00A4B00BB7AFE /* XYSystemInfo.m */; };
 		579ECE1D17A8E90B00687AF2 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579ECE1C17A8E90B00687AF2 /* CoreText.framework */; };
 		57B30000177AD9BC00775FC9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B3FFFF177AD9BC00775FC9 /* Default-568h@2x.png */; };
 		57B3000E177AD9BC00775FC9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B3000D177AD9BC00775FC9 /* SenTestingKit.framework */; };
@@ -588,6 +589,8 @@
 		57901EC017E6C63800B8E8FF /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
 		57901EC117E6C63800B8E8FF /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
 		57901EC217E6C63800B8E8FF /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		579609BC17F00A4B00BB7AFE /* XYSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSystemInfo.h; sourceTree = "<group>"; };
+		579609BD17F00A4B00BB7AFE /* XYSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSystemInfo.m; sourceTree = "<group>"; };
 		579ECE1C17A8E90B00687AF2 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		57B3000C177AD9BC00775FC9 /* JoinShowTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JoinShowTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B3000D177AD9BC00775FC9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -1145,6 +1148,8 @@
 				573D546217DB9C31008FFDE4 /* XYTimer.m */,
 				57E7857917DE564E0056C589 /* DataLite.h */,
 				57E7857A17DE564E0056C589 /* DataLite.m */,
+				579609BC17F00A4B00BB7AFE /* XYSystemInfo.h */,
+				579609BD17F00A4B00BB7AFE /* XYSystemInfo.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -1691,6 +1696,7 @@
 				571CBA3317C6FB55007CB842 /* AppDelegate.m in Sources */,
 				571CBA5517C6FCC0007CB842 /* DomeTableViewController.m in Sources */,
 				571CBA5717C6FCC0007CB842 /* BookInfo.m in Sources */,
+				579609BE17F00A4B00BB7AFE /* XYSystemInfo.m in Sources */,
 				571CBA5917C6FCC0007CB842 /* Test2View.m in Sources */,
 				571CBA5A17C6FCC0007CB842 /* TestView.m in Sources */,
 				571CBA5D17C7000A007CB842 /* AnimationVC.m in Sources */,

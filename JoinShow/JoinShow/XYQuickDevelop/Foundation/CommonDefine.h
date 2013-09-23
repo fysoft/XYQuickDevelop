@@ -88,6 +88,23 @@ objc_msgSend(_delegate, @selector( __fun ), ## __VA_ARGS__);}
 /**************************************************************/
 #pragma mark- 以下待筛选
 /**************************************************************/
+// 版本
+/*
+ #define SYSTEMVERSION_UNDER_7 (DeviceSystemMajorVersion() < 7)
+ 
+ //
+ static NSUInteger DeviceSystemMajorVersion();
+ static NSUInteger DeviceSystemMajorVersion() {
+ static NSUInteger _deviceSystemMajorVersion = -1;
+ static dispatch_once_t onceToken;
+ dispatch_once(&onceToken, ^{
+ _deviceSystemMajorVersion = [[[[[UIDevice currentDevice] systemVersion] componentsSeparatedByString:@"."] objectAtIndex:0] intValue];
+ });
+ return _deviceSystemMajorVersion;
+ }
+ */
+
+/**************************************************************/
 /*
 #define NavigationBar_HEIGHT 44
 

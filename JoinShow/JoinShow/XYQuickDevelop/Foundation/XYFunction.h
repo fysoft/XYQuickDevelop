@@ -20,6 +20,7 @@
  * original 原方法
  * replacement 劫持后的方法
  */
+//static void XY_swizzleInstanceMethod(Class c, SEL original, SEL replacement);
 static void XY_swizzleInstanceMethod(Class c, SEL original, SEL replacement) {
     Method a = class_getInstanceMethod(c, original);
     Method b = class_getInstanceMethod(c, replacement);

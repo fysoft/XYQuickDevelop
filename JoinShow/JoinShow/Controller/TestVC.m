@@ -51,7 +51,7 @@
   //  [XYTimer sharedInstance].delegate = self;
   //  [[XYTimer sharedInstance] startTimerWithInterval:1];
     
-    TestView *tempView = [[TestView alloc] initWithFrame:CGRectMake(100, 000, 40, 40)];
+    TestView *tempView = [[TestView alloc] initWithFrame:CGRectMake(100, 100, 40, 40)];
     tempView.backgroundColor = [UIColor grayColor];
     tempView.userInteractionEnabled = YES;
     [tempView addTapGestureWithBlock:^{

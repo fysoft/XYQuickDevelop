@@ -719,5 +719,7 @@
     CGImageRelease(newImageRef);
     return newImage;
 }
+/***************************************************************/
+
 @end
 
