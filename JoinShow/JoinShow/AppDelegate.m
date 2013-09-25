@@ -31,8 +31,8 @@
     // 开启键盘偏移
     [IQKeyBoardManager installKeyboardManager];
 #pragma mark - some test
-    NSLogD(@"start");
-    NSLogDD;
+  //  NSLogD(@"start");
+  //  NSLogDD;
     return YES;
 }
 

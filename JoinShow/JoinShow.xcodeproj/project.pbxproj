@@ -266,7 +266,6 @@
 		57F134DF17DC39F200C5DCDC /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F134DC17DC39F200C5DCDC /* Player.m */; };
 		57F134E017DC39F200C5DCDC /* Shot.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F134DE17DC39F200C5DCDC /* Shot.m */; };
 		57F3965F17DB6F490060D6CE /* NetWorkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F3965E17DB6F490060D6CE /* NetWorkEngine.m */; };
-		57F690B017E6CD6D00D9A437 /* dyci.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F690AE17E6CD6D00D9A437 /* dyci.framework */; };
 		57F690BE17E6CE0C00D9A437 /* LKDB+Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F690B317E6CE0C00D9A437 /* LKDB+Manager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		57F690BF17E6CE0C00D9A437 /* LKDB+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F690B517E6CE0C00D9A437 /* LKDB+Mapping.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		57F690C017E6CE0C00D9A437 /* LKDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F690B717E6CE0C00D9A437 /* LKDBHelper.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -626,7 +625,6 @@
 		57F134DE17DC39F200C5DCDC /* Shot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shot.m; sourceTree = "<group>"; };
 		57F3965D17DB6F490060D6CE /* NetWorkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkEngine.h; sourceTree = "<group>"; };
 		57F3965E17DB6F490060D6CE /* NetWorkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkEngine.m; sourceTree = "<group>"; };
-		57F690AE17E6CD6D00D9A437 /* dyci.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = dyci.framework; sourceTree = "<group>"; };
 		57F690B217E6CE0C00D9A437 /* LKDB+Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LKDB+Manager.h"; sourceTree = "<group>"; };
 		57F690B317E6CE0C00D9A437 /* LKDB+Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LKDB+Manager.m"; sourceTree = "<group>"; };
 		57F690B417E6CE0C00D9A437 /* LKDB+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LKDB+Mapping.h"; sourceTree = "<group>"; };
@@ -691,7 +689,6 @@
 				57B3FFEC177AD9BC00775FC9 /* Foundation.framework in Frameworks */,
 				57B3FFEE177AD9BC00775FC9 /* CoreGraphics.framework in Frameworks */,
 				57BE89BB17AA52E700FCD864 /* AudioToolbox.framework in Frameworks */,
-				57F690B017E6CD6D00D9A437 /* dyci.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1084,7 +1081,6 @@
 			children = (
 				57F690C417E6CE2500D9A437 /* FMDB */,
 				57F690B117E6CE0C00D9A437 /* LKDBHelper */,
-				57F690AD17E6CD6D00D9A437 /* dyci.embeddedframework */,
 				57F134D417DC37A800C5DCDC /* YYJSON */,
 				572217FC17DB33F6003504E8 /* MKNetworkKit */,
 				577C496B17BDFC8500C7FC56 /* CocosDenshion */,
@@ -1291,22 +1287,6 @@
 				57F134D617DC37A800C5DCDC /* YYJSONHelper.m */,
 			);
 			path = YYJSON;
-			sourceTree = "<group>";
-		};
-		57F690AD17E6CD6D00D9A437 /* dyci.embeddedframework */ = {
-			isa = PBXGroup;
-			children = (
-				57F690AE17E6CD6D00D9A437 /* dyci.framework */,
-				57F690AF17E6CD6D00D9A437 /* Resources */,
-			);
-			path = dyci.embeddedframework;
-			sourceTree = "<group>";
-		};
-		57F690AF17E6CD6D00D9A437 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		57F690B117E6CE0C00D9A437 /* LKDBHelper */ = {
