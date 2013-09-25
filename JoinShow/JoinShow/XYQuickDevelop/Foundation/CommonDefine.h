@@ -44,6 +44,17 @@ return __singleton__; \
 }
 
 /**************************************************************/
+// 执行一次
+#undef	XY_ONCE_BEGIN
+#define XY_ONCE_BEGIN \
+static dispatch_once_t once; \
+dispatch_once( &once , ^{
+
+#undef	XY_ONCE_END
+#define XY_ONCE_END		});
+
+
+/**************************************************************/
 // GCD 多线程
 #define Common_MainFun(aFun) dispatch_async( dispatch_get_main_queue(), ^(void){aFun;} );
 #define Common_MainBlock(block) dispatch_async( dispatch_get_main_queue(), block );
@@ -79,11 +90,12 @@ objc_msgSend(_delegate, @selector( __fun ), ## __VA_ARGS__);}
 /**************************************************************/
 // NSUserDefaults
 #define USER_DEFAULT [NSUserDefaults standardUserDefaults]
-/**************************************************************/
 
+/**************************************************************/
 // UIImage
 #define LoadImage_cache(_pointer) [UIImage imageNamed:_pointer]
 #define LoadImage_nocache(file, ext) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:file ofType:ext]]
+
 
 /**************************************************************/
 #pragma mark- 以下待筛选

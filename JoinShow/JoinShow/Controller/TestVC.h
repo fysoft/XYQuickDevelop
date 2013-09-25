@@ -18,5 +18,6 @@
 - (IBAction)clickBtn1:(id)sender;
 - (IBAction)clickBtn2:(id)sender;
 - (IBAction)clickAVSpeech:(id)sender;
+- (IBAction)clickOnce:(id)sender;
 
 @end

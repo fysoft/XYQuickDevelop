@@ -60,8 +60,6 @@
     [tempView test];
     [self.view addSubview:tempView];
     [tempView release];
-    
-
 }
 
 - (void)didReceiveMemoryWarning
@@ -101,6 +99,12 @@
         NSLogD(@"2")
         SHOWMBProgressHUD(@"only show on IOS7", nil, nil, NO, 2)
     }
+}
+
+- (IBAction)clickOnce:(id)sender {
+    XY_ONCE_BEGIN
+    SHOWMBProgressHUD(@"only show once", nil, nil, NO, 2)
+    XY_ONCE_END
 }
 
 
