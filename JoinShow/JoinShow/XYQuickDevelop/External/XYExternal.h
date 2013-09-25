@@ -28,9 +28,7 @@
 
 ///////////////////////////////////////////////////////////////
 // 下拉键盘在iOS移动文本字段的通用解决方案
-#import "TPKeyboardAvoidingCollectionView.h"
-#import "TPKeyboardAvoidingScrollView.h"
-#import "TPKeyboardAvoidingTableView.h"
+#import "IQKeyBoardManager.h"
 
 // 状态指示器
 #import "MBProgressHUD.h"

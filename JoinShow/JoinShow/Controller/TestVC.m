@@ -61,11 +61,7 @@
     [self.view addSubview:tempView];
     [tempView release];
     
-    if (IOS7_OR_LATER) {
-        NSLogD(@"1")
-    }else{
-        NSLogD(@"2")
-    }
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -91,6 +87,20 @@
     NSNumber *a = objc_getAssociatedObject(self, [NSString stringWithFormat:@"%d", 0]);
     NSNumber *b = objc_getAssociatedObject(_array, [NSString stringWithFormat:@"%d", 0]);
     NSLogD(@"self : %@, array : %@", a, b);
+}
+
+- (IBAction)clickAVSpeech:(id)sender {
+    if (IOS7_OR_LATER) {
+        NSLogD(@"1")
+        AVSpeechSynthesizer *av = [[[AVSpeechSynthesizer alloc] init] autorelease];
+        AVSpeechUtterance *utterance = [[[AVSpeechUtterance alloc] initWithString:@"Copyright (c) 2013年 Heaven. All rights reserved"] autorelease];
+      //  utterance.rate = AVSpeechUtteranceMinimumSpeechRate;
+        utterance.pitchMultiplier = 0.7;
+        [av speakUtterance:utterance];
+    }else{
+        NSLogD(@"2")
+        SHOWMBProgressHUD(@"only show on IOS7", nil, nil, NO, 2)
+    }
 }
 
 

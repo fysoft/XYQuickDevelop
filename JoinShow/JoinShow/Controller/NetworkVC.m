@@ -105,7 +105,7 @@
         SHOWMSG(nil, @"Download succeed", @"ok");
     } failed:^(MKNetworkOperation *errorOp, NSError *err) {
          NSLog(@"MKNetwork request error : %@", [err localizedDescription]);
-        SHOWMSG(nil, @"Download failed", nil);
+        SHOWMSG(nil, @"Download failed",  @"ok");
     }];
 }
 

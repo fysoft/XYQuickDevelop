@@ -17,5 +17,6 @@
 @property (nonatomic, retain) NSMutableArray *array;
 - (IBAction)clickBtn1:(id)sender;
 - (IBAction)clickBtn2:(id)sender;
+- (IBAction)clickAVSpeech:(id)sender;
 
 @end

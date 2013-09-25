@@ -213,6 +213,8 @@
 		57383F3B17D2F5F20001079C /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 57383F3A17D2F5F20001079C /* TestVC.m */; };
 		573D546317DB9C31008FFDE4 /* XYTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 573D546217DB9C31008FFDE4 /* XYTimer.m */; };
 		57525A4517AB7DEA0094D835 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57525A4417AB7DEA0094D835 /* QuartzCore.framework */; };
+		575BB0EF17F2BEB40082B0A8 /* IQKeyBoardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 575BB0EC17F2BEB40082B0A8 /* IQKeyBoardManager.m */; };
+		575BB0F017F2BEB40082B0A8 /* IQSegmentedNextPrevious.m in Sources */ = {isa = PBXBuildFile; fileRef = 575BB0EE17F2BEB40082B0A8 /* IQSegmentedNextPrevious.m */; };
 		576DA3CC17F031EC002AF08A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 576DA3CB17F031EC002AF08A /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		577C499A17BDFC8500C7FC56 /* NSObject+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C495817BDFC8500C7FC56 /* NSObject+XY.m */; };
 		577C499B17BDFC8500C7FC56 /* UIView+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C495A17BDFC8500C7FC56 /* UIView+XY.m */; };
@@ -237,9 +239,6 @@
 		577C49B017BDFC8500C7FC56 /* XYSpriteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C499617BDFC8500C7FC56 /* XYSpriteView.m */; };
 		57901EB917E6AAEF00B8E8FF /* AutoSizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57901EB817E6AAEF00B8E8FF /* AutoSizeView.m */; };
 		57901EBB17E6C26E00B8E8FF /* remark in Resources */ = {isa = PBXBuildFile; fileRef = 57901EBA17E6C26E00B8E8FF /* remark */; };
-		57901EC317E6C63800B8E8FF /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57901EBE17E6C63800B8E8FF /* TPKeyboardAvoidingCollectionView.m */; };
-		57901EC417E6C63800B8E8FF /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57901EC017E6C63800B8E8FF /* TPKeyboardAvoidingScrollView.m */; };
-		57901EC517E6C63800B8E8FF /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57901EC217E6C63800B8E8FF /* TPKeyboardAvoidingTableView.m */; };
 		579609BE17F00A4B00BB7AFE /* XYSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 579609BD17F00A4B00BB7AFE /* XYSystemInfo.m */; };
 		579ECE1D17A8E90B00687AF2 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579ECE1C17A8E90B00687AF2 /* CoreText.framework */; };
 		57B30000177AD9BC00775FC9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B3FFFF177AD9BC00775FC9 /* Default-568h@2x.png */; };
@@ -527,6 +526,10 @@
 		573D546117DB9C31008FFDE4 /* XYTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTimer.h; sourceTree = "<group>"; };
 		573D546217DB9C31008FFDE4 /* XYTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTimer.m; sourceTree = "<group>"; };
 		57525A4417AB7DEA0094D835 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		575BB0EB17F2BEB40082B0A8 /* IQKeyBoardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyBoardManager.h; sourceTree = "<group>"; };
+		575BB0EC17F2BEB40082B0A8 /* IQKeyBoardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyBoardManager.m; sourceTree = "<group>"; };
+		575BB0ED17F2BEB40082B0A8 /* IQSegmentedNextPrevious.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSegmentedNextPrevious.h; sourceTree = "<group>"; };
+		575BB0EE17F2BEB40082B0A8 /* IQSegmentedNextPrevious.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSegmentedNextPrevious.m; sourceTree = "<group>"; };
 		576DA3CA17F031EC002AF08A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		576DA3CB17F031EC002AF08A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		577C495717BDFC8500C7FC56 /* NSObject+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XY.h"; sourceTree = "<group>"; };
@@ -583,12 +586,6 @@
 		57901EB717E6AAEF00B8E8FF /* AutoSizeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoSizeView.h; sourceTree = "<group>"; };
 		57901EB817E6AAEF00B8E8FF /* AutoSizeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoSizeView.m; sourceTree = "<group>"; };
 		57901EBA17E6C26E00B8E8FF /* remark */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = remark; sourceTree = "<group>"; };
-		57901EBD17E6C63800B8E8FF /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
-		57901EBE17E6C63800B8E8FF /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
-		57901EBF17E6C63800B8E8FF /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
-		57901EC017E6C63800B8E8FF /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
-		57901EC117E6C63800B8E8FF /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
-		57901EC217E6C63800B8E8FF /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
 		579609BC17F00A4B00BB7AFE /* XYSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSystemInfo.h; sourceTree = "<group>"; };
 		579609BD17F00A4B00BB7AFE /* XYSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSystemInfo.m; sourceTree = "<group>"; };
 		579ECE1C17A8E90B00687AF2 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
@@ -993,6 +990,17 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		575BB0EA17F2BEB40082B0A8 /* IQKeyBoardManager */ = {
+			isa = PBXGroup;
+			children = (
+				575BB0EB17F2BEB40082B0A8 /* IQKeyBoardManager.h */,
+				575BB0EC17F2BEB40082B0A8 /* IQKeyBoardManager.m */,
+				575BB0ED17F2BEB40082B0A8 /* IQSegmentedNextPrevious.h */,
+				575BB0EE17F2BEB40082B0A8 /* IQSegmentedNextPrevious.m */,
+			);
+			path = IQKeyBoardManager;
+			sourceTree = "<group>";
+		};
 		577C495517BDFC8500C7FC56 /* XYQuickDevelop */ = {
 			isa = PBXGroup;
 			children = (
@@ -1033,7 +1041,7 @@
 		577C495D17BDFC8500C7FC56 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				57901EBC17E6C63800B8E8FF /* TPKeyboardAvoiding */,
+				575BB0EA17F2BEB40082B0A8 /* IQKeyBoardManager */,
 				577C495E17BDFC8500C7FC56 /* BlockUI */,
 				577C496417BDFC8500C7FC56 /* MBProgressHUD */,
 				577C496717BDFC8500C7FC56 /* RTLabel */,
@@ -1176,19 +1184,6 @@
 				57901EB817E6AAEF00B8E8FF /* AutoSizeView.m */,
 			);
 			path = AutoSizeView;
-			sourceTree = "<group>";
-		};
-		57901EBC17E6C63800B8E8FF /* TPKeyboardAvoiding */ = {
-			isa = PBXGroup;
-			children = (
-				57901EBD17E6C63800B8E8FF /* TPKeyboardAvoidingCollectionView.h */,
-				57901EBE17E6C63800B8E8FF /* TPKeyboardAvoidingCollectionView.m */,
-				57901EBF17E6C63800B8E8FF /* TPKeyboardAvoidingScrollView.h */,
-				57901EC017E6C63800B8E8FF /* TPKeyboardAvoidingScrollView.m */,
-				57901EC117E6C63800B8E8FF /* TPKeyboardAvoidingTableView.h */,
-				57901EC217E6C63800B8E8FF /* TPKeyboardAvoidingTableView.m */,
-			);
-			path = TPKeyboardAvoiding;
 			sourceTree = "<group>";
 		};
 		57B30013177AD9BC00775FC9 /* JoinShowTests */ = {
@@ -1681,6 +1676,8 @@
 				577C49A317BDFC8500C7FC56 /* SimpleAudioEngine.m in Sources */,
 				577C49A417BDFC8500C7FC56 /* OpenUDID.m in Sources */,
 				577C49A517BDFC8500C7FC56 /* SDDataCacheManager.m in Sources */,
+				575BB0EF17F2BEB40082B0A8 /* IQKeyBoardManager.m in Sources */,
+				575BB0F017F2BEB40082B0A8 /* IQSegmentedNextPrevious.m in Sources */,
 				577C49A617BDFC8500C7FC56 /* SDImageView+SDWebCache.m in Sources */,
 				577C49A717BDFC8500C7FC56 /* SDNetworkActivityIndicator.m in Sources */,
 				577C49A817BDFC8500C7FC56 /* SDWebDataDownloader.m in Sources */,
@@ -1723,9 +1720,6 @@
 				57FC192E17DEBF8F00B5E6F9 /* DataLiteVC.m in Sources */,
 				57FB837C17E2A543004B70B6 /* UIView+Test.m in Sources */,
 				57901EB917E6AAEF00B8E8FF /* AutoSizeView.m in Sources */,
-				57901EC317E6C63800B8E8FF /* TPKeyboardAvoidingCollectionView.m in Sources */,
-				57901EC417E6C63800B8E8FF /* TPKeyboardAvoidingScrollView.m in Sources */,
-				57901EC517E6C63800B8E8FF /* TPKeyboardAvoidingTableView.m in Sources */,
 				57F690BE17E6CE0C00D9A437 /* LKDB+Manager.m in Sources */,
 				57F690BF17E6CE0C00D9A437 /* LKDB+Mapping.m in Sources */,
 				57F690C017E6CE0C00D9A437 /* LKDBHelper.m in Sources */,
