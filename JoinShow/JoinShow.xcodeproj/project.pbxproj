@@ -213,7 +213,6 @@
 		5742C1F817F7BF3C00065083 /* CDOpenALSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C1A117F7BF3C00065083 /* CDOpenALSupport.m */; };
 		5742C1F917F7BF3C00065083 /* CocosDenshion.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C1A317F7BF3C00065083 /* CocosDenshion.m */; };
 		5742C1FA17F7BF3C00065083 /* SimpleAudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C1A517F7BF3C00065083 /* SimpleAudioEngine.m */; };
-		5742C1FB17F7BF3C00065083 /* dyci.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5742C1A717F7BF3C00065083 /* dyci.framework */; };
 		5742C1FC17F7BF3C00065083 /* FMDatabase+InMemoryOnDiskIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C1AC17F7BF3C00065083 /* FMDatabase+InMemoryOnDiskIO.m */; };
 		5742C1FD17F7BF3C00065083 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C1AF17F7BF3C00065083 /* FMDatabase.m */; };
 		5742C1FE17F7BF3C00065083 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C1B117F7BF3C00065083 /* FMDatabaseAdditions.m */; };
@@ -237,12 +236,8 @@
 		5742C21017F7BF3C00065083 /* MKNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C1D917F7BF3C00065083 /* MKNetworkOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		5742C21117F7BF3C00065083 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C1DC17F7BF3C00065083 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		5742C21217F7BF3C00065083 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C1DF17F7BF3C00065083 /* OpenUDID.m */; };
-		5742C21317F7BF3C00065083 /* SDDataCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C1E217F7BF3C00065083 /* SDDataCacheManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		5742C21417F7BF3C00065083 /* SDImageView+SDWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C1E417F7BF3C00065083 /* SDImageView+SDWebCache.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		5742C21517F7BF3C00065083 /* SDNetworkActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C1E617F7BF3C00065083 /* SDNetworkActivityIndicator.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		5742C21617F7BF3C00065083 /* SDWebDataDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C1E817F7BF3C00065083 /* SDWebDataDownloader.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		5742C21717F7BF3C00065083 /* SDWebDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C1EA17F7BF3C00065083 /* SDWebDataManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		5742C21817F7BF3C00065083 /* YYJSONHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C1EF17F7BF3C00065083 /* YYJSONHelper.m */; };
+		5748EC7B17F95C120092019D /* UIImage+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 5748EC7A17F95C120092019D /* UIImage+XY.m */; };
 		57525A4517AB7DEA0094D835 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57525A4417AB7DEA0094D835 /* QuartzCore.framework */; };
 		577C499A17BDFC8500C7FC56 /* NSObject+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C495817BDFC8500C7FC56 /* NSObject+XY.m */; };
 		577C499B17BDFC8500C7FC56 /* UIView+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C495A17BDFC8500C7FC56 /* UIView+XY.m */; };
@@ -252,6 +247,11 @@
 		577C49AE17BDFC8500C7FC56 /* XYAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C499217BDFC8500C7FC56 /* XYAnimationView.m */; };
 		577C49AF17BDFC8500C7FC56 /* XYSpriteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C499417BDFC8500C7FC56 /* XYSpriteManager.m */; };
 		577C49B017BDFC8500C7FC56 /* XYSpriteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C499617BDFC8500C7FC56 /* XYSpriteView.m */; };
+		5781669917F9110E003D9D6E /* SDDataCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5781668F17F9110E003D9D6E /* SDDataCacheManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		5781669A17F9110E003D9D6E /* SDImageView+SDWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5781669117F9110E003D9D6E /* SDImageView+SDWebCache.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		5781669B17F9110E003D9D6E /* SDNetworkActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5781669317F9110E003D9D6E /* SDNetworkActivityIndicator.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		5781669C17F9110E003D9D6E /* SDWebDataDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5781669517F9110E003D9D6E /* SDWebDataDownloader.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		5781669D17F9110E003D9D6E /* SDWebDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5781669717F9110E003D9D6E /* SDWebDataManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		57901EB917E6AAEF00B8E8FF /* AutoSizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57901EB817E6AAEF00B8E8FF /* AutoSizeView.m */; };
 		57901EBB17E6C26E00B8E8FF /* remark in Resources */ = {isa = PBXBuildFile; fileRef = 57901EBA17E6C26E00B8E8FF /* remark */; };
 		579609BE17F00A4B00BB7AFE /* XYSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 579609BD17F00A4B00BB7AFE /* XYSystemInfo.m */; };
@@ -528,7 +528,6 @@
 		5742C1A317F7BF3C00065083 /* CocosDenshion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocosDenshion.m; sourceTree = "<group>"; };
 		5742C1A417F7BF3C00065083 /* SimpleAudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAudioEngine.h; sourceTree = "<group>"; };
 		5742C1A517F7BF3C00065083 /* SimpleAudioEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAudioEngine.m; sourceTree = "<group>"; };
-		5742C1A717F7BF3C00065083 /* dyci.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = dyci.framework; sourceTree = "<group>"; };
 		5742C1AB17F7BF3C00065083 /* FMDatabase+InMemoryOnDiskIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+InMemoryOnDiskIO.h"; sourceTree = "<group>"; };
 		5742C1AC17F7BF3C00065083 /* FMDatabase+InMemoryOnDiskIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+InMemoryOnDiskIO.m"; sourceTree = "<group>"; };
 		5742C1AE17F7BF3C00065083 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
@@ -576,20 +575,11 @@
 		5742C1DC17F7BF3C00065083 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		5742C1DE17F7BF3C00065083 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
 		5742C1DF17F7BF3C00065083 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
-		5742C1E117F7BF3C00065083 /* SDDataCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDDataCacheManager.h; sourceTree = "<group>"; };
-		5742C1E217F7BF3C00065083 /* SDDataCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDDataCacheManager.m; sourceTree = "<group>"; };
-		5742C1E317F7BF3C00065083 /* SDImageView+SDWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDImageView+SDWebCache.h"; sourceTree = "<group>"; };
-		5742C1E417F7BF3C00065083 /* SDImageView+SDWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDImageView+SDWebCache.m"; sourceTree = "<group>"; };
-		5742C1E517F7BF3C00065083 /* SDNetworkActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDNetworkActivityIndicator.h; sourceTree = "<group>"; };
-		5742C1E617F7BF3C00065083 /* SDNetworkActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDNetworkActivityIndicator.m; sourceTree = "<group>"; };
-		5742C1E717F7BF3C00065083 /* SDWebDataDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebDataDownloader.h; sourceTree = "<group>"; };
-		5742C1E817F7BF3C00065083 /* SDWebDataDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebDataDownloader.m; sourceTree = "<group>"; };
-		5742C1E917F7BF3C00065083 /* SDWebDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebDataManager.h; sourceTree = "<group>"; };
-		5742C1EA17F7BF3C00065083 /* SDWebDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebDataManager.m; sourceTree = "<group>"; };
-		5742C1EB17F7BF3C00065083 /* SDWebImageCompatibly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompatibly.h; sourceTree = "<group>"; };
 		5742C1EE17F7BF3C00065083 /* YYJSONHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYJSONHelper.h; sourceTree = "<group>"; };
 		5742C1EF17F7BF3C00065083 /* YYJSONHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYJSONHelper.m; sourceTree = "<group>"; };
 		5742C1F017F7BF3C00065083 /* XYExternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYExternal.h; sourceTree = "<group>"; };
+		5748EC7917F95C120092019D /* UIImage+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XY.h"; sourceTree = "<group>"; };
+		5748EC7A17F95C120092019D /* UIImage+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XY.m"; sourceTree = "<group>"; };
 		57525A4417AB7DEA0094D835 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		577C495717BDFC8500C7FC56 /* NSObject+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XY.h"; sourceTree = "<group>"; };
 		577C495817BDFC8500C7FC56 /* NSObject+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XY.m"; sourceTree = "<group>"; };
@@ -612,6 +602,17 @@
 		577C499717BDFC8500C7FC56 /* XYUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYUI.h; sourceTree = "<group>"; };
 		577C499817BDFC8500C7FC56 /* XYCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYCommon.h; sourceTree = "<group>"; };
 		577C499917BDFC8500C7FC56 /* XYPrecompile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPrecompile.h; sourceTree = "<group>"; };
+		5781668E17F9110E003D9D6E /* SDDataCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDDataCacheManager.h; sourceTree = "<group>"; };
+		5781668F17F9110E003D9D6E /* SDDataCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDDataCacheManager.m; sourceTree = "<group>"; };
+		5781669017F9110E003D9D6E /* SDImageView+SDWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDImageView+SDWebCache.h"; sourceTree = "<group>"; };
+		5781669117F9110E003D9D6E /* SDImageView+SDWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDImageView+SDWebCache.m"; sourceTree = "<group>"; };
+		5781669217F9110E003D9D6E /* SDNetworkActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDNetworkActivityIndicator.h; sourceTree = "<group>"; };
+		5781669317F9110E003D9D6E /* SDNetworkActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDNetworkActivityIndicator.m; sourceTree = "<group>"; };
+		5781669417F9110E003D9D6E /* SDWebDataDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebDataDownloader.h; sourceTree = "<group>"; };
+		5781669517F9110E003D9D6E /* SDWebDataDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebDataDownloader.m; sourceTree = "<group>"; };
+		5781669617F9110E003D9D6E /* SDWebDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebDataManager.h; sourceTree = "<group>"; };
+		5781669717F9110E003D9D6E /* SDWebDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebDataManager.m; sourceTree = "<group>"; };
+		5781669817F9110E003D9D6E /* SDWebImageCompatibly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompatibly.h; sourceTree = "<group>"; };
 		57901EB717E6AAEF00B8E8FF /* AutoSizeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoSizeView.h; sourceTree = "<group>"; };
 		57901EB817E6AAEF00B8E8FF /* AutoSizeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoSizeView.m; sourceTree = "<group>"; };
 		57901EBA17E6C26E00B8E8FF /* remark */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = remark; sourceTree = "<group>"; };
@@ -681,7 +682,6 @@
 				57F690DA17E6CE7B00D9A437 /* libsqlite3.0.dylib in Frameworks */,
 				5722182517DB34E1003504E8 /* Security.framework in Frameworks */,
 				5722182317DB34CC003504E8 /* CFNetwork.framework in Frameworks */,
-				5742C1FB17F7BF3C00065083 /* dyci.framework in Frameworks */,
 				5722182117DB34BD003504E8 /* ImageIO.framework in Frameworks */,
 				5722181F17DB3427003504E8 /* SystemConfiguration.framework in Frameworks */,
 				57B3FFEA177AD9BC00775FC9 /* UIKit.framework in Frameworks */,
@@ -1009,13 +1009,12 @@
 		5742C19B17F7BF3C00065083 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				5781668D17F9110E003D9D6E /* SDWebData_1.1.1 */,
 				5742C19C17F7BF3C00065083 /* CocosDenshion */,
-				5742C1A617F7BF3C00065083 /* dyci.embeddedframework */,
 				5742C1A917F7BF3C00065083 /* FMDB */,
 				5742C1B817F7BF3C00065083 /* LKDBHelper */,
 				5742C1C517F7BF3C00065083 /* MKNetworkKit */,
 				5742C1DD17F7BF3C00065083 /* OpenUDID */,
-				5742C1E017F7BF3C00065083 /* SDWebData_1.1.1 */,
 				5742C1EC17F7BF3C00065083 /* UMAnalytics_Sdk_2.2.0.OpenUDID */,
 				5742C1ED17F7BF3C00065083 /* YYJSON */,
 			);
@@ -1036,22 +1035,6 @@
 				5742C1A517F7BF3C00065083 /* SimpleAudioEngine.m */,
 			);
 			path = CocosDenshion;
-			sourceTree = "<group>";
-		};
-		5742C1A617F7BF3C00065083 /* dyci.embeddedframework */ = {
-			isa = PBXGroup;
-			children = (
-				5742C1A717F7BF3C00065083 /* dyci.framework */,
-				5742C1A817F7BF3C00065083 /* Resources */,
-			);
-			path = dyci.embeddedframework;
-			sourceTree = "<group>";
-		};
-		5742C1A817F7BF3C00065083 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		5742C1A917F7BF3C00065083 /* FMDB */ = {
@@ -1161,24 +1144,6 @@
 			path = OpenUDID;
 			sourceTree = "<group>";
 		};
-		5742C1E017F7BF3C00065083 /* SDWebData_1.1.1 */ = {
-			isa = PBXGroup;
-			children = (
-				5742C1E117F7BF3C00065083 /* SDDataCacheManager.h */,
-				5742C1E217F7BF3C00065083 /* SDDataCacheManager.m */,
-				5742C1E317F7BF3C00065083 /* SDImageView+SDWebCache.h */,
-				5742C1E417F7BF3C00065083 /* SDImageView+SDWebCache.m */,
-				5742C1E517F7BF3C00065083 /* SDNetworkActivityIndicator.h */,
-				5742C1E617F7BF3C00065083 /* SDNetworkActivityIndicator.m */,
-				5742C1E717F7BF3C00065083 /* SDWebDataDownloader.h */,
-				5742C1E817F7BF3C00065083 /* SDWebDataDownloader.m */,
-				5742C1E917F7BF3C00065083 /* SDWebDataManager.h */,
-				5742C1EA17F7BF3C00065083 /* SDWebDataManager.m */,
-				5742C1EB17F7BF3C00065083 /* SDWebImageCompatibly.h */,
-			);
-			path = SDWebData_1.1.1;
-			sourceTree = "<group>";
-		};
 		5742C1EC17F7BF3C00065083 /* UMAnalytics_Sdk_2.2.0.OpenUDID */ = {
 			isa = PBXGroup;
 			children = (
@@ -1224,6 +1189,8 @@
 				577C495817BDFC8500C7FC56 /* NSObject+XY.m */,
 				577C495917BDFC8500C7FC56 /* UIView+XY.h */,
 				577C495A17BDFC8500C7FC56 /* UIView+XY.m */,
+				5748EC7917F95C120092019D /* UIImage+XY.h */,
+				5748EC7A17F95C120092019D /* UIImage+XY.m */,
 				57FB837A17E2A543004B70B6 /* UIView+Test.h */,
 				57FB837B17E2A543004B70B6 /* UIView+Test.m */,
 				577C495B17BDFC8500C7FC56 /* XYExtension.h */,
@@ -1269,6 +1236,24 @@
 				577C499617BDFC8500C7FC56 /* XYSpriteView.m */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		5781668D17F9110E003D9D6E /* SDWebData_1.1.1 */ = {
+			isa = PBXGroup;
+			children = (
+				5781668E17F9110E003D9D6E /* SDDataCacheManager.h */,
+				5781668F17F9110E003D9D6E /* SDDataCacheManager.m */,
+				5781669017F9110E003D9D6E /* SDImageView+SDWebCache.h */,
+				5781669117F9110E003D9D6E /* SDImageView+SDWebCache.m */,
+				5781669217F9110E003D9D6E /* SDNetworkActivityIndicator.h */,
+				5781669317F9110E003D9D6E /* SDNetworkActivityIndicator.m */,
+				5781669417F9110E003D9D6E /* SDWebDataDownloader.h */,
+				5781669517F9110E003D9D6E /* SDWebDataDownloader.m */,
+				5781669617F9110E003D9D6E /* SDWebDataManager.h */,
+				5781669717F9110E003D9D6E /* SDWebDataManager.m */,
+				5781669817F9110E003D9D6E /* SDWebImageCompatibly.h */,
+			);
+			path = SDWebData_1.1.1;
 			sourceTree = "<group>";
 		};
 		57901EB617E6AAEF00B8E8FF /* AutoSizeView */ = {
@@ -1681,7 +1666,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				57B3FFF6177AD9BC00775FC9 /* main.m in Sources */,
-				5742C21417F7BF3C00065083 /* SDImageView+SDWebCache.m in Sources */,
 				577C499A17BDFC8500C7FC56 /* NSObject+XY.m in Sources */,
 				5742C1F417F7BF3C00065083 /* IQSegmentedNextPrevious.m in Sources */,
 				5742C1FF17F7BF3C00065083 /* FMDatabasePool.m in Sources */,
@@ -1693,10 +1677,10 @@
 				577C49AC17BDFC8500C7FC56 /* XYFunction.m in Sources */,
 				5742C1F917F7BF3C00065083 /* CocosDenshion.m in Sources */,
 				577C49AD17BDFC8500C7FC56 /* XYThread.m in Sources */,
+				5748EC7B17F95C120092019D /* UIImage+XY.m in Sources */,
 				577C49AE17BDFC8500C7FC56 /* XYAnimationView.m in Sources */,
 				577C49AF17BDFC8500C7FC56 /* XYSpriteManager.m in Sources */,
 				5742C20017F7BF3C00065083 /* FMDatabaseQueue.m in Sources */,
-				5742C21617F7BF3C00065083 /* SDWebDataDownloader.m in Sources */,
 				5742C1FC17F7BF3C00065083 /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
 				5742C1FA17F7BF3C00065083 /* SimpleAudioEngine.m in Sources */,
 				577C49B017BDFC8500C7FC56 /* XYSpriteView.m in Sources */,
@@ -1705,11 +1689,12 @@
 				571CBA2A17C6F59E007CB842 /* XYPerformance.m in Sources */,
 				5742C1FE17F7BF3C00065083 /* FMDatabaseAdditions.m in Sources */,
 				571CBA3317C6FB55007CB842 /* AppDelegate.m in Sources */,
-				5742C21717F7BF3C00065083 /* SDWebDataManager.m in Sources */,
 				571CBA5517C6FCC0007CB842 /* DomeTableViewController.m in Sources */,
 				5742C1F317F7BF3C00065083 /* IQKeyBoardManager.m in Sources */,
 				5742C20D17F7BF3C00065083 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
+				5781669B17F9110E003D9D6E /* SDNetworkActivityIndicator.m in Sources */,
 				571CBA5717C6FCC0007CB842 /* BookInfo.m in Sources */,
+				5781669C17F9110E003D9D6E /* SDWebDataDownloader.m in Sources */,
 				579609BE17F00A4B00BB7AFE /* XYSystemInfo.m in Sources */,
 				5742C1F117F7BF3C00065083 /* BUIControl.m in Sources */,
 				571CBA5917C6FCC0007CB842 /* Test2View.m in Sources */,
@@ -1719,6 +1704,7 @@
 				57383F3B17D2F5F20001079C /* TestVC.m in Sources */,
 				5742C20E17F7BF3C00065083 /* UIImageView+MKNetworkKitAdditions.m in Sources */,
 				5742C1F517F7BF3C00065083 /* MBProgressHUD.m in Sources */,
+				5781669A17F9110E003D9D6E /* SDImageView+SDWebCache.m in Sources */,
 				5742C20217F7BF3C00065083 /* LKDB+Manager.m in Sources */,
 				5742C20B17F7BF3C00065083 /* NSDictionary+RequestEncoding.m in Sources */,
 				5722182817DB365B003504E8 /* NetworkVC.m in Sources */,
@@ -1728,8 +1714,6 @@
 				5742C20717F7BF3C00065083 /* NSObject+LKModel.m in Sources */,
 				57F134DF17DC39F200C5DCDC /* Player.m in Sources */,
 				5742C20517F7BF3C00065083 /* LKDBUtils.m in Sources */,
-				5742C21517F7BF3C00065083 /* SDNetworkActivityIndicator.m in Sources */,
-				5742C21317F7BF3C00065083 /* SDDataCacheManager.m in Sources */,
 				5742C21817F7BF3C00065083 /* YYJSONHelper.m in Sources */,
 				5742C1FD17F7BF3C00065083 /* FMDatabase.m in Sources */,
 				5742C21017F7BF3C00065083 /* MKNetworkOperation.m in Sources */,
@@ -1737,6 +1721,8 @@
 				57F134E017DC39F200C5DCDC /* Shot.m in Sources */,
 				57E7857817DE459E0056C589 /* ConfigManager.m in Sources */,
 				5742C20C17F7BF3C00065083 /* NSString+MKNetworkKitAdditions.m in Sources */,
+				5781669917F9110E003D9D6E /* SDDataCacheManager.m in Sources */,
+				5781669D17F9110E003D9D6E /* SDWebDataManager.m in Sources */,
 				5742C1F217F7BF3C00065083 /* BUIView.m in Sources */,
 				5742C1F817F7BF3C00065083 /* CDOpenALSupport.m in Sources */,
 				5742C20317F7BF3C00065083 /* LKDB+Mapping.m in Sources */,

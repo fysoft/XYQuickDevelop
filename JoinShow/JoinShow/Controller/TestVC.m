@@ -60,6 +60,8 @@
     [tempView test];
     [self.view addSubview:tempView];
     [tempView release];
+    
+    [[XYTimer sharedInstance] startTimerWithInterval:0.1];
 }
 
 - (void)didReceiveMemoryWarning
@@ -69,22 +71,11 @@
 }
 
 - (IBAction)clickBtn1:(id)sender {
-    for (int i = 0; i < 1000; i++) {
-        NSNumber *n = [NSNumber numberWithInt:i];
-        NSString *str = [NSString stringWithFormat:@"%d", i];
-        NSNumber *a = [NSNumber numberWithInt:i + offset];
-        NSNumber *b = [NSNumber numberWithInt:i + 10000];
-        objc_setAssociatedObject(self, n, a, OBJC_ASSOCIATION_COPY);
-        
-        objc_setAssociatedObject(_array, n, b, OBJC_ASSOCIATION_COPY);
-    }
-    offset += 1000;
+    [[XYTimer sharedInstance] startTimerWithInterval:1];
 }
 
 - (IBAction)clickBtn2:(id)sender {
-    NSNumber *a = objc_getAssociatedObject(self, [NSString stringWithFormat:@"%d", 0]);
-    NSNumber *b = objc_getAssociatedObject(_array, [NSString stringWithFormat:@"%d", 0]);
-    NSLogD(@"self : %@, array : %@", a, b);
+    [[XYTimer sharedInstance] pauseTimer];
 }
 
 - (IBAction)clickAVSpeech:(id)sender {

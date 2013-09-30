@@ -30,6 +30,7 @@ XY_SINGLETON(XYTimer)
 -(void) startTimerWithInterval:(NSTimeInterval)ti;
 -(void) stopTimer;
 -(void) pauseTimer;
+-(void) resumeTimer;
 
 
 @end

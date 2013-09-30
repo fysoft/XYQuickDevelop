@@ -33,16 +33,18 @@ DEF_SINGLETON(XYTimer)
 -(void) startTimerWithInterval:(NSTimeInterval)ti{
     NSTimer *timer = [_timers objectForKey:XYTimer_default];
     if (timer) {
-        [timer setFireDate:[NSDate distantPast]];
+        float f = _accumulatorTime;
+        [self stopTimer];
+        _accumulatorTime = f;
     }else{
         _accumulatorTime = 0;
-        NSDate *date = [NSDate date];
-        timer = [[NSTimer alloc] initWithFireDate:date interval:ti target:self selector:@selector(runDefaultTimer:) userInfo:nil repeats:YES];
-        [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
-        [_timers setObject:timer forKey:XYTimer_default];
-        [timer release];
     }
-
+    
+    NSDate *date = [NSDate date];
+    timer = [[NSTimer alloc] initWithFireDate:date interval:ti target:self selector:@selector(runDefaultTimer:) userInfo:nil repeats:YES];
+    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+    [_timers setObject:timer forKey:XYTimer_default];
+    [timer release];
 }
 -(void) stopTimer{
     NSTimer *timer = [_timers objectForKey:XYTimer_default];
@@ -59,11 +61,16 @@ DEF_SINGLETON(XYTimer)
         [timer setFireDate:[NSDate distantFuture]];
     }
 }
+-(void) resumeTimer{
+    NSTimer *timer = [_timers objectForKey:XYTimer_default];
+    if (timer) {
+        [timer setFireDate:[NSDate date]];
+    }
+    
+}
 -(void) runDefaultTimer:(NSTimer *)timer{
     _accumulatorTime += timer.timeInterval;
-  //  if ((int)object_getClass(_delegate) == classIsa) {
-        Delegate(onTimer:, _accumulatorTime)
-  //  }
-    
+    NSLogD(@"%f", _accumulatorTime);
+    Delegate(onTimer:, _accumulatorTime)
 }
 @end
