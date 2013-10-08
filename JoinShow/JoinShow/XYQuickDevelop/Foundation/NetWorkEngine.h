@@ -49,3 +49,6 @@
 
 @end
 
+// 设置图片缓存
+#define XY_initWebImageCache [UIImageView setDefaultEngine:[[MKNetworkEngine alloc] init]];
+

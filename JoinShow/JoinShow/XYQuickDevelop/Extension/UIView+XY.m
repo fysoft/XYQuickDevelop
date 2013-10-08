@@ -79,4 +79,10 @@
     UIView *view = [self viewWithTag:UIView_shadeTag];
     [view removeFromSuperview];
 }
+
+/////////////////////////////////////////////////////////////
+-(void) setBg:(NSString *)str{
+    UIImage *image = [UIImage imageNamed:str];
+    self.layer.contents = (id) image.CGImage;
+}
 @end
