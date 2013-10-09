@@ -1187,7 +1187,6 @@
 		577C495517BDFC8500C7FC56 /* XYQuickDevelop */ = {
 			isa = PBXGroup;
 			children = (
-				57FC269E18052CEA007AA3BC /* Model */,
 				577C495617BDFC8500C7FC56 /* Extension */,
 				577C498817BDFC8500C7FC56 /* Foundation */,
 				577C499017BDFC8500C7FC56 /* UI */,
@@ -1380,13 +1379,6 @@
 				571CBA3217C6FB55007CB842 /* AppDelegate.m */,
 			);
 			name = AppDelegate;
-			sourceTree = "<group>";
-		};
-		57FC269E18052CEA007AA3BC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

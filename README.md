@@ -7,11 +7,14 @@ XYSpriteView 帧动画精灵类.
 ### 
 XYSpriteManager 精灵管理类.
 ### 
-XYTimer 定时器类.默认只有一个定时.
+XYTimer 定时器类.
 ### 
 NetWorkEngine 网络通讯类.
 ### 
 DataLite 轻量形数据持久化, 基于NSUserDefaults
+### 
+ParallaxManager 实现类似ios7 视图差效果.
+
 ### 
 todo
 消息传递
