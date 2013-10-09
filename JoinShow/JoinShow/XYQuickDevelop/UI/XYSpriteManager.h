@@ -6,6 +6,7 @@
 //
 
 #define XYSpriteManager_interval      1.0/12.0
+#define XYSpriteManager_timer         @"XYSprite"
 
 
 #import "XYPrecompile.h"

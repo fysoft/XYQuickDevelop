@@ -13,5 +13,9 @@
 
 #endif
 
+// 帧动画
 #import "XYSpriteView.h"
 #import "XYSpriteManager.h"
+
+// 视差
+#import "ParallaxManager.h"

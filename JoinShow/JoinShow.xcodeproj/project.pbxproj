@@ -254,6 +254,8 @@
 		5781669D17F9110E003D9D6E /* SDWebDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5781669717F9110E003D9D6E /* SDWebDataManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		57901EB917E6AAEF00B8E8FF /* AutoSizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57901EB817E6AAEF00B8E8FF /* AutoSizeView.m */; };
 		57901EBB17E6C26E00B8E8FF /* remark in Resources */ = {isa = PBXBuildFile; fileRef = 57901EBA17E6C26E00B8E8FF /* remark */; };
+		5791A7E818051BCA009A1003 /* ParallaxManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5791A7E718051BCA009A1003 /* ParallaxManager.m */; };
+		5791A7EA18051E7C009A1003 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5791A7E918051E7C009A1003 /* CoreMotion.framework */; };
 		579609BE17F00A4B00BB7AFE /* XYSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 579609BD17F00A4B00BB7AFE /* XYSystemInfo.m */; };
 		579ECE1D17A8E90B00687AF2 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579ECE1C17A8E90B00687AF2 /* CoreText.framework */; };
 		57B30000177AD9BC00775FC9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B3FFFF177AD9BC00775FC9 /* Default-568h@2x.png */; };
@@ -285,6 +287,8 @@
 		57FB837C17E2A543004B70B6 /* UIView+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FB837B17E2A543004B70B6 /* UIView+Test.m */; };
 		57FB838017E2F3CD004B70B6 /* default_TestDic.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57FB837F17E2F3CD004B70B6 /* default_TestDic.plist */; };
 		57FC192E17DEBF8F00B5E6F9 /* DataLiteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FC192D17DEBF8F00B5E6F9 /* DataLiteVC.m */; };
+		57FC26A418053155007AA3BC /* ParallaxVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FC26A318053155007AA3BC /* ParallaxVC.m */; };
+		57FC26A618054822007AA3BC /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 57FC26A518054822007AA3BC /* bg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -616,6 +620,9 @@
 		57901EB717E6AAEF00B8E8FF /* AutoSizeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoSizeView.h; sourceTree = "<group>"; };
 		57901EB817E6AAEF00B8E8FF /* AutoSizeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoSizeView.m; sourceTree = "<group>"; };
 		57901EBA17E6C26E00B8E8FF /* remark */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = remark; sourceTree = "<group>"; };
+		5791A7E618051BCA009A1003 /* ParallaxManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxManager.h; sourceTree = "<group>"; };
+		5791A7E718051BCA009A1003 /* ParallaxManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxManager.m; sourceTree = "<group>"; };
+		5791A7E918051E7C009A1003 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		579609BC17F00A4B00BB7AFE /* XYSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSystemInfo.h; sourceTree = "<group>"; };
 		579609BD17F00A4B00BB7AFE /* XYSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSystemInfo.m; sourceTree = "<group>"; };
 		579ECE1C17A8E90B00687AF2 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
@@ -662,6 +669,9 @@
 		57FB837F17E2F3CD004B70B6 /* default_TestDic.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = default_TestDic.plist; sourceTree = "<group>"; };
 		57FC192C17DEBF8F00B5E6F9 /* DataLiteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataLiteVC.h; sourceTree = "<group>"; };
 		57FC192D17DEBF8F00B5E6F9 /* DataLiteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataLiteVC.m; sourceTree = "<group>"; };
+		57FC26A218053155007AA3BC /* ParallaxVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxVC.h; sourceTree = "<group>"; };
+		57FC26A318053155007AA3BC /* ParallaxVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxVC.m; sourceTree = "<group>"; };
+		57FC26A518054822007AA3BC /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -679,6 +689,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5791A7EA18051E7C009A1003 /* CoreMotion.framework in Frameworks */,
 				57F690DA17E6CE7B00D9A437 /* libsqlite3.0.dylib in Frameworks */,
 				5722182517DB34E1003504E8 /* Security.framework in Frameworks */,
 				5722182317DB34CC003504E8 /* CFNetwork.framework in Frameworks */,
@@ -717,6 +728,8 @@
 				57FC192D17DEBF8F00B5E6F9 /* DataLiteVC.m */,
 				57F690DB17E6CFBF00D9A437 /* DatabaseVC.h */,
 				57F690DC17E6CFBF00D9A437 /* DatabaseVC.m */,
+				57FC26A218053155007AA3BC /* ParallaxVC.h */,
+				57FC26A318053155007AA3BC /* ParallaxVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1163,6 +1176,7 @@
 		57525A4C17AB9E300094D835 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				57FC26A518054822007AA3BC /* bg.png */,
 				57FB837F17E2F3CD004B70B6 /* default_TestDic.plist */,
 				57E852E117B224E500C664F4 /* json2.json */,
 				571CBA5E17C702D0007CB842 /* p31b */,
@@ -1173,6 +1187,7 @@
 		577C495517BDFC8500C7FC56 /* XYQuickDevelop */ = {
 			isa = PBXGroup;
 			children = (
+				57FC269E18052CEA007AA3BC /* Model */,
 				577C495617BDFC8500C7FC56 /* Extension */,
 				577C498817BDFC8500C7FC56 /* Foundation */,
 				577C499017BDFC8500C7FC56 /* UI */,
@@ -1234,6 +1249,8 @@
 				577C499417BDFC8500C7FC56 /* XYSpriteManager.m */,
 				577C499517BDFC8500C7FC56 /* XYSpriteView.h */,
 				577C499617BDFC8500C7FC56 /* XYSpriteView.m */,
+				5791A7E618051BCA009A1003 /* ParallaxManager.h */,
+				5791A7E718051BCA009A1003 /* ParallaxManager.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -1306,6 +1323,7 @@
 		57B3FFE8177AD9BC00775FC9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5791A7E918051E7C009A1003 /* CoreMotion.framework */,
 				57F690D917E6CE7B00D9A437 /* libsqlite3.0.dylib */,
 				5722182417DB34E1003504E8 /* Security.framework */,
 				5722182217DB34CC003504E8 /* CFNetwork.framework */,
@@ -1362,6 +1380,13 @@
 				571CBA3217C6FB55007CB842 /* AppDelegate.m */,
 			);
 			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		57FC269E18052CEA007AA3BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1517,6 +1542,7 @@
 				571CBB5417C702D1007CB842 /* p31b0066.png in Resources */,
 				571CBB5517C702D1007CB842 /* p31b0067.png in Resources */,
 				571CBB5617C702D1007CB842 /* p31b0068.png in Resources */,
+				57FC26A618054822007AA3BC /* bg.png in Resources */,
 				571CBB5717C702D1007CB842 /* p31b0069.png in Resources */,
 				571CBB5817C702D1007CB842 /* p31b0070.png in Resources */,
 				571CBB5917C702D1007CB842 /* p31b0071.png in Resources */,
@@ -1707,12 +1733,14 @@
 				5781669A17F9110E003D9D6E /* SDImageView+SDWebCache.m in Sources */,
 				5742C20217F7BF3C00065083 /* LKDB+Manager.m in Sources */,
 				5742C20B17F7BF3C00065083 /* NSDictionary+RequestEncoding.m in Sources */,
+				5791A7E818051BCA009A1003 /* ParallaxManager.m in Sources */,
 				5722182817DB365B003504E8 /* NetworkVC.m in Sources */,
 				57F3965F17DB6F490060D6CE /* NetWorkEngine.m in Sources */,
 				573D546317DB9C31008FFDE4 /* XYTimer.m in Sources */,
 				57F134DA17DC393600C5DCDC /* JsonVC.m in Sources */,
 				5742C20717F7BF3C00065083 /* NSObject+LKModel.m in Sources */,
 				57F134DF17DC39F200C5DCDC /* Player.m in Sources */,
+				57FC26A418053155007AA3BC /* ParallaxVC.m in Sources */,
 				5742C20517F7BF3C00065083 /* LKDBUtils.m in Sources */,
 				5742C21817F7BF3C00065083 /* YYJSONHelper.m in Sources */,
 				5742C1FD17F7BF3C00065083 /* FMDatabase.m in Sources */,

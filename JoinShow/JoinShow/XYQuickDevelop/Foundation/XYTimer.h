@@ -6,14 +6,13 @@
 //  Copyright (c) 2013年 Heaven. All rights reserved.
 //
 
-// 定时器 暂时默认只有一个
 #define XYTimer_default @"ddd"
 #import <Foundation/Foundation.h>
 
 @protocol XYTimerDelegate <NSObject>
 
 @optional
--(void) onTimer:(NSTimeInterval)ti;
+-(void) onTimer:(NSString *)timer time:(NSTimeInterval)ti;
 
 @end
 
@@ -22,15 +21,25 @@
   //  int classIsa;
 }
 XY_SINGLETON(XYTimer)
+
+@property (nonatomic, readonly) NSMutableDictionary *delegates;
 @property (nonatomic, readonly) NSMutableDictionary *timers;
-@property (nonatomic, assign) id<XYTimerDelegate> delegate;
-@property (nonatomic, readonly) NSTimeInterval accumulatorTime;
+@property (nonatomic, readonly) NSMutableDictionary *accumulatorTimes;
 
 // 默认的定时器
+@property (nonatomic, assign) id<XYTimerDelegate> delegate;
 -(void) startTimerWithInterval:(NSTimeInterval)ti;
 -(void) stopTimer;
 -(void) pauseTimer;
 -(void) resumeTimer;
+
+// 特定的定时器
+-(void) startTimer:(NSString *)key interval:(NSTimeInterval)ti;
+-(void) stopTimer:(NSString *)key;
+-(void) pauseTimer:(NSString *)key;
+-(void) resumeTimer:(NSString *)key;
+
+-(void) setTimer:(NSString *)key delegate:(id)anObject;
 
 
 @end

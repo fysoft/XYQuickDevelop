@@ -27,33 +27,14 @@ DEF_SINGLETON(XYSpriteManager);
 }
 
 -(void)startTimer{
-    /*
-     if (_timer == nil) {
-     NSTimer *tmpTimer;
-     NSDate *date = [NSDate date];
-     tmpTimer = [[NSTimer alloc] initWithFireDate:date interval:_interval target:self selector:@selector(updateSprites) userInfo:nil repeats:YES];
-     [[NSRunLoop currentRunLoop] addTimer:tmpTimer forMode:NSRunLoopCommonModes];
-     _timer = tmpTimer;
-     [tmpTimer release];
-     }
-     */
-    [[XYTimer sharedInstance] startTimerWithInterval:_interval];
-    [XYTimer sharedInstance].delegate = self;
+    [[XYTimer sharedInstance] startTimer:XYSpriteManager_timer interval:_interval];
+    [[XYTimer sharedInstance] setTimer:XYSpriteManager_timer delegate:self];
 }
 -(void) pauseTimer{
-    [[XYTimer sharedInstance] pauseTimer];
+    [[XYTimer sharedInstance] pauseTimer:XYSpriteManager_timer];
 }
 -(void)stopTimer{
-    /*
-    if (_timer) {
-        if ([_timer isValid]) {
-            [_timer invalidate];
-            _timer = nil;
-        }
-    }
-     */
-    [XYTimer sharedInstance].delegate = nil;
-    [[XYTimer sharedInstance] stopTimer];
+    [[XYTimer sharedInstance] stopTimer:XYSpriteManager_timer];
 }
 
 -(void)clearAllSprites{
@@ -81,8 +62,8 @@ DEF_SINGLETON(XYSpriteManager);
        // [ani updateImage];
     }];
 }
-#define mark - 
--(void) onTimer:(NSTimeInterval)ti{
+#define mark - XYTimerDelegate
+-(void) onTimer:(NSString *)timer time:(NSTimeInterval)ti{
   //  NSLogD(@"%f", ti);
     [self updateSprites];
 }

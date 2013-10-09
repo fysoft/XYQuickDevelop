@@ -82,7 +82,7 @@
     if (IOS7_OR_LATER) {
         NSLogD(@"1")
         AVSpeechSynthesizer *av = [[[AVSpeechSynthesizer alloc] init] autorelease];
-        AVSpeechUtterance *utterance = [[[AVSpeechUtterance alloc] initWithString:@"Copyright (c) 2013年 Heaven. All rights reserved"] autorelease];
+        AVSpeechUtterance *utterance = [[[AVSpeechUtterance alloc] initWithString:@"Copyright (c) 2013 Heaven. All rights reserved"] autorelease];
       //  utterance.rate = AVSpeechUtteranceMinimumSpeechRate;
         utterance.pitchMultiplier = 0.7;
         [av speakUtterance:utterance];

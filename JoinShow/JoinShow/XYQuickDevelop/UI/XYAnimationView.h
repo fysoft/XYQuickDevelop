@@ -3,6 +3,7 @@
 //
 
 #pragma mark -todo 整理后废弃
+
 #define XYAnimationView_state_start 1
 #define XYAnimationView_state_pause 2
 #define XYAnimationView_state_resume 4

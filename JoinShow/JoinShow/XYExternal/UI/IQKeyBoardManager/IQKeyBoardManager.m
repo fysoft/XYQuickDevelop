@@ -72,11 +72,11 @@ static IQKeyBoardManager *kbManager;
         /*Registering for textView notification*/
         [[NSNotificationCenter defaultCenter] addObserver:kbManager selector:@selector(textViewDidBeginEditing:) name:UITextViewTextDidBeginEditingNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:kbManager selector:@selector(textViewdDidEndEditing:) name:UITextViewTextDidEndEditingNotification object:nil];
-        NSLog(@"Keyboard Manager enabled");
+      //  NSLog(@"Keyboard Manager enabled");
     }
     else
     {
-        NSLog(@"Keyboard Manager already enabled");
+      //  NSLog(@"Keyboard Manager already enabled");
     }
 }
 
@@ -86,11 +86,11 @@ static IQKeyBoardManager *kbManager;
     {
         kbManager.isEnabled = NO;
         [[NSNotificationCenter defaultCenter] removeObserver:kbManager];
-        NSLog(@"Keyboard Manager desabled");
+      //  NSLog(@"Keyboard Manager desabled");
     }
     else
     {
-        NSLog(@"Keyboard Manger already desabled");
+     //   NSLog(@"Keyboard Manger already desabled");
     }
 }
 
