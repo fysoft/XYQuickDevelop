@@ -96,6 +96,24 @@ objc_msgSend(_delegate, @selector( __fun ), ## __VA_ARGS__);}
 #define LoadImage_cache(_pointer) [UIImage imageNamed:_pointer]
 #define LoadImage_nocache(file, ext) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:file ofType:ext]]
 
+/**************************************************************/
+// Use dummy class for category in static library.
+#ifndef DUMMY_CLASS
+#define DUMMY_CLASS(UNIQUE_NAME) \
+@interface DUMMY_CLASS_##UNIQUE_NAME : NSObject @end \
+@implementation DUMMY_CLASS_##UNIQUE_NAME @end
+#endif
+
+//使用示例:
+//UIColor+YYAdd.m
+/*
+#import "UIColor+YYAdd.h"
+DUMMY_CLASS(UIColor+YYAdd)
+
+@implementation UIColor(YYAdd)
+...
+@end
+ */
 
 /**************************************************************/
 #pragma mark- 以下待筛选

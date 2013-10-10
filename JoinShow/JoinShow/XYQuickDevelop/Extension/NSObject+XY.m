@@ -22,6 +22,7 @@
 #undef	NSObject_key_object
 #define NSObject_key_object	"NSObject.object"
 
+DUMMY_CLASS(NSObject_XY);
 
 @implementation NSObject (XY)
 

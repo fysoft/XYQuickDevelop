@@ -170,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JoinShow/JoinShow/XYQuickDevelop/Extension/UIView+XY.m"
-            timestampString = "400730093.546459"
+            timestampString = "403077759.831036"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "-addTapGestureWithBlock:"
             landmarkType = "5">
          </BreakpointContent>
@@ -534,11 +534,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JoinShow/JoinShow/XYQuickDevelop/Extension/UIView+XY.m"
-            timestampString = "400730093.546459"
+            timestampString = "403077759.831036"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "-UIView_dealloc"
             landmarkType = "5">
          </BreakpointContent>
@@ -550,11 +550,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JoinShow/JoinShow/XYQuickDevelop/Extension/UIView+Test.m"
-            timestampString = "400730717.106092"
+            timestampString = "403077759.831036"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
             landmarkName = "+load"
             landmarkType = "5">
          </BreakpointContent>
@@ -566,11 +566,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JoinShow/JoinShow/XYQuickDevelop/Extension/UIView+Test.m"
-            timestampString = "400730762.098995"
+            timestampString = "403077759.831036"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
             landmarkName = "-UIView_dealloc2"
             landmarkType = "5">
          </BreakpointContent>
@@ -582,11 +582,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JoinShow/JoinShow/XYQuickDevelop/Extension/UIView+XY.m"
-            timestampString = "400730184.688271"
+            timestampString = "403077759.831036"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "-addTapGestureWithBlock:"
             landmarkType = "5">
          </BreakpointContent>

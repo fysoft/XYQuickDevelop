@@ -1028,7 +1028,6 @@
 				5742C1B817F7BF3C00065083 /* LKDBHelper */,
 				5742C1C517F7BF3C00065083 /* MKNetworkKit */,
 				5742C1DD17F7BF3C00065083 /* OpenUDID */,
-				5742C1EC17F7BF3C00065083 /* UMAnalytics_Sdk_2.2.0.OpenUDID */,
 				5742C1ED17F7BF3C00065083 /* YYJSON */,
 			);
 			path = Utilities;
@@ -1155,13 +1154,6 @@
 				5742C1DF17F7BF3C00065083 /* OpenUDID.m */,
 			);
 			path = OpenUDID;
-			sourceTree = "<group>";
-		};
-		5742C1EC17F7BF3C00065083 /* UMAnalytics_Sdk_2.2.0.OpenUDID */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UMAnalytics_Sdk_2.2.0.OpenUDID;
 			sourceTree = "<group>";
 		};
 		5742C1ED17F7BF3C00065083 /* YYJSON */ = {

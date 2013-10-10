@@ -10,6 +10,8 @@
 #import "XYExtension.h"
 #import <objc/runtime.h>
 
+DUMMY_CLASS(UIView_XY);
+
 @implementation UIView (XY)
 
 #undef	UIView_key_tapBlock

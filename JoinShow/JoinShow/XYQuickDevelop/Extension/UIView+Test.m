@@ -8,6 +8,8 @@
 
 #import "UIView+Test.h"
 
+DUMMY_CLASS(UIView_Test);
+
 @implementation UIView (Test)
 
 + (void) load{
