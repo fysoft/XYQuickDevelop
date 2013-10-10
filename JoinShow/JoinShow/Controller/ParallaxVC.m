@@ -64,7 +64,7 @@
     [[ParallaxManager sharedInstance] setView:tempLabel intensity:40];
     [tempLabel release];
     
-    [self.view setBg:@"bg.png"];
+    [self.view setBg:@"bg.jpg"];
     [[ParallaxManager sharedInstance] setView:self.view intensity:-10];
     
     [[ParallaxManager sharedInstance] start]; 

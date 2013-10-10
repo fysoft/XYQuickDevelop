@@ -258,6 +258,7 @@
 		5791A7EA18051E7C009A1003 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5791A7E918051E7C009A1003 /* CoreMotion.framework */; };
 		579609BE17F00A4B00BB7AFE /* XYSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 579609BD17F00A4B00BB7AFE /* XYSystemInfo.m */; };
 		579ECE1D17A8E90B00687AF2 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579ECE1C17A8E90B00687AF2 /* CoreText.framework */; };
+		57A2FE5E18063D5A002460EC /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57A2FE5D18063D5A002460EC /* bg.jpg */; };
 		57B30000177AD9BC00775FC9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B3FFFF177AD9BC00775FC9 /* Default-568h@2x.png */; };
 		57B3000E177AD9BC00775FC9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B3000D177AD9BC00775FC9 /* SenTestingKit.framework */; };
 		57B3000F177AD9BC00775FC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B3FFE9177AD9BC00775FC9 /* UIKit.framework */; };
@@ -288,7 +289,6 @@
 		57FB838017E2F3CD004B70B6 /* default_TestDic.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57FB837F17E2F3CD004B70B6 /* default_TestDic.plist */; };
 		57FC192E17DEBF8F00B5E6F9 /* DataLiteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FC192D17DEBF8F00B5E6F9 /* DataLiteVC.m */; };
 		57FC26A418053155007AA3BC /* ParallaxVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FC26A318053155007AA3BC /* ParallaxVC.m */; };
-		57FC26A618054822007AA3BC /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 57FC26A518054822007AA3BC /* bg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -626,6 +626,7 @@
 		579609BC17F00A4B00BB7AFE /* XYSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSystemInfo.h; sourceTree = "<group>"; };
 		579609BD17F00A4B00BB7AFE /* XYSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSystemInfo.m; sourceTree = "<group>"; };
 		579ECE1C17A8E90B00687AF2 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		57A2FE5D18063D5A002460EC /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		57B3000C177AD9BC00775FC9 /* JoinShowTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JoinShowTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B3000D177AD9BC00775FC9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		57B30015177AD9BC00775FC9 /* JoinShowTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JoinShowTests-Info.plist"; sourceTree = "<group>"; };
@@ -671,7 +672,6 @@
 		57FC192D17DEBF8F00B5E6F9 /* DataLiteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataLiteVC.m; sourceTree = "<group>"; };
 		57FC26A218053155007AA3BC /* ParallaxVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxVC.h; sourceTree = "<group>"; };
 		57FC26A318053155007AA3BC /* ParallaxVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxVC.m; sourceTree = "<group>"; };
-		57FC26A518054822007AA3BC /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1176,7 +1176,7 @@
 		57525A4C17AB9E300094D835 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				57FC26A518054822007AA3BC /* bg.png */,
+				57A2FE5D18063D5A002460EC /* bg.jpg */,
 				57FB837F17E2F3CD004B70B6 /* default_TestDic.plist */,
 				57E852E117B224E500C664F4 /* json2.json */,
 				571CBA5E17C702D0007CB842 /* p31b */,
@@ -1534,7 +1534,6 @@
 				571CBB5417C702D1007CB842 /* p31b0066.png in Resources */,
 				571CBB5517C702D1007CB842 /* p31b0067.png in Resources */,
 				571CBB5617C702D1007CB842 /* p31b0068.png in Resources */,
-				57FC26A618054822007AA3BC /* bg.png in Resources */,
 				571CBB5717C702D1007CB842 /* p31b0069.png in Resources */,
 				571CBB5817C702D1007CB842 /* p31b0070.png in Resources */,
 				571CBB5917C702D1007CB842 /* p31b0071.png in Resources */,
@@ -1570,6 +1569,7 @@
 				571CBB7717C702D1007CB842 /* p31b0101.png in Resources */,
 				571CBB7817C702D1007CB842 /* p31b0102.png in Resources */,
 				571CBB7917C702D1007CB842 /* p31b0103.png in Resources */,
+				57A2FE5E18063D5A002460EC /* bg.jpg in Resources */,
 				571CBB7A17C702D1007CB842 /* p31b0104.png in Resources */,
 				571CBB7B17C702D1007CB842 /* p31b0105.png in Resources */,
 				571CBB7C17C702D1007CB842 /* p31b0106.png in Resources */,
