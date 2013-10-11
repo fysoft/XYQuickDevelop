@@ -147,7 +147,7 @@ DEF_SINGLETON(ParallaxManager)
     self.curAttitude = motion.attitude;
     
     CGPoint point = CGPointMake((self.curAttitude.roll - self.lastAttitude.roll), (self.curAttitude.pitch - self.lastAttitude.pitch));
-  //  NSLogD(@"%@", NSStringFromCGPoint(point));
+    NSLogD(@"%@", NSStringFromCGPoint(point));
     
     [_views enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         UIView *view = obj;
