@@ -236,7 +236,7 @@
 		5742C21017F7BF3C00065083 /* MKNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C1D917F7BF3C00065083 /* MKNetworkOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		5742C21117F7BF3C00065083 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C1DC17F7BF3C00065083 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		5742C21217F7BF3C00065083 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C1DF17F7BF3C00065083 /* OpenUDID.m */; };
-		5742C21817F7BF3C00065083 /* YYJSONHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C1EF17F7BF3C00065083 /* YYJSONHelper.m */; };
+		5742C21817F7BF3C00065083 /* YYJSONHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C1EF17F7BF3C00065083 /* YYJSONHelper.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		5748EC7B17F95C120092019D /* UIImage+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 5748EC7A17F95C120092019D /* UIImage+XY.m */; };
 		57525A4517AB7DEA0094D835 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57525A4417AB7DEA0094D835 /* QuartzCore.framework */; };
 		577C499A17BDFC8500C7FC56 /* NSObject+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C495817BDFC8500C7FC56 /* NSObject+XY.m */; };
