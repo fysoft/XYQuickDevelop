@@ -28,6 +28,7 @@
 DUMMY_CLASS(NSObject_XY);
 
 @implementation NSObject (XY)
+/*
 @dynamic isHookDealloc;
 -(BOOL) isHookDealloc{
     NSNumber *obj = objc_getAssociatedObject(self, NSObject_isHookDealloc);
@@ -54,6 +55,7 @@ DUMMY_CLASS(NSObject_XY);
         self.isHookDealloc = YES;
     }
 }
+*/
 ////////////////////////  perform  ////////////////////////
 -(void) performSelector:(SEL)aSelector  target:(id)target  mark:(id)mark afterDelay:(NSTimeInterval(^)(void))aBlockTime loop:(BOOL)loop isRunNow:(BOOL)now{
     if (!aBlockTime) return;

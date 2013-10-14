@@ -58,8 +58,8 @@ DUMMY_CLASS(UIView_XY);
     
     if (aBlock) aBlock();
 }
-/////////////////////////////////////////////////////////////
 
+/////////////////////////////////////////////////////////////
 -(void) addShadeWithTarget:(id)target action:(SEL)action color:(UIColor *)aColor alpha:(float)aAlpha{
     UIView *tmpView = [[UIView alloc] initWithFrame:self.frame];
     tmpView.tag = UIView_shadeTag;
