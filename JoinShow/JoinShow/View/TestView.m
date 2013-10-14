@@ -29,7 +29,7 @@
 */
 
 -(void)dealloc{
-   // NSLogDD
+    NSLogDD
     [super dealloc];
 }
 

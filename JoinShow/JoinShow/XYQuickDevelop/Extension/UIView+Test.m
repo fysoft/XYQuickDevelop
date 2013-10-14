@@ -17,7 +17,7 @@ DUMMY_CLASS(UIView_Test);
 
 // 可以多次劫持
 -(void) UIView_dealloc2{
- //   NSLogDD
+    NSLogDD
     objc_removeAssociatedObjects(self);
     XY_swizzleInstanceMethod([self class], @selector(UIView_dealloc2), @selector(dealloc));
 	[self dealloc];

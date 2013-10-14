@@ -22,17 +22,38 @@
 #undef	NSObject_key_object
 #define NSObject_key_object	"NSObject.object"
 
+#undef	NSObject_isHookDealloc
+#define NSObject_isHookDealloc	"NSObject.isHookDealloc"
+
 DUMMY_CLASS(NSObject_XY);
 
 @implementation NSObject (XY)
+@dynamic isHookDealloc;
+-(BOOL) isHookDealloc{
+    NSNumber *obj = objc_getAssociatedObject(self, NSObject_isHookDealloc);
+	BOOL b = [obj boolValue];
+    
+	return b;
+}
+- (void)setIsHookDealloc:(BOOL)b
+{
+	objc_setAssociatedObject(self, NSObject_isHookDealloc, [NSNumber numberWithBool:b], OBJC_ASSOCIATION_ASSIGN);
+}
 
 -(void) NSObject_dealloc{
+    NSLogDD
     objc_removeAssociatedObjects(self);
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     XY_swizzleInstanceMethod([self class], @selector(NSObject_dealloc), @selector(dealloc));
+    self.isHookDealloc = NO;
 	[self dealloc];
 }
-
+-(void) hookDealloc{
+    if (!self.isHookDealloc) {
+        XY_swizzleInstanceMethod([self class], @selector(dealloc), @selector(NSObject_dealloc));
+        self.isHookDealloc = YES;
+    }
+}
 ////////////////////////  perform  ////////////////////////
 -(void) performSelector:(SEL)aSelector  target:(id)target  mark:(id)mark afterDelay:(NSTimeInterval(^)(void))aBlockTime loop:(BOOL)loop isRunNow:(BOOL)now{
     if (!aBlockTime) return;
@@ -108,17 +129,20 @@ DUMMY_CLASS(NSObject_XY);
     objc_setAssociatedObject(self, NSObject_key_loop, nil, OBJC_ASSOCIATION_ASSIGN);
 }
 ////////////////////////  NSNotificationCenter  ////////////////////////
--(void) registerMessage:(NSString*)aMsg selector:(SEL)aSel source:(id)anObject{
+-(void) registerMessage:(NSString*)aMsg selector:(SEL)aSel source:(id)source{
     if (aMsg == nil || aSel == nil) return;
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:aSel name:aMsg object:anObject];
-    XY_swizzleInstanceMethod([self class], @selector(dealloc), @selector(NSObject_dealloc));
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:aSel name:aMsg object:source];
+  //  [self hookDealloc];
 }
 -(void) unregisterMessage:(NSString*)aMsg{
     if (aMsg == nil) return;
-    [[NSNotificationCenter defaultCenter] removeObserver:aMsg];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:aMsg object:nil];
 }
--(void) sendMessage:(NSString *)aMsg data:(NSDictionary *)aDic{
+-(void) unregisterAllMessage{
+   [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+-(void) sendMessage:(NSString *)aMsg withObject:(NSObject *)object{
     if (aMsg == nil) return;
-    [[NSNotificationCenter defaultCenter] postNotificationName:aMsg object:self userInfo:aDic];
+    [[NSNotificationCenter defaultCenter] postNotificationName:aMsg object:object userInfo:nil];
 }
 @end

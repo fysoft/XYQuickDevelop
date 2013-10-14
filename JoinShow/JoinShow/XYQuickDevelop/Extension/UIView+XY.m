@@ -51,7 +51,7 @@ DUMMY_CLASS(UIView_XY);
     [tap release];
     
     objc_setAssociatedObject(self, UIView_key_tapBlock, aBlock, OBJC_ASSOCIATION_COPY);
-    XY_swizzleInstanceMethod([self class], @selector(dealloc), @selector(UIView_dealloc));
+  //  XY_swizzleInstanceMethod([self class], @selector(dealloc), @selector(UIView_dealloc));
 }
 -(void)actionTap{
     void (^aBlock)(void) = objc_getAssociatedObject(self, UIView_key_tapBlock);

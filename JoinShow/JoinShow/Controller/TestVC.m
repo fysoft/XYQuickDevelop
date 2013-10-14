@@ -9,7 +9,7 @@
 #import "TestVC.h"
 #import "UIView+Test.h"
 #import "TestView.h"
-#import "AutoSizeView.h"
+//#import "AutoSizeView.h"
 
 @interface TestVC ()
 
@@ -34,6 +34,7 @@
 }
 - (void)dealloc
 {
+    NSLogDD
     self.array = nil;
     [super dealloc];
 }
@@ -48,19 +49,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-  //  [XYTimer sharedInstance].delegate = self;
-  //  [[XYTimer sharedInstance] startTimerWithInterval:1];
-    
-    TestView *tempView = [[TestView alloc] initWithFrame:CGRectMake(100, 100, 40, 40)];
-    tempView.backgroundColor = [UIColor grayColor];
-    tempView.userInteractionEnabled = YES;
-    [tempView addTapGestureWithBlock:^{
-        NSLogDD
-    }];
-    [tempView test];
-    [self.view addSubview:tempView];
-    [tempView release];
-    
     [[XYTimer sharedInstance] startTimerWithInterval:0.1];
 }
 
@@ -69,7 +57,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 - (IBAction)clickBtn1:(id)sender {
     [[XYTimer sharedInstance] startTimerWithInterval:1];
 }
