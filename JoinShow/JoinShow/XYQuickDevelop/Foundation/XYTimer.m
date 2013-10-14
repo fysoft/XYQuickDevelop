@@ -15,15 +15,16 @@ DEF_SINGLETON(XYTimer)
 {
     self = [super init];
     if (self) {
-        _delegates = [[NSMutableDictionary alloc] initWithCapacity:2];
-        _timers = [[NSMutableDictionary alloc] initWithCapacity:2];
-        _accumulatorTimes = [[NSMutableDictionary alloc] initWithCapacity:2];
+        _delegates = [[NSMutableDictionary alloc] initWithCapacity:4];
+        _timers = [[NSMutableDictionary alloc] initWithCapacity:4];
+        _accumulatorTimes = [[NSMutableDictionary alloc] initWithCapacity:4];
     }
     return self;
 }
 
 - (void)dealloc
 {
+    [_delegates release];
     [_timers release];
     [_accumulatorTimes release];
     [super dealloc];
@@ -107,5 +108,14 @@ DEF_SINGLETON(XYTimer)
     if (timer) {
         [timer setFireDate:[NSDate date]];
     }
+}
+-(void) stopAllTimer{
+    [_timers enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+        NSTimer *timer = (NSTimer *)obj;
+        [timer invalidate];
+    }];
+    [_timers removeAllObjects];
+    [_accumulatorTimes removeAllObjects];
+    [_delegates removeAllObjects];
 }
 @end

@@ -239,6 +239,7 @@
 		5742C21817F7BF3C00065083 /* YYJSONHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C1EF17F7BF3C00065083 /* YYJSONHelper.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		5748EC7B17F95C120092019D /* UIImage+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 5748EC7A17F95C120092019D /* UIImage+XY.m */; };
 		57525A4517AB7DEA0094D835 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57525A4417AB7DEA0094D835 /* QuartzCore.framework */; };
+		5757000D180B9BB6008ABDF0 /* NSArray+XY.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5757000B180B9BB6008ABDF0 /* NSArray+XY.mm */; };
 		577C499A17BDFC8500C7FC56 /* NSObject+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C495817BDFC8500C7FC56 /* NSObject+XY.m */; };
 		577C499B17BDFC8500C7FC56 /* UIView+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C495A17BDFC8500C7FC56 /* UIView+XY.m */; };
 		577C49AB17BDFC8500C7FC56 /* UmengManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C498B17BDFC8500C7FC56 /* UmengManager.m */; };
@@ -585,6 +586,8 @@
 		5748EC7917F95C120092019D /* UIImage+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XY.h"; sourceTree = "<group>"; };
 		5748EC7A17F95C120092019D /* UIImage+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XY.m"; sourceTree = "<group>"; };
 		57525A4417AB7DEA0094D835 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5757000B180B9BB6008ABDF0 /* NSArray+XY.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSArray+XY.mm"; sourceTree = "<group>"; };
+		5757000C180B9BB6008ABDF0 /* NSArray+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+XY.h"; sourceTree = "<group>"; };
 		577C495717BDFC8500C7FC56 /* NSObject+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XY.h"; sourceTree = "<group>"; };
 		577C495817BDFC8500C7FC56 /* NSObject+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XY.m"; sourceTree = "<group>"; };
 		577C495917BDFC8500C7FC56 /* UIView+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XY.h"; sourceTree = "<group>"; };
@@ -1185,6 +1188,8 @@
 			children = (
 				577C495717BDFC8500C7FC56 /* NSObject+XY.h */,
 				577C495817BDFC8500C7FC56 /* NSObject+XY.m */,
+				5757000C180B9BB6008ABDF0 /* NSArray+XY.h */,
+				5757000B180B9BB6008ABDF0 /* NSArray+XY.mm */,
 				577C495917BDFC8500C7FC56 /* UIView+XY.h */,
 				577C495A17BDFC8500C7FC56 /* UIView+XY.m */,
 				5748EC7917F95C120092019D /* UIImage+XY.h */,
@@ -1739,6 +1744,7 @@
 				5742C1F617F7BF3C00065083 /* RTLabel.m in Sources */,
 				57901EB917E6AAEF00B8E8FF /* AutoSizeView.m in Sources */,
 				5742C20417F7BF3C00065083 /* LKDBHelper.m in Sources */,
+				5757000D180B9BB6008ABDF0 /* NSArray+XY.mm in Sources */,
 				57F690DD17E6CFBF00D9A437 /* DatabaseVC.m in Sources */,
 				57F690E017E6CFFA00D9A437 /* LKTestModels.m in Sources */,
 			);

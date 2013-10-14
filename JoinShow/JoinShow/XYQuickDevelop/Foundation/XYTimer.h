@@ -38,8 +38,8 @@ XY_SINGLETON(XYTimer)
 -(void) stopTimer:(NSString *)key;
 -(void) pauseTimer:(NSString *)key;
 -(void) resumeTimer:(NSString *)key;
-
 -(void) setTimer:(NSString *)key delegate:(id)anObject;
 
+-(void) stopAllTimer;
 
 @end

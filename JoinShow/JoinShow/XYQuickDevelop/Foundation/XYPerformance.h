@@ -4,7 +4,7 @@
 //
 //  Created by Heaven on 13-8-23.
 //  Copyright (c) 2013年 Heaven. All rights reserved.
-//  Copy from bee Framework
+//  Copy from bee Framework http://www.bee-framework.com
 
 // 性能分析
 #import <Foundation/Foundation.h>
