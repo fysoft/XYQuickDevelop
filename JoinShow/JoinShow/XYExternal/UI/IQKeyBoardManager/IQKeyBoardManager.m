@@ -21,15 +21,53 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+/*
+ 
+ /-----------------------------------------------------------------------------------------------------------\
+ \-----------------------------------------------------------------------------------------------------------/
+ |                                          iOS UINotification Mechanism                                    |
+ /-----------------------------------------------------------------------------------------------------------\
+ \-----------------------------------------------------------------------------------------------------------/
+ 
+ 1) Begin Editing:-         When TextField begin editing.
+ 2) End Editing:-           When TextField end editing.
+ 3) Switch TextField:-      When Keyboard Switch from a TextField to another TextField.
+ 3) Orientation Change:-    When Device Orientation Change.
+ 
+ 
+ 
+ 
+ 
+ Begin Editing
+ -------------------------------------------------           -------------------------------------------------   UITextFieldTextDidBeginEditingNotification  | --------> |          UIKeyboardWillShowNotification       |
+ -------------------------------------------------           -------------------------------------------------
+                        ^------------------------Switch TextField--------^      ^
+                        |                                                       |
+                        |                                                       |
+                        | Switch TextField                                      | Orientation Change
+                        |                                                       |
+                        |                                                       |
+                        |                                                       |
+ -------------------------------------------------           -------------------------------------------------
+ |   UITextFieldTextDidEndEditingNotification    | <-------- |          UIKeyboardWillHideNotification       |
+ -------------------------------------------------           -------------------------------------------------
+ End Editing
+ 
+ 
+ 
+ /-----------------------------------------------------------------------------------------------------------\
+ \-----------------------------------------------------------------------------------------------------------/
+ */
+
 
 #import "IQKeyBoardManager.h"
-#import "IQSegmentedNextPrevious.h"
 
 //Singleton object.
 static IQKeyBoardManager *kbManager;
 
 @interface IQKeyBoardManager()
 
+//Properties to maintain keyboar
 @property(nonatomic, assign) CGFloat keyboardDistanceFromTextField;
 @property(nonatomic, assign) BOOL isEnabled;
 
@@ -45,24 +83,29 @@ static IQKeyBoardManager *kbManager;
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
+        
+        //Initializing keyboard manger.
         kbManager = [[IQKeyBoardManager alloc] init];
+        
+        //Enabling keyboard manager.
         [IQKeyBoardManager enableKeyboardManger];
     });
 }
 
 +(void)setTextFieldDistanceFromKeyboard:(CGFloat)distance
 {
+    //Setting keyboard distance.
     kbManager.keyboardDistanceFromTextField = MAX(distance, 0);
 }
 
 +(void)enableKeyboardManger
 {
+    //registering for notifications if it is not enable already.
     if (kbManager.isEnabled == NO)
     {
         kbManager.isEnabled = YES;
         /*Registering for keyboard notification*/
-        [[NSNotificationCenter defaultCenter] addObserver:kbManager selector:@selector(keyboardDidShow:) name:UIKeyboardDidShowNotification object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:kbManager selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+         [[NSNotificationCenter defaultCenter] addObserver:kbManager selector:@selector(keyboardDidShow:) name:UIKeyboardDidShowNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:kbManager selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
         
         /*Registering for textField notification*/
@@ -72,26 +115,33 @@ static IQKeyBoardManager *kbManager;
         /*Registering for textView notification*/
         [[NSNotificationCenter defaultCenter] addObserver:kbManager selector:@selector(textViewDidBeginEditing:) name:UITextViewTextDidBeginEditingNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:kbManager selector:@selector(textViewdDidEndEditing:) name:UITextViewTextDidEndEditingNotification object:nil];
-      //  NSLog(@"Keyboard Manager enabled");
+        NSLog(@"Keyboard Manager enabled");
     }
     else
     {
-      //  NSLog(@"Keyboard Manager already enabled");
+        NSLog(@"Keyboard Manager already enabled");
     }
 }
 
 +(void)disableKeyboardManager
 {
+    //Unregister for all notifications if it is enabled.
     if (kbManager.isEnabled == YES)
     {
         kbManager.isEnabled = NO;
         [[NSNotificationCenter defaultCenter] removeObserver:kbManager];
-      //  NSLog(@"Keyboard Manager desabled");
+        NSLog(@"Keyboard Manager disabled");
     }
     else
     {
-     //   NSLog(@"Keyboard Manger already desabled");
+        NSLog(@"Keyboard Manger already disabled");
     }
+}
+
++(BOOL)isEnabled
+{
+    //keyboard manger is enabled or not.
+    return kbManager.isEnabled;
 }
 
 //Initialize only once
@@ -101,6 +151,8 @@ static IQKeyBoardManager *kbManager;
     {
         static dispatch_once_t onceToken;
         dispatch_once(&onceToken, ^{
+            
+            //Default settings
             keyboardDistanceFromTextField = 10.0;
             isEnabled = NO;
             animationDuration = 0.25;
@@ -109,13 +161,17 @@ static IQKeyBoardManager *kbManager;
     return self;
 }
 
+//Function to get topMost ViewController object.
 + (UIViewController*) topMostController
 {
+    //Getting rootViewController
     UIViewController *topController = [UIApplication sharedApplication].keyWindow.rootViewController;
 
+    //Getting topMost ViewController
     while (topController.presentedViewController)
         topController = topController.presentedViewController;
 
+    //Returning topMost ViewController
     return topController;
 }
 
@@ -124,8 +180,12 @@ static IQKeyBoardManager *kbManager;
 //Helper function to manipulate RootViewController's frame with animation.
 -(void)setRootViewFrame:(CGRect)frame
 {
+    //Getting topMost ViewController.
     UIViewController *controller = [IQKeyBoardManager topMostController];
+    
     [UIView animateWithDuration:animationDuration animations:^{
+        
+        //Setting it's new frame
         [controller.view setFrame:frame];
     }];
 }
@@ -134,44 +194,67 @@ static IQKeyBoardManager *kbManager;
 // Keyboard Will hide. So setting rootViewController to it's default frame.
 - (void)keyboardWillHide:(NSNotification*)aNotification
 {
+    //Boolean to know keyboard is showing/hiding
+    isKeyboardShowing = NO;
+    
+    //Getting keyboard animation duration
     CGFloat aDuration = [[aNotification.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] floatValue];
     if (aDuration!= 0.0f)
     {
+        //Setitng keyboard animation duration
         animationDuration = [[aNotification.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] floatValue];
-    }
-    
-    CGRect resetFrame;
-    
-    UIViewController *controller = [IQKeyBoardManager topMostController];
-    
-    if([controller isKindOfClass:[UINavigationController class]])
-    {
-        resetFrame = [[UIApplication sharedApplication] keyWindow].frame;
-    }
-    else
-    {
-        resetFrame = CGRectMake(0, 0, controller.view.frame.size.width, controller.view.frame.size.height);
     }
 
     //Setting rootViewController frame to it's original position.
-    [self setRootViewFrame:resetFrame];
+    [self setRootViewFrame:topViewBeginRect];
 }
 
-//UIKeyboard Did shown. Adjusting RootViewController's frame according to device orientation.
--(void)keyboardWillShow:(NSNotification*)aNotification
+//UIKeyboard Did show
+-(void)keyboardDidShow:(NSNotification*)aNotification
 {
-    CGFloat aDuration = [[aNotification.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] floatValue];
+    //Getting keyboard animation duration
+    CGFloat duration = [[aNotification.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] floatValue];
+    
+    //Getting UIKeyboardSize.
+    kbSize = [[[aNotification userInfo] objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
+    
+    //Adding Keyboard distance from textField.
+    switch ([IQKeyBoardManager topMostController].interfaceOrientation)
+    {
+        case UIInterfaceOrientationLandscapeLeft:
+            kbSize.width += keyboardDistanceFromTextField;
+            break;
+        case UIInterfaceOrientationLandscapeRight:
+            kbSize.width += keyboardDistanceFromTextField;
+            break;
+        case UIInterfaceOrientationPortrait:
+            kbSize.height += keyboardDistanceFromTextField;
+            break;
+        case UIInterfaceOrientationPortraitUpsideDown:
+            kbSize.height += keyboardDistanceFromTextField;
+            break;
+        default:
+            break;
+    }
+
+    [self adjustFrameWithDuration:duration];
+}
+
+//UIKeyboard Did show. Adjusting RootViewController's frame according to device orientation.
+-(void)adjustFrameWithDuration:(CGFloat)aDuration {
+    //Boolean to know keyboard is showing/hiding
+    isKeyboardShowing = YES;
+    
     if (aDuration!= 0.0f)
     {
-        animationDuration = [[aNotification.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] floatValue];
+        //Setitng keyboard animation duration
+        animationDuration = aDuration;
     }
     
     //Getting KeyWindow object.
     UIWindow *window = [[UIApplication sharedApplication] keyWindow];
     //Getting RootViewController's view.
     UIViewController *rootController = [IQKeyBoardManager topMostController];
-    //Getting UIKeyboardSize.
-    CGSize kbSize = [[[aNotification userInfo] objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
     
     //Converting Rectangle according to window bounds.
     CGRect textFieldViewRect = [textFieldView.superview convertRect:textFieldView.frame toView:window];
@@ -182,23 +265,19 @@ static IQKeyBoardManager *kbManager;
     //Move positive = textField is hidden.
     //Move negative = textField is showing.
 
-    //Common for both normal and special cases.
+    //Calculating move position. Common for both normal and special cases.
     switch (rootController.interfaceOrientation)
     {
         case UIInterfaceOrientationLandscapeLeft:
-            kbSize.width += keyboardDistanceFromTextField;
             move = CGRectGetMaxX(textFieldViewRect)-(CGRectGetWidth(window.frame)-kbSize.width);
             break;
         case UIInterfaceOrientationLandscapeRight:
-            kbSize.width += keyboardDistanceFromTextField;
             move = kbSize.width-CGRectGetMinX(textFieldViewRect);
             break;
         case UIInterfaceOrientationPortrait:
-            kbSize.height += keyboardDistanceFromTextField;
             move = CGRectGetMaxY(textFieldViewRect)-(CGRectGetHeight(window.frame)-kbSize.height);
             break;
         case UIInterfaceOrientationPortraitUpsideDown:
-            kbSize.height += keyboardDistanceFromTextField;
             move = kbSize.height-CGRectGetMinY(textFieldViewRect);
             break;
         default:
@@ -219,14 +298,15 @@ static IQKeyBoardManager *kbManager;
         //Negative
         else
         {
-            CGRect appFrame = CGRectMake(0, 0, rootViewRect.size.width, rootViewRect.size.height);
-            CGFloat disturbDistance = CGRectGetMinY(rootViewRect)-CGRectGetMinY(appFrame);
+            //Calculating disturbed distance
+            CGFloat disturbDistance = CGRectGetMinY(rootViewRect)-CGRectGetMinY(topViewBeginRect);
 
             //Move Negative = frame disturbed.
             //Move positive or frame not disturbed.
             if(disturbDistance<0)
             {
-                rootViewRect.origin.y -= MAX(move, disturbDistance); 
+                //We should only manipulate y.
+                rootViewRect.origin.y -= MAX(move, disturbDistance);
                 [self setRootViewFrame:rootViewRect];
             }
         }
@@ -236,7 +316,7 @@ static IQKeyBoardManager *kbManager;
         //Positive or zero.
         if (move>=0)
         {
-            //        switch ([[UIApplication sharedApplication] statusBarOrientation])
+            //adjusting rootViewRect
             switch (rootController.interfaceOrientation)
             {
                 case UIInterfaceOrientationLandscapeLeft:       rootViewRect.origin.x -= move;  break;
@@ -245,35 +325,29 @@ static IQKeyBoardManager *kbManager;
                 case UIInterfaceOrientationPortraitUpsideDown:  rootViewRect.origin.y += move;  break;
                 default:    break;
             }
-            
+
+            //Setting adjusted rootViewRect
             [self setRootViewFrame:rootViewRect];
         }
         //Negative
         else
         {
-            CGRect appFrame;
-            if([rootController isKindOfClass:[UINavigationController class]])
-                appFrame = window.frame;
-            else if ([rootController isKindOfClass:[UIViewController class]])
-                appFrame = [[UIScreen mainScreen] applicationFrame];
-            
-            
             CGFloat disturbDistance;
             
-            //        switch ([[UIApplication sharedApplication] statusBarOrientation])
-            switch (rootController.interfaceOrientation)
+            //Calculating disturbed distance
+           switch (rootController.interfaceOrientation)
             {
                 case UIInterfaceOrientationLandscapeLeft:
-                    disturbDistance = CGRectGetMinX(rootViewRect)-CGRectGetMinX(appFrame);
+                    disturbDistance = CGRectGetMinX(rootViewRect)-CGRectGetMinX(topViewBeginRect);
                     break;
                 case UIInterfaceOrientationLandscapeRight:
-                    disturbDistance = CGRectGetMinX(appFrame)-CGRectGetMinX(rootViewRect);
+                    disturbDistance = CGRectGetMinX(topViewBeginRect)-CGRectGetMinX(rootViewRect);
                     break;
                 case UIInterfaceOrientationPortrait:
-                    disturbDistance = CGRectGetMinY(rootViewRect)-CGRectGetMinY(appFrame);
+                    disturbDistance = CGRectGetMinY(rootViewRect)-CGRectGetMinY(topViewBeginRect);
                     break;
                 case UIInterfaceOrientationPortraitUpsideDown:
-                    disturbDistance = CGRectGetMinY(appFrame)-CGRectGetMinY(rootViewRect);
+                    disturbDistance = CGRectGetMinY(topViewBeginRect)-CGRectGetMinY(rootViewRect);
                     break;
                 default:
                     break;
@@ -283,7 +357,7 @@ static IQKeyBoardManager *kbManager;
             //Move positive or frame not disturbed.
             if(disturbDistance<0)
             {
-                //            switch ([[UIApplication sharedApplication] statusBarOrientation])
+                //adjusting rootViewRect
                 switch (rootController.interfaceOrientation)
                 {
                     case UIInterfaceOrientationLandscapeLeft:       rootViewRect.origin.x -= MAX(move, disturbDistance);  break;
@@ -293,14 +367,11 @@ static IQKeyBoardManager *kbManager;
                     default:    break;
                 }
                 
+                //Setting adjusted rootViewRect
                 [self setRootViewFrame:rootViewRect];
             }
         }
     }    
-}
-
-- (void)keyboardDidShow:(NSNotification*)aNotification
-{
 }
 
 #pragma mark - UITextField Delegate methods
@@ -308,6 +379,7 @@ static IQKeyBoardManager *kbManager;
 -(void)textFieldDidBeginEditing:(NSNotification*)notification
 {
     textFieldView = notification.object;
+    [self commonDidBeginEditing];
 }
 
 //Removing fetched object.
@@ -321,6 +393,7 @@ static IQKeyBoardManager *kbManager;
 -(void)textViewDidBeginEditing:(NSNotification*)notification
 {
     textFieldView = notification.object;
+    [self commonDidBeginEditing];
 }
 
 //Removing fetched object.
@@ -329,10 +402,22 @@ static IQKeyBoardManager *kbManager;
     textFieldView = nil;
 }
 
+// Common code to perform on begin editing
+-(void)commonDidBeginEditing {
+    if (isKeyboardShowing)
+    {
+        // keyboard is already showing. adjust frame.
+        [self adjustFrameWithDuration:0];
+    }
+    else
+    {
+        //keyboard is not showing(At the beginning only). We should save rootViewRect.
+        UIViewController *rootController = [IQKeyBoardManager topMostController];
+        topViewBeginRect = rootController.view.frame;
+    }
+}
+
 @end
-
-
-
 
 
 /*Additional Function*/
@@ -406,5 +491,54 @@ static IQKeyBoardManager *kbManager;
     }
 }
 
+
+@end
+
+
+@implementation IQSegmentedNextPrevious
+
+-(id)initWithTarget:(id)target previousSelector:(SEL)pSelector nextSelector:(SEL)nSelector
+{
+    self = [super initWithItems:[NSArray arrayWithObjects:@"Previous",@"Next",nil]];
+    
+    if (self)
+    {
+//#ifndef __IPHONE_7_0
+        [self setSegmentedControlStyle:UISegmentedControlStyleBar];
+//#endif
+        
+        [self setMomentary:YES];
+        [self addTarget:self action:@selector(segmentedControlHandler:) forControlEvents:UIControlEventValueChanged];
+        
+        buttonTarget = target;
+        previousSelector = pSelector;
+        nextSelector = nSelector;
+    }
+    return self;
+}
+
+- (void)segmentedControlHandler:(IQSegmentedNextPrevious*)sender
+{
+    switch ([sender selectedSegmentIndex])
+    {
+        case 0:
+        {
+            NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:[[buttonTarget class] instanceMethodSignatureForSelector:previousSelector]];
+            invocation.target = buttonTarget;
+            invocation.selector = previousSelector;
+            [invocation invoke];
+        }
+            break;
+        case 1:
+        {
+            NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:[[buttonTarget class] instanceMethodSignatureForSelector:nextSelector]];
+            invocation.target = buttonTarget;
+            invocation.selector = nextSelector;
+            [invocation invoke];
+        }
+        default:
+            break;
+    }
+}
 
 @end
