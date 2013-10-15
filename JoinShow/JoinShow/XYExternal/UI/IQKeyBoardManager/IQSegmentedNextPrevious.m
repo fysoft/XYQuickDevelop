@@ -32,9 +32,9 @@
 
     if (self)
     {
-#ifndef __IPHONE_7_0
+//#ifndef __IPHONE_7_0
         [self setSegmentedControlStyle:UISegmentedControlStyleBar];
-#endif
+//#endif
 
         [self setMomentary:YES];
         [self addTarget:self action:@selector(segmentedControlHandler:) forControlEvents:UIControlEventValueChanged];
