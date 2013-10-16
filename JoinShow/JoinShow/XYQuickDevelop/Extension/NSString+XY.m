@@ -33,7 +33,7 @@
     
     return output;
 }
-- (NSString *)MD5
+-(NSString *) MD5
 {
 	const char *cStr = [self UTF8String];
     unsigned char digest[CC_MD5_DIGEST_LENGTH];
@@ -45,18 +45,18 @@
     return result;
 }
 
-- (NSData *)MD5Data
+-(NSData *) MD5Data
 {
 	// TODO:
 	return nil;
 }
 
-- (NSData *)data
+-(NSData *) data
 {
 	return [self dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
 }
 
-- (NSDate *)date
+-(NSDate *) date
 {
 	NSTimeZone *local = [NSTimeZone localTimeZone];
 	

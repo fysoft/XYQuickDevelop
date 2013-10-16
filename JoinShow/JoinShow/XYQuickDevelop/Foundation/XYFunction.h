@@ -153,15 +153,6 @@ typedef enum {
  */
 +(void) shareToTwitterWithStr:(NSString *)strText withPicPath:(NSString *)picPath withURL:(NSString*)strURL inController:(id)vc;
 
-/***************************************************************/
-// 得到对象的属性名字列表
-/*
- * api parameters 说明
- *
- * aObject 类对象
- */
-+(NSArray *) getPropertyListClass:(id)aObject;
-
 /****************************************************************/
 // 返回UUID
 /*
@@ -295,11 +286,4 @@ typedef enum {
  */
 //+(NSMutableDictionary *) dictionaryOfObject:(id)aObject;
 
-/****************************************************************/
-/** 截取图片
- * api parameters 说明
- * image 原图
- * rect 截取的范围
- */
-+(UIImage *) imageFromImage:(UIImage *)image inRect:(CGRect)rect;
 @end

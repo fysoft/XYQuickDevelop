@@ -33,4 +33,9 @@
 
 ////////////////////////  KVO  ////////////////////////
 #pragma mark -todo
+
+////////////////////////  property  ////////////////////////
+// 属性列表
+@property (nonatomic, readonly) NSArray                *attributeList;
+
 @end

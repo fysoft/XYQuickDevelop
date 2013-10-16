@@ -317,23 +317,6 @@
     [alertview show];
     [alertview release];
 }
-/***************************************************************/
-+(NSArray *) getPropertyListClass:(id)aObject{
-    NSUInteger			propertyCount = 0;
-    objc_property_t *	properties = class_copyPropertyList( [aObject class], &propertyCount );
-    NSMutableArray *    array = [[[NSMutableArray alloc] init] autorelease];
-    for ( NSUInteger i = 0; i < propertyCount; i++ )
-    {
-        const char *name = property_getName(properties[i]);
-        NSString *propertyName = [NSString stringWithCString:name encoding:NSUTF8StringEncoding];
-        
-        //   const char *attr = property_getAttributes(properties[i]);
-        // NSLogD(@"%@, %s", propertyName, attr);
-        [array addObject:propertyName];
-    }
-    free( properties );
-    return array;
-}
 
 /***************************************************************/
 +(NSString *) UUID{
@@ -370,7 +353,7 @@
     }
     
     //当前model的属性集合
-    NSMutableArray *newColumns = [NSMutableArray arrayWithArray:[self getPropertyListClass:aObject]];
+    NSMutableArray *newColumns = [NSMutableArray arrayWithArray:aObject.attributeList];
     
     //新增属性个数
     int newColumnCount = newColumns.count - columns.count;
@@ -671,14 +654,6 @@
     } else {
         return NO;
     }
-}
-/***************************************************************/
-+(UIImage *) imageFromImage:(UIImage *)image inRect:(CGRect)rect{
-    CGImageRef sourceImageRef = [image CGImage];
-    CGImageRef newImageRef = CGImageCreateWithImageInRect(sourceImageRef, rect);
-    UIImage *newImage = [UIImage imageWithCGImage:newImageRef];
-    CGImageRelease(newImageRef);
-    return newImage;
 }
 /***************************************************************/
 

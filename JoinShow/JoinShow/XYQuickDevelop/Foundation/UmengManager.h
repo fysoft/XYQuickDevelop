@@ -7,11 +7,8 @@
 //
 
 // 友盟信息统计管理类
-#import "XYCommon.h"
-
 #ifdef UMENG
 #import "MobClick.h"
-#endif
 
 #define Umeng_appkey @"aaaaaaaaaaaaaaaaaaaaaaaa"
 
@@ -35,3 +32,4 @@
 +(void) updateOnlineConfig;
 
 @end
+#endif

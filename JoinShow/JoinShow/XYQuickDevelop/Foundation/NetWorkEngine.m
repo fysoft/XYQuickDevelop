@@ -101,5 +101,12 @@
     }
 }
 */
++(void) setWebImageEngine:(MKNetworkEngine *)engine{
+    if (engine == nil) {
+        [UIImageView setDefaultEngine:[[[MKNetworkEngine alloc] init] autorelease]];
+    }else{
+        [UIImageView setDefaultEngine:engine];
+    }
+}
 @end
 #endif
