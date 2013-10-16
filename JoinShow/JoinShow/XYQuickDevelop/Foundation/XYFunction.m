@@ -334,46 +334,7 @@
     free( properties );
     return array;
 }
-/***************************************************************/
-+(void) activityShow:(BOOL)b{
-    //   static UIView *bgView;
-    static UIActivityIndicatorView *aView = nil;
-    if (aView == nil) {
-        /*
-         bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1024, 1024)];
-         bgView.backgroundColor = [UIColor blackColor];
-         bgView.alpha = 0.7;
-         */
-        aView = [[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray] autorelease];
-    }
-    if (b) {
-        UIViewController *vc = [Common getCurrentViewController];
-        aView.center = vc.view.center;
-        [vc.view addSubview:aView];
-        [aView startAnimating];
-    }else{
-        [aView stopAnimating];
-        [aView removeFromSuperview];
-        aView = nil;
-    }
-    
-}
-/***************************************************************/
-+(NSString *) sha1:(NSString*)str{
-    const char *cstr = [str cStringUsingEncoding:NSUTF8StringEncoding];
-    NSData *data = [NSData dataWithBytes:cstr length:str.length];
-    
-    uint8_t digest[CC_SHA1_DIGEST_LENGTH];
-    
-    CC_SHA1(data.bytes, data.length, digest);
-    
-    NSMutableString* output = [NSMutableString stringWithCapacity:CC_SHA1_DIGEST_LENGTH * 2];
-    
-    for(int i = 0; i < CC_SHA1_DIGEST_LENGTH; i++)
-        [output appendFormat:@"%02x", digest[i]];
-    
-    return output;
-}
+
 /***************************************************************/
 +(NSString *) UUID{
     CFUUIDRef puuid = CFUUIDCreate( nil );

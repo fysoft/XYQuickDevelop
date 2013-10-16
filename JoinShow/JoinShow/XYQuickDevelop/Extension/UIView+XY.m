@@ -72,19 +72,54 @@ DUMMY_CLASS(UIView_XY);
     [self addSubview:tmpView];
     [tmpView release];
     
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:target action:action];
-    [tmpView addGestureRecognizer:tap];
-    [tap release];
+    [self addTapGestureWithTarget:target action:action];
+}
+-(void) addShadeWithBlock:(void(^)(void))aBlock color:(UIColor *)aColor alpha:(float)aAlpha{
+    UIView *tmpView = [[UIView alloc] initWithFrame:self.frame];
+    tmpView.tag = UIView_shadeTag;
+    if (aColor) {
+        tmpView.backgroundColor = aColor;
+    } else {
+        tmpView.backgroundColor = [UIColor blackColor];
+    }
+    tmpView.alpha = aAlpha;
+    [self addSubview:tmpView];
+    [tmpView release];
     
+    if (aBlock) {
+        [self addTapGestureWithBlock:^{
+            aBlock();
+        }];
+    }
 }
 -(void) removeShade{
     UIView *view = [self viewWithTag:UIView_shadeTag];
-    [view removeFromSuperview];
+    if (view) {
+        [view removeFromSuperview];
+    }
 }
 
 /////////////////////////////////////////////////////////////
 -(void) setBg:(NSString *)str{
     UIImage *image = [UIImage imageNamed:str];
     self.layer.contents = (id) image.CGImage;
+}
+
+/////////////////////////////////////////////////////////////
+-(UIActivityIndicatorView *) addActivityIndicatorView{
+    UIActivityIndicatorView *aView = [[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray] autorelease];
+    aView.center = CGPointMake(self.bounds.size.width * .5, self.bounds.size.height * .5);
+    aView.tag = UIView_activityIndicatorViewTag;
+    [self addSubview:aView];
+    [aView startAnimating];
+    
+    return aView;
+}
+-(void) removeActivityIndicatorView{
+    UIActivityIndicatorView *aView = (UIActivityIndicatorView *)[self viewWithTag:UIView_activityIndicatorViewTag];
+    if (aView) {
+        [aView stopAnimating];
+        [aView removeFromSuperview];
+    }
 }
 @end

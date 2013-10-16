@@ -161,22 +161,7 @@ typedef enum {
  * aObject 类对象
  */
 +(NSArray *) getPropertyListClass:(id)aObject;
-/****************************************************************/
-// 显示,关闭活动指示器
-/*
- * api parameters 说明
- *
- * b YES开,NO关
- */
-+(void) activityShow:(BOOL)b;
-/****************************************************************/
-// 返回sha1
-/*
- * api parameters 说明
- *
- * str 源string
- */
-+(NSString *) sha1:(NSString*)str;
+
 /****************************************************************/
 // 返回UUID
 /*

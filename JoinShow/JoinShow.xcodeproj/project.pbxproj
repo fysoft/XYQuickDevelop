@@ -203,6 +203,7 @@
 		57383F3817D2EF8B0001079C /* MessVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 57383F3717D2EF8B0001079C /* MessVC.m */; };
 		57383F3B17D2F5F20001079C /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 57383F3A17D2F5F20001079C /* TestVC.m */; };
 		573D546317DB9C31008FFDE4 /* XYTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 573D546217DB9C31008FFDE4 /* XYTimer.m */; };
+		573F5A47180E24690064121F /* NSString+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 573F5A46180E24690064121F /* NSString+XY.m */; };
 		5742C1F117F7BF3C00065083 /* BUIControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C18C17F7BF3C00065083 /* BUIControl.m */; };
 		5742C1F217F7BF3C00065083 /* BUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C18E17F7BF3C00065083 /* BUIView.m */; };
 		5742C1F517F7BF3C00065083 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C19617F7BF3C00065083 /* MBProgressHUD.m */; };
@@ -259,6 +260,9 @@
 		579A82A6180CDCED009F02E5 /* IQKeyBoardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A82A5180CDCED009F02E5 /* IQKeyBoardManager.m */; };
 		579ECE1D17A8E90B00687AF2 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579ECE1C17A8E90B00687AF2 /* CoreText.framework */; };
 		57A2FE5E18063D5A002460EC /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57A2FE5D18063D5A002460EC /* bg.jpg */; };
+		57AA66F9180E276A00DBDD8E /* NSData+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AA66F8180E276A00DBDD8E /* NSData+XY.m */; };
+		57AA6725180E3A7100DBDD8E /* NSDate+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AA6724180E3A7100DBDD8E /* NSDate+XY.m */; };
+		57AA6728180E3B8500DBDD8E /* NSNumber+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AA6727180E3B8500DBDD8E /* NSNumber+XY.m */; };
 		57B30000177AD9BC00775FC9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B3FFFF177AD9BC00775FC9 /* Default-568h@2x.png */; };
 		57B3000E177AD9BC00775FC9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B3000D177AD9BC00775FC9 /* SenTestingKit.framework */; };
 		57B3000F177AD9BC00775FC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B3FFE9177AD9BC00775FC9 /* UIKit.framework */; };
@@ -510,6 +514,8 @@
 		57383F3A17D2F5F20001079C /* TestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC.m; sourceTree = "<group>"; };
 		573D546117DB9C31008FFDE4 /* XYTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTimer.h; sourceTree = "<group>"; };
 		573D546217DB9C31008FFDE4 /* XYTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTimer.m; sourceTree = "<group>"; };
+		573F5A45180E24690064121F /* NSString+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XY.h"; sourceTree = "<group>"; };
+		573F5A46180E24690064121F /* NSString+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XY.m"; sourceTree = "<group>"; };
 		5742C18A17F7BF3C00065083 /* BlockUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockUI.h; sourceTree = "<group>"; };
 		5742C18B17F7BF3C00065083 /* BUIControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUIControl.h; sourceTree = "<group>"; };
 		5742C18C17F7BF3C00065083 /* BUIControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUIControl.m; sourceTree = "<group>"; };
@@ -627,6 +633,12 @@
 		579A82A5180CDCED009F02E5 /* IQKeyBoardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyBoardManager.m; sourceTree = "<group>"; };
 		579ECE1C17A8E90B00687AF2 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		57A2FE5D18063D5A002460EC /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		57AA66F7180E276A00DBDD8E /* NSData+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+XY.h"; sourceTree = "<group>"; };
+		57AA66F8180E276A00DBDD8E /* NSData+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+XY.m"; sourceTree = "<group>"; };
+		57AA6723180E3A7100DBDD8E /* NSDate+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+XY.h"; sourceTree = "<group>"; };
+		57AA6724180E3A7100DBDD8E /* NSDate+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+XY.m"; sourceTree = "<group>"; };
+		57AA6726180E3B8500DBDD8E /* NSNumber+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+XY.h"; sourceTree = "<group>"; };
+		57AA6727180E3B8500DBDD8E /* NSNumber+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+XY.m"; sourceTree = "<group>"; };
 		57B3000C177AD9BC00775FC9 /* JoinShowTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JoinShowTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B3000D177AD9BC00775FC9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		57B30015177AD9BC00775FC9 /* JoinShowTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JoinShowTests-Info.plist"; sourceTree = "<group>"; };
@@ -1185,6 +1197,14 @@
 				577C495817BDFC8500C7FC56 /* NSObject+XY.m */,
 				5757000C180B9BB6008ABDF0 /* NSArray+XY.h */,
 				5757000B180B9BB6008ABDF0 /* NSArray+XY.mm */,
+				573F5A45180E24690064121F /* NSString+XY.h */,
+				573F5A46180E24690064121F /* NSString+XY.m */,
+				57AA66F7180E276A00DBDD8E /* NSData+XY.h */,
+				57AA66F8180E276A00DBDD8E /* NSData+XY.m */,
+				57AA6723180E3A7100DBDD8E /* NSDate+XY.h */,
+				57AA6724180E3A7100DBDD8E /* NSDate+XY.m */,
+				57AA6726180E3B8500DBDD8E /* NSNumber+XY.h */,
+				57AA6727180E3B8500DBDD8E /* NSNumber+XY.m */,
 				577C495917BDFC8500C7FC56 /* UIView+XY.h */,
 				577C495A17BDFC8500C7FC56 /* UIView+XY.m */,
 				5748EC7917F95C120092019D /* UIImage+XY.h */,
@@ -1685,6 +1705,7 @@
 				5742C1FC17F7BF3C00065083 /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
 				5742C1FA17F7BF3C00065083 /* SimpleAudioEngine.m in Sources */,
 				577C49B017BDFC8500C7FC56 /* XYSpriteView.m in Sources */,
+				57AA6728180E3B8500DBDD8E /* NSNumber+XY.m in Sources */,
 				5742C20F17F7BF3C00065083 /* MKNetworkEngine.m in Sources */,
 				5742C21217F7BF3C00065083 /* OpenUDID.m in Sources */,
 				571CBA2A17C6F59E007CB842 /* XYPerformance.m in Sources */,
@@ -1707,6 +1728,7 @@
 				5742C1F517F7BF3C00065083 /* MBProgressHUD.m in Sources */,
 				5781669A17F9110E003D9D6E /* SDImageView+SDWebCache.m in Sources */,
 				5742C20217F7BF3C00065083 /* LKDB+Manager.m in Sources */,
+				573F5A47180E24690064121F /* NSString+XY.m in Sources */,
 				5742C20B17F7BF3C00065083 /* NSDictionary+RequestEncoding.m in Sources */,
 				5791A7E818051BCA009A1003 /* ParallaxManager.m in Sources */,
 				5722182817DB365B003504E8 /* NetworkVC.m in Sources */,
@@ -1736,9 +1758,11 @@
 				57FB837C17E2A543004B70B6 /* UIView+Test.m in Sources */,
 				5742C21117F7BF3C00065083 /* Reachability.m in Sources */,
 				5742C1F617F7BF3C00065083 /* RTLabel.m in Sources */,
+				57AA6725180E3A7100DBDD8E /* NSDate+XY.m in Sources */,
 				57901EB917E6AAEF00B8E8FF /* AutoSizeView.m in Sources */,
 				5742C20417F7BF3C00065083 /* LKDBHelper.m in Sources */,
 				5757000D180B9BB6008ABDF0 /* NSArray+XY.mm in Sources */,
+				57AA66F9180E276A00DBDD8E /* NSData+XY.m in Sources */,
 				57F690DD17E6CFBF00D9A437 /* DatabaseVC.m in Sources */,
 				57F690E017E6CFFA00D9A437 /* LKTestModels.m in Sources */,
 			);

@@ -26,6 +26,7 @@
 #import <mach/mach_host.h>
 #import <objc/runtime.h>
 #import <objc/message.h>
+#import <CommonCrypto/CommonDigest.h>
 
 #import "CommonDefine.h"
 #import "XYCommon.h"

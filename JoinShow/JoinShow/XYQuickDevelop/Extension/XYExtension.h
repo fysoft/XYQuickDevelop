@@ -15,6 +15,9 @@
 
 #import "NSObject+XY.h"
 #import "NSArray+XY.h"
+#import "NSString+XY.h"
+#import "NSData+XY.h"
+#import "NSDate+XY.h"
 
 #import "UIView+XY.h"
 #import "UIImage+XY.h"

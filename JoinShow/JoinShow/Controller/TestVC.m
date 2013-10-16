@@ -50,6 +50,17 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [[XYTimer sharedInstance] startTimerWithInterval:0.1];
+    /*
+    UIImage *myImage = [UIImage imageNamed:@"bg.jpg"];
+    myImage = [myImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    UIImageView *tempImg = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    tempImg.image = myImage;
+    [self.view addSubview:tempImg];
+    [tempImg release];
+     */
+    NSString *str = @"aa";
+    NSLogD(@"%@", [str sha1]);
 }
 
 - (void)didReceiveMemoryWarning
