@@ -204,8 +204,6 @@
 		57383F3B17D2F5F20001079C /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 57383F3A17D2F5F20001079C /* TestVC.m */; };
 		573D546317DB9C31008FFDE4 /* XYTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 573D546217DB9C31008FFDE4 /* XYTimer.m */; };
 		573F5A47180E24690064121F /* NSString+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 573F5A46180E24690064121F /* NSString+XY.m */; };
-		5742C1F117F7BF3C00065083 /* BUIControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C18C17F7BF3C00065083 /* BUIControl.m */; };
-		5742C1F217F7BF3C00065083 /* BUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C18E17F7BF3C00065083 /* BUIView.m */; };
 		5742C1F517F7BF3C00065083 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C19617F7BF3C00065083 /* MBProgressHUD.m */; };
 		5742C1F617F7BF3C00065083 /* RTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C19917F7BF3C00065083 /* RTLabel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		5742C1F717F7BF3C00065083 /* CDAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742C19E17F7BF3C00065083 /* CDAudioManager.m */; };
@@ -518,11 +516,6 @@
 		573D546217DB9C31008FFDE4 /* XYTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTimer.m; sourceTree = "<group>"; };
 		573F5A45180E24690064121F /* NSString+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XY.h"; sourceTree = "<group>"; };
 		573F5A46180E24690064121F /* NSString+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XY.m"; sourceTree = "<group>"; };
-		5742C18A17F7BF3C00065083 /* BlockUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockUI.h; sourceTree = "<group>"; };
-		5742C18B17F7BF3C00065083 /* BUIControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUIControl.h; sourceTree = "<group>"; };
-		5742C18C17F7BF3C00065083 /* BUIControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUIControl.m; sourceTree = "<group>"; };
-		5742C18D17F7BF3C00065083 /* BUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUIView.h; sourceTree = "<group>"; };
-		5742C18E17F7BF3C00065083 /* BUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUIView.m; sourceTree = "<group>"; };
 		5742C19517F7BF3C00065083 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		5742C19617F7BF3C00065083 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		5742C19817F7BF3C00065083 /* RTLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTLabel.h; sourceTree = "<group>"; };
@@ -980,24 +973,11 @@
 		5742C18817F7BF3C00065083 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				5742C18917F7BF3C00065083 /* BlockUI */,
 				5742C18F17F7BF3C00065083 /* IQKeyBoardManager */,
 				5742C19417F7BF3C00065083 /* MBProgressHUD */,
 				5742C19717F7BF3C00065083 /* RTLabel */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		5742C18917F7BF3C00065083 /* BlockUI */ = {
-			isa = PBXGroup;
-			children = (
-				5742C18A17F7BF3C00065083 /* BlockUI.h */,
-				5742C18B17F7BF3C00065083 /* BUIControl.h */,
-				5742C18C17F7BF3C00065083 /* BUIControl.m */,
-				5742C18D17F7BF3C00065083 /* BUIView.h */,
-				5742C18E17F7BF3C00065083 /* BUIView.m */,
-			);
-			path = BlockUI;
 			sourceTree = "<group>";
 		};
 		5742C18F17F7BF3C00065083 /* IQKeyBoardManager */ = {
@@ -1727,7 +1707,6 @@
 				571CBA5717C6FCC0007CB842 /* BookInfo.m in Sources */,
 				5781669C17F9110E003D9D6E /* SDWebDataDownloader.m in Sources */,
 				579609BE17F00A4B00BB7AFE /* XYSystemInfo.m in Sources */,
-				5742C1F117F7BF3C00065083 /* BUIControl.m in Sources */,
 				579A82A6180CDCED009F02E5 /* IQKeyBoardManager.m in Sources */,
 				575DD090180FE9140044E438 /* UIAlertView+XY.m in Sources */,
 				571CBA5917C6FCC0007CB842 /* Test2View.m in Sources */,
@@ -1760,7 +1739,6 @@
 				5781669917F9110E003D9D6E /* SDDataCacheManager.m in Sources */,
 				5781669D17F9110E003D9D6E /* SDWebDataManager.m in Sources */,
 				575DD093180FEDF10044E438 /* UIActionSheet+XY.m in Sources */,
-				5742C1F217F7BF3C00065083 /* BUIView.m in Sources */,
 				5742C1F817F7BF3C00065083 /* CDOpenALSupport.m in Sources */,
 				5742C20317F7BF3C00065083 /* LKDB+Mapping.m in Sources */,
 				57E7857B17DE564E0056C589 /* DataLite.m in Sources */,

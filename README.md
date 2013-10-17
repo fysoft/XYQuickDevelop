@@ -62,6 +62,3 @@ todo
 ###MBProgressHUD
 * 进度指示器
 
-###BlockUI 
-* 部分控件支持代码块
-
