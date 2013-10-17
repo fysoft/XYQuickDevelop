@@ -256,7 +256,27 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="ClickBtnShade:" destination="u6i-df-1A3" eventType="touchUpInside" id="fwz-kx-Tfg"/>
+                                    <action selector="clickBtnShade:" destination="u6i-df-1A3" eventType="touchUpInside" id="vbs-Yv-2jX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3j0-82-j9G">
+                                <rect key="frame" x="6" y="112" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Block AlertView ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickBtnBlockAlertView:" destination="u6i-df-1A3" eventType="touchUpInside" id="pGm-um-QIK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="I07-mQ-QBL">
+                                <rect key="frame" x="6" y="142" width="134" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Block ActionSheet">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickBtnBlockActionSheet:" destination="u6i-df-1A3" eventType="touchUpInside" id="1RA-0t-dCK"/>
                                 </connections>
                             </button>
                         </subviews>

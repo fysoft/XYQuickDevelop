@@ -186,12 +186,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JoinShow/JoinShow/Controller/MessVC.m"
-            timestampString = "400730472.602624"
+            timestampString = "403697610.443838"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "-closeShade"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "-clickBtnBlockAlertView:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -379,7 +379,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "39"
             endingLineNumber = "39"
-            landmarkName = "-ClickBtnShade:"
+            landmarkName = "-clickBtnShade:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -578,7 +578,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JoinShow/JoinShow/XYQuickDevelop/Extension/UIView+XY.m"
@@ -603,7 +603,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "39"
             endingLineNumber = "39"
-            landmarkName = "-ClickBtnShade:"
+            landmarkName = "-clickBtnShade:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -619,7 +619,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
             endingLineNumber = "38"
-            landmarkName = "-ClickBtnShade:"
+            landmarkName = "-clickBtnShade:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -630,11 +630,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JoinShow/JoinShow/Controller/MessVC.m"
-            timestampString = "400730472.602624"
+            timestampString = "403697610.443838"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "-closeShade"
             landmarkType = "5">
          </BreakpointContent>
@@ -646,11 +646,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JoinShow/JoinShow/Controller/MessVC.m"
-            timestampString = "400730472.602624"
+            timestampString = "403697610.443838"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "-closeShade"
             landmarkType = "5">
          </BreakpointContent>
@@ -678,7 +678,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JoinShow/JoinShow/Controller/TestVC.m"
-            timestampString = "403580307.94092"
+            timestampString = "403697610.443838"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "76"

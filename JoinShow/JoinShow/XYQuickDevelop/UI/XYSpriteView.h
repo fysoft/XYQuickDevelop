@@ -49,7 +49,6 @@ typedef enum{
 @property (nonatomic, assign) BOOL isAutoPlay;      // 设置完成后自动播放
 @property (nonatomic, assign) BOOL isReverseOrder;  // 反转播放顺序
 @property (nonatomic, assign) BOOL isPlayAudio;  // 播放生效
-@property (nonatomic, assign) UIView *master;
 
 @property (nonatomic, assign) id<XYSpriteDelegate> delegate;
 #pragma mark -暂不修改 interval delay
@@ -101,7 +100,7 @@ typedef enum{
 //-(void) spriteFailed:(XYSpriteView *)aSprite;
 -(void) spriteWillStart:(XYSpriteView *)aSprite;
 -(void) spriteDidStop:(XYSpriteView *)aSprite;
--(void) spriteOnIndex:(int)aIndex  sprite:(XYSpriteView *)aSprite;
+-(void) spriteOnIndex:(int)aIndex sprite:(XYSpriteView *)aSprite;
 
 @end
 

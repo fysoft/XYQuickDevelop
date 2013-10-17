@@ -60,7 +60,7 @@
     [tempImg release];
      */
     NSString *str = @"aa";
-    NSLogD(@"%@", [str sha1]);
+    NSLogD(@"%@", [str SHA1]);
 }
 
 - (void)didReceiveMemoryWarning

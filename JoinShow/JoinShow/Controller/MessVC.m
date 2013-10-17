@@ -35,8 +35,24 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)ClickBtnShade:(id)sender {
+- (IBAction)clickBtnShade:(id)sender {
     [self.view addShadeWithTarget:self action:@selector(closeShade) color:nil alpha:0.7];
+}
+
+- (IBAction)clickBtnBlockAlertView:(id)sender {
+    UIAlertView *alertView = [[[UIAlertView alloc] initWithTitle:@"title" message:@"msg" delegate:nil cancelButtonTitle:@"cancel" otherButtonTitles:@"ok", nil] autorelease];
+    [alertView clickedHandler:^(NSInteger btnIndex) {
+        NSLogD(@"%d", btnIndex);
+    }];
+    [alertView show];
+}
+
+- (IBAction)clickBtnBlockActionSheet:(id)sender {
+    UIActionSheet *actionSheet = [[[UIActionSheet alloc] initWithTitle:@"title" delegate:nil cancelButtonTitle:@"cancel" destructiveButtonTitle:@"destructive" otherButtonTitles:@"other1", @"other2", nil] autorelease];
+    [actionSheet clickedHandler:^(NSInteger btnIndex) {
+        NSLogD(@"%d", btnIndex);
+    }];
+    [actionSheet showInView:self.view];
 }
 -(void) closeShade{
     [self.view removeShade];

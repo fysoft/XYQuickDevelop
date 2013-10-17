@@ -239,6 +239,8 @@
 		5748EC7B17F95C120092019D /* UIImage+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 5748EC7A17F95C120092019D /* UIImage+XY.m */; };
 		57525A4517AB7DEA0094D835 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57525A4417AB7DEA0094D835 /* QuartzCore.framework */; };
 		5757000D180B9BB6008ABDF0 /* NSArray+XY.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5757000B180B9BB6008ABDF0 /* NSArray+XY.mm */; };
+		575DD090180FE9140044E438 /* UIAlertView+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 575DD08F180FE9140044E438 /* UIAlertView+XY.m */; };
+		575DD093180FEDF10044E438 /* UIActionSheet+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 575DD092180FEDF10044E438 /* UIActionSheet+XY.m */; };
 		577C499A17BDFC8500C7FC56 /* NSObject+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C495817BDFC8500C7FC56 /* NSObject+XY.m */; };
 		577C499B17BDFC8500C7FC56 /* UIView+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C495A17BDFC8500C7FC56 /* UIView+XY.m */; };
 		577C49AB17BDFC8500C7FC56 /* UmengManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C498B17BDFC8500C7FC56 /* UmengManager.m */; };
@@ -589,6 +591,10 @@
 		57525A4417AB7DEA0094D835 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5757000B180B9BB6008ABDF0 /* NSArray+XY.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSArray+XY.mm"; sourceTree = "<group>"; };
 		5757000C180B9BB6008ABDF0 /* NSArray+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+XY.h"; sourceTree = "<group>"; };
+		575DD08E180FE9140044E438 /* UIAlertView+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+XY.h"; sourceTree = "<group>"; };
+		575DD08F180FE9140044E438 /* UIAlertView+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+XY.m"; sourceTree = "<group>"; };
+		575DD091180FEDF10044E438 /* UIActionSheet+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+XY.h"; sourceTree = "<group>"; };
+		575DD092180FEDF10044E438 /* UIActionSheet+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+XY.m"; sourceTree = "<group>"; };
 		577C495717BDFC8500C7FC56 /* NSObject+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XY.h"; sourceTree = "<group>"; };
 		577C495817BDFC8500C7FC56 /* NSObject+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XY.m"; sourceTree = "<group>"; };
 		577C495917BDFC8500C7FC56 /* UIView+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XY.h"; sourceTree = "<group>"; };
@@ -1207,6 +1213,10 @@
 				57AA6727180E3B8500DBDD8E /* NSNumber+XY.m */,
 				577C495917BDFC8500C7FC56 /* UIView+XY.h */,
 				577C495A17BDFC8500C7FC56 /* UIView+XY.m */,
+				575DD08E180FE9140044E438 /* UIAlertView+XY.h */,
+				575DD08F180FE9140044E438 /* UIAlertView+XY.m */,
+				575DD091180FEDF10044E438 /* UIActionSheet+XY.h */,
+				575DD092180FEDF10044E438 /* UIActionSheet+XY.m */,
 				5748EC7917F95C120092019D /* UIImage+XY.h */,
 				5748EC7A17F95C120092019D /* UIImage+XY.m */,
 				57FB837A17E2A543004B70B6 /* UIView+Test.h */,
@@ -1719,6 +1729,7 @@
 				579609BE17F00A4B00BB7AFE /* XYSystemInfo.m in Sources */,
 				5742C1F117F7BF3C00065083 /* BUIControl.m in Sources */,
 				579A82A6180CDCED009F02E5 /* IQKeyBoardManager.m in Sources */,
+				575DD090180FE9140044E438 /* UIAlertView+XY.m in Sources */,
 				571CBA5917C6FCC0007CB842 /* Test2View.m in Sources */,
 				571CBA5A17C6FCC0007CB842 /* TestView.m in Sources */,
 				571CBA5D17C7000A007CB842 /* AnimationVC.m in Sources */,
@@ -1748,6 +1759,7 @@
 				5742C20C17F7BF3C00065083 /* NSString+MKNetworkKitAdditions.m in Sources */,
 				5781669917F9110E003D9D6E /* SDDataCacheManager.m in Sources */,
 				5781669D17F9110E003D9D6E /* SDWebDataManager.m in Sources */,
+				575DD093180FEDF10044E438 /* UIActionSheet+XY.m in Sources */,
 				5742C1F217F7BF3C00065083 /* BUIView.m in Sources */,
 				5742C1F817F7BF3C00065083 /* CDOpenALSupport.m in Sources */,
 				5742C20317F7BF3C00065083 /* LKDB+Mapping.m in Sources */,
@@ -1859,25 +1871,12 @@
 		57B3001F177AD9BC00775FC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)",
-					"\\\"$(SRCROOT)/../../../..\\\"",
-					"\\\"$(SRCROOT)/Test.embeddedframework\\\"",
-					"\\\"$(SRCROOT)/../../../../../Library/Developer/Xcode/DerivedData/Untitled-dkndkneniqhjqxguxeuaptlqxlcc/Build/Products/Debug-iphoneos\\\"",
-					"\\\"$(SRCROOT)/dyci.embeddedframework\\\"",
-					"\\\"$(SRCROOT)/JoinShow/XYQuickDevelop/External/Utilities/dyci.embeddedframework\\\"",
-					"/Users/heaven/Desktop/IOS\\ CODE/MyClass/XYQuickDevelop/JoinShow/JoinShow/XYExternal/Utilities/dyci.embeddedframework",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JoinShow/JoinShow-Prefix.pch";
 				INFOPLIST_FILE = "JoinShow/JoinShow-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../XYQuickDevelop/External/Utilities/UMAnalytics_Sdk_2.2.0.OpenUDID\"",
-					"\"$(SRCROOT)/JoinShow/XYQuickDevelop/External/Utilities/UMAnalytics_Sdk_2.2.0.OpenUDID\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1888,25 +1887,12 @@
 		57B30020177AD9BC00775FC9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)",
-					"\\\"$(SRCROOT)/../../../..\\\"",
-					"\\\"$(SRCROOT)/Test.embeddedframework\\\"",
-					"\\\"$(SRCROOT)/../../../../../Library/Developer/Xcode/DerivedData/Untitled-dkndkneniqhjqxguxeuaptlqxlcc/Build/Products/Debug-iphoneos\\\"",
-					"\\\"$(SRCROOT)/dyci.embeddedframework\\\"",
-					"\\\"$(SRCROOT)/JoinShow/XYQuickDevelop/External/Utilities/dyci.embeddedframework\\\"",
-					"/Users/heaven/Desktop/IOS\\ CODE/MyClass/XYQuickDevelop/JoinShow/JoinShow/XYExternal/Utilities/dyci.embeddedframework",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JoinShow/JoinShow-Prefix.pch";
 				INFOPLIST_FILE = "JoinShow/JoinShow-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../XYQuickDevelop/External/Utilities/UMAnalytics_Sdk_2.2.0.OpenUDID\"",
-					"\"$(SRCROOT)/JoinShow/XYQuickDevelop/External/Utilities/UMAnalytics_Sdk_2.2.0.OpenUDID\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

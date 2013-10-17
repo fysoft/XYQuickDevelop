@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface MessVC : UIViewController
-- (IBAction)ClickBtnShade:(id)sender;
+- (IBAction)clickBtnShade:(id)sender;
+- (IBAction)clickBtnBlockAlertView:(id)sender;
+- (IBAction)clickBtnBlockActionSheet:(id)sender;
 
 @end
