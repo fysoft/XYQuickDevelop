@@ -10,7 +10,12 @@
 
 @interface UIAlertView (XY)
 
--(void) clickedHandler:(void (^)(NSInteger btnIndex))block;
--(void) cancelHandler:(void (^)(void))aBlock;
+-(void) handlerClickedButton:(void (^)(NSInteger btnIndex))aBlock;
+-(void) handlerCancel:(void (^)(void))aBlock;
+-(void) handlerWillPresent:(void (^)(void))aBlock;
+-(void) handlerDidPresent:(void (^)(void))aBlock;
+-(void) handlerWillDismiss:(void (^)(NSInteger btnIndex))aBlock;
+-(void) handlerDidDismiss:(void (^)(NSInteger btnIndex))aBlock;
+-(void) handlerShouldEnableFirstOtherButton:(BOOL (^)(void))aBlock;
 
 @end

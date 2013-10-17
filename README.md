@@ -16,8 +16,6 @@ DataLite 轻量形数据持久化, 基于NSUserDefaults
 ParallaxManager 实现类似ios7 视图差效果.
 
 ### 
-todo
-消息传递
 
 
 ## External 使用的第三方库

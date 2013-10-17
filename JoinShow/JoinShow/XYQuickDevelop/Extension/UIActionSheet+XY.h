@@ -10,7 +10,11 @@
 
 @interface UIActionSheet (XY)
 
--(void) clickedHandler:(void (^)(NSInteger btnIndex))block;
--(void) cancelHandler:(void (^)(void))aBlock;
+-(void) handlerClickedButton:(void (^)(NSInteger btnIndex))aBlock;
+-(void) handlerCancel:(void (^)(void))aBlock;
+-(void) handlerWillPresent:(void (^)(void))aBlock;
+-(void) handlerDidPresent:(void (^)(void))aBlock;
+-(void) handlerWillDismiss:(void (^)(void))aBlock;
+-(void) handlerDidDismiss:(void (^)(NSInteger btnIndex))aBlock;
 
 @end
