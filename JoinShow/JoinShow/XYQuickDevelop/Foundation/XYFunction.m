@@ -337,7 +337,7 @@
 
 /***************************************************************/
 #if (1 == __USED_FMDatabase__)
-+(BOOL) updateTable:(NSString *)tableName dbPath:(NSString *)dbPath object:(id)aObject{
++(BOOL) updateTable:(NSString *)tableName dbPath:(NSString *)dbPath object:(id)anObject{
     // NSString *path = [Common dataFilePath:@"/BeeDatabase/TWP_SkyBookShelf.db" ofType:kCommon_dataFilePath_documents];
     FMDatabase *db = [FMDatabase databaseWithPath:dbPath];
     [db open];
@@ -352,7 +352,7 @@
     }
     
     //当前model的属性集合
-    NSMutableArray *newColumns = [NSMutableArray arrayWithArray:aObject.attributeList];
+    NSMutableArray *newColumns = [NSMutableArray arrayWithArray:((NSObject *)anObject).attributeList];
     
     //新增属性个数
     int newColumnCount = newColumns.count - columns.count;

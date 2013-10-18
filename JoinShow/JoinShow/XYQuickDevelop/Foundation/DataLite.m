@@ -86,11 +86,11 @@ DEF_DataLite_object(StrTest, YES, nil, nil)
     }
 }
 */
-+(void) writeObject:(id)aObject forKey:(NSString *)key synchronize:(BOOL)bSync{
-    if (aObject == nil) {
++(void) writeObject:(id)anObject forKey:(NSString *)key synchronize:(BOOL)bSync{
+    if (anObject == nil) {
         [[NSUserDefaults standardUserDefaults] removeObjectForKey:key];
     }else{
-        [[NSUserDefaults standardUserDefaults] setObject:aObject forKey:key];
+        [[NSUserDefaults standardUserDefaults] setObject:anObject forKey:key];
     }
     if (bSync) {
         [[self class] synchronize];

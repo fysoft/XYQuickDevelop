@@ -172,9 +172,9 @@ typedef enum {
 #if (1 == __USED_FMDatabase__)
 /** 更新表结构
  * api parameters 说明
- * tableName 表明, dbPath 数据库路径, aObject 实体对象
+ * tableName 表明, dbPath 数据库路径, anObject 实体对象
  */
-+ (BOOL) updateTable:(NSString *)tableName dbPath:(NSString *)dbPath object:(id)aObject;
++ (BOOL) updateTable:(NSString *)tableName dbPath:(NSString *)dbPath object:(id)anObject;
 #endif
 /****************************************************************/
 /** 得到当前 UIViewController
@@ -282,8 +282,8 @@ typedef enum {
 #pragma mark - to do
 /** objc to dictionary
  * api parameters 说明
- * aObject 对象
+ * anObject 对象
  */
-//+(NSMutableDictionary *) dictionaryOfObject:(id)aObject;
+//+(NSMutableDictionary *) dictionaryOfObject:(id)anObject;
 
 @end

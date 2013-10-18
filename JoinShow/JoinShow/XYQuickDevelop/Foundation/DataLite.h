@@ -18,17 +18,17 @@
 
 // 注意: __name 首字母需要大写
 #define XY_DataLite_string( __name ) \
--(void) set##__name:(NSString *)aObject; \
+-(void) set##__name:(NSString *)anObject; \
 -(id) __name;
 
 #define XY_DataLite_object( __name ) \
--(void) set##__name:(id)aObject; \
+-(void) set##__name:(id)anObject; \
 -(id) __name;
 
 /*
 #define DEF_setMethod( __name, __synchronize) \
--(void) set##__name:(id)aObject{ \
-[DataLite writeObject:aObject forKey:NSStringify( __name ) synchronize:__synchronize]; \
+-(void) set##__name:(id)anObject{ \
+[DataLite writeObject:anObject forKey:NSStringify( __name ) synchronize:__synchronize]; \
 }
 */
 // __synchronize 自动存
@@ -36,8 +36,8 @@
 // 用__defaultPath时不要用NSNumber, NSString NSData 识别问题
 // 2个只能用一个
 #define DEF_DataLite_object( __name , __synchronize, __defaultObject, __defaultPath) \
--(void) set##__name:(id)aObject{ \
-[DataLite writeObject:aObject forKey:NSStringify( __name ) synchronize:__synchronize]; \
+-(void) set##__name:(id)anObject{ \
+[DataLite writeObject:anObject forKey:NSStringify( __name ) synchronize:__synchronize]; \
 } \
 -(id) __name{ \
     return [DataLite readObjectForKey:NSStringify( __name ) defaultObject:__defaultObject defaultObjectPath:__defaultPath]; \
@@ -61,7 +61,7 @@ XY_DataLite_string(StrTest)
 
 
 // if bSync == YES, run [[NSUserDefaults standardUserDefaults] synchronize]
-+(void) writeObject:(id)aObject forKey:(NSString *)key synchronize:(BOOL)bSync;
++(void) writeObject:(id)anObject forKey:(NSString *)key synchronize:(BOOL)bSync;
 
 +(void) synchronize;
 @end

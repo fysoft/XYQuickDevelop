@@ -9,19 +9,16 @@
 #ifndef TWP_SkyBookShelf_XYPrecompile_h
 #define TWP_SkyBookShelf_XYPrecompile_h
 
-#define __USED_FMDatabase__         (0)
-#define __USED_MBProgressHUD__      (1)
-#define __USED_ASIHTTPRequest__     (0)
-#define __USED_MKNetworkKit__       (1)
-#define __USED_CocosDenshion__      (0)
-#define __XY_PERFORMANCE__          (0)
-
+// 性能测试
+#define __XY_PERFORMANCE__          (1)
+// not used
 #define __OPEN_Statistics__         (0)
 
-#endif
+
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVSpeechSynthesis.h>
 #import <mach/mach.h>
 #import <mach/mach_host.h>
 #import <objc/runtime.h>
@@ -29,27 +26,29 @@
 #import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonCryptor.h>
 
+
+
+
+// 第三方支持
+#define __USED_FMDatabase__         (1)
+#define __USED_LKDBHelper__         (1)
+#define __USED_MKNetworkKit__       (1)
+#define __USED_ASIHTTPRequest__     (0)
+#define __USED_YYJSONHelper__       (1)
+#define __USED_CocosDenshion__      (1)
+#define __USED_OpenUDID__           (1)
+
+#define __USED_IQKeyBoardManager__  (1)
+#define __USED_MBProgressHUD__      (1)
+#define __USED_RTLabel__            (1)
+
+
+#if (1 == __USED_Statistics__)
+#define UMENG
+#endif
+
 #import "CommonDefine.h"
 #import "XYCommon.h"
 
 
-// 第三方支持
-#if (1 == __USED_FMDatabase__)
-#import "FMDatabase.h"
-#endif
-
-#if (1 == __USED_MBProgressHUD__)
-#import "MBProgressHUD.h"
-#endif
-
-#if (1 ==  __USED_ASIHTTPRequest__)
-#import "ASIHTTPRequest.h"
-#endif
-
-#if (1 == __USED_CocosDenshion__)
-#import "SimpleAudioEngine.h"
-#endif
-
-#if (1 == __USED_Statistics__)
-#define UMENG
 #endif

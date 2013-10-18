@@ -79,10 +79,11 @@
 - (IBAction)clickAVSpeech:(id)sender {
     if (IOS7_OR_LATER) {
         NSLogD(@"1")
+        
         AVSpeechSynthesizer *av = [[[AVSpeechSynthesizer alloc] init] autorelease];
         AVSpeechUtterance *utterance = [[[AVSpeechUtterance alloc] initWithString:@"Copyright (c) 2013 Heaven. All rights reserved"] autorelease];
-      //  utterance.rate = AVSpeechUtteranceMinimumSpeechRate;
-        utterance.pitchMultiplier = 0.7;
+     //   utterance.rate = AVSpeechUtteranceMinimumSpeechRate;
+        utterance.pitchMultiplier = 1;
         [av speakUtterance:utterance];
     }else{
         NSLogD(@"2")
