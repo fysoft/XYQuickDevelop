@@ -108,5 +108,14 @@
         [UIImageView setDefaultEngine:engine];
     }
 }
+
++(NSString *) generateAccessTokenWithObject:(id)anObject{
+    NSDictionary *dic = anObject;
+    NSString *link = [dic objectForKey:@"link"];
+    NSString *uuid = [Common UUID];
+    NSString *str1 = [NSString stringWithFormat:@"%@+%@", link, uuid];
+   // const char *str2 = [str1 cStringUsingEncoding:NSUTF8StringEncoding];
+    return str1;
+}
 @end
 #endif

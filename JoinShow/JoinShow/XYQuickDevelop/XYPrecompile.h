@@ -27,6 +27,7 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 #import <CommonCrypto/CommonDigest.h>
+#import <CommonCrypto/CommonCryptor.h>
 
 #import "CommonDefine.h"
 #import "XYCommon.h"

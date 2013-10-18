@@ -49,6 +49,9 @@
 // cancel
 -(void) cancelOperationsContainingURLString:(NSString*)string;
 
+// 子类需要重新
++(NSString *) generateAccessTokenWithObject:(id)anObject;
+
 #pragma mark- todo ,数量控制
 // 定义队列最大并发数量, 默认为wifi下 6, 2g/3g下 2
 //@property (nonatomic, assign) int maxOperationCount;
@@ -59,7 +62,5 @@
 +(void) setWebImageEngine:(MKNetworkEngine *)engine;
 
 @end
-
-
 
 #endif

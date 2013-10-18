@@ -69,7 +69,7 @@ dispatch_once( &once , ^{
 
 
 /**************************************************************/
-// delegate
+// delegate 委托
 /*
 #define DelegateSelf( __fun ) \
 if (_delegate && [_delegate respondsToSelector:@selector( __fun )]) { \
