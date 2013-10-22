@@ -18,9 +18,17 @@
  改变提交的数据类型需要设置postDataEncoding
  */
 
-#import "MKNetworkEngine.h"
+
+#import "XYPrecompile.h"
+#import "XYFoundation.h"
 
 #if (1 ==  __USED_MKNetworkKit__)
+#import "MKNetworkEngine.h"
+#endif
+
+
+
+@class MKNetworkEngine;
 
 @interface NetworkEngine : MKNetworkEngine
 // 建议子类重写 initWithDefaultSettings
@@ -63,4 +71,4 @@
 
 @end
 
-#endif
+

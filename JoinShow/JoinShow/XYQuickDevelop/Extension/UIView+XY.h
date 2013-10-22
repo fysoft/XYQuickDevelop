@@ -9,7 +9,7 @@
 #define UIView_shadeTag 26601
 #define UIView_activityIndicatorViewTag 26602
 
-#import <UIKit/UIKit.h>
+#import "XYFoundation.h"
 
 @interface UIView (XY)
 

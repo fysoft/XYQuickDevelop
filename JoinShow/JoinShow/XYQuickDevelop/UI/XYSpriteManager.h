@@ -11,7 +11,7 @@
 
 #import "XYPrecompile.h"
 #import "XYUI.h"
-#import <UIKit/UIKit.h>
+#import "XYFoundation.h"
 
 @interface XYSpriteManager : NSObject<XYTimerDelegate>{
 }

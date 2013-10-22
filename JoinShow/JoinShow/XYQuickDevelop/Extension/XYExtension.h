@@ -23,5 +23,3 @@
 #import "UIImage+XY.h"
 #import "UIAlertView+XY.h"
 #import "UIActionSheet+XY.h"
-
-#import "XYCommon.h"

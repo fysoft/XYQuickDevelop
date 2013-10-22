@@ -7,7 +7,7 @@
 //
 
 #import "AnimationVC.h"
-
+#import "XYCommon.h"
 @interface AnimationVC (){
     UILabel *labText;
     int count;

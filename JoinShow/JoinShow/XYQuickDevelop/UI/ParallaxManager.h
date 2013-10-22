@@ -6,8 +6,9 @@
 //  Copyright (c) 2013年 Heaven. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <CoreMotion/CoreMotion.h>
+
+#import "XYPrecompile.h"
+#import "XYFoundation.h"
 
 #define ParallaxManager_updateInterval 0.05
 #define ParallaxManager_timer @"Parallax"

@@ -6,7 +6,7 @@
 //  Copyright (c) 2013年 Heaven. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "XYPrecompile.h"
 
 @interface UIActionSheet (XY)
 

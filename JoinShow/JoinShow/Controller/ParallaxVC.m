@@ -7,6 +7,8 @@
 //
 
 #import "ParallaxVC.h"
+#import "XYCommon.h"
+
 
 @interface ParallaxVC ()
 

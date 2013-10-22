@@ -7,7 +7,7 @@
 //
 
 #import "DomeTableViewController.h"
-
+#import "XYCommon.h"
 @interface DomeTableViewController ()
 
 @end
@@ -59,6 +59,13 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    /*
+    // 1 initalize
+    // 2 config view
+    // 3 assign view
+    // 4 addsubview
+     */
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
 }

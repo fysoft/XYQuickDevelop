@@ -7,7 +7,7 @@
 //
 
 #define XYTimer_default @"ddd"
-#import <Foundation/Foundation.h>
+#import "XYPrecompile.h"
 
 @protocol XYTimerDelegate <NSObject>
 

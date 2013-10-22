@@ -12,7 +12,7 @@
 // 性能测试
 #define __XY_PERFORMANCE__          (1)
 // not used
-#define __OPEN_Statistics__         (0)
+#define __OPEN_Statistics__         (1)
 
 
 
@@ -25,6 +25,7 @@
 #import <objc/message.h>
 #import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonCryptor.h>
+#import <CoreMotion/CoreMotion.h>
 
 
 
@@ -48,7 +49,5 @@
 #endif
 
 #import "CommonDefine.h"
-#import "XYCommon.h"
-
 
 #endif

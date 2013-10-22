@@ -7,6 +7,7 @@
 //
 
 #import "JsonVC.h"
+#import "XYCommon.h"
 
 @interface JsonVC ()
 

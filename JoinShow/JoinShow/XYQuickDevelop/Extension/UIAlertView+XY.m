@@ -22,6 +22,7 @@
 #define UIAlertView_key_shouldEnableFirstOtherButton	"UIAlertView.SEFOB"
 
 #import "UIAlertView+XY.h"
+#import "XYPrecompile.h"
 
 @implementation UIAlertView (XY)
 

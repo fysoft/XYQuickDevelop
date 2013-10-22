@@ -6,7 +6,7 @@
 //  Copyright (c) 2013年 Heaven. All rights reserved.
 //
 
-//#import "XYPerformance.h"
+#import "XYPrecompile.h"
 
 @interface NSString (XY)
 

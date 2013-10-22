@@ -1,9 +1,8 @@
 //  Created by Heaven on 13-5-16.
 //
 
-#import <UIKit/UIKit.h>
-#import <QuartzCore/QuartzCore.h>
 #import "XYPrecompile.h"
+#import "XYFoundation.h"
 
 // 帧间隔
 #define XYSpriteView_aniFrames 12

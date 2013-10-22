@@ -4,7 +4,7 @@
 
 
 #import "XYSpriteManager.h"
-#import "XYSpriteView.h"
+
 
 
 @implementation XYSpriteManager{

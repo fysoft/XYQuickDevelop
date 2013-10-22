@@ -8,8 +8,7 @@
 
 // 此页面 测试用
 
-#import <UIKit/UIKit.h>
-
+#import "XYCommon.h"
 
 @interface TestVC : UIViewController <XYTimerDelegate>{
     int offset;

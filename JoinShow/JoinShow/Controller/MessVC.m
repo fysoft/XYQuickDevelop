@@ -7,7 +7,7 @@
 //
 
 #import "MessVC.h"
-
+#import "XYCommon.h"
 @interface MessVC ()
 
 @end

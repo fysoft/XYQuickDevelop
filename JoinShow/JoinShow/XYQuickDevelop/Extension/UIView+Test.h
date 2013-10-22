@@ -6,7 +6,8 @@
 //  Copyright (c) 2013年 Heaven. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "XYPrecompile.h"
+#import "XYFoundation.h"
 
 @interface UIView (Test)
 

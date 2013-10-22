@@ -9,7 +9,8 @@
 #import "TestVC.h"
 #import "UIView+Test.h"
 #import "TestView.h"
-//#import "AutoSizeView.h"
+
+#import "XYCommon.h"
 
 @interface TestVC ()
 
@@ -131,7 +132,7 @@ void objc_setAssociatedObject(id object, void *key, id value, objc_AssociationPo
     [tableView setAutoresizingMask:UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth];
     tableView.backgroundColor = [UIColor colorWithRed:226.0/255.0 green:231.0/255.0 blue:237.0/255.0 alpha:1.0];
     
-    //assgin view
+    // assige view
     self.view = view;
     self.tableView = tableView;
     [view release];

@@ -6,7 +6,7 @@
 //  Copyright (c) 2013年 Heaven. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "XYPerformance.h"
 
 @interface ConfigManager : NSObject
 

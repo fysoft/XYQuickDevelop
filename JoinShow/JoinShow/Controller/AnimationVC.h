@@ -6,8 +6,8 @@
 //  Copyright (c) 2013年 Heaven. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 
-@interface AnimationVC : UIViewController<XYSpriteDelegate>
+
+@interface AnimationVC : UIViewController
 
 @end

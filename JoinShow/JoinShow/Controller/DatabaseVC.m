@@ -8,6 +8,8 @@
 
 #import "DatabaseVC.h"
 #import "LKTestModels.h"
+#import "XYCommon.h"
+
 
 @interface DatabaseVC ()
 @property(strong, nonatomic) NSMutableString* ms;

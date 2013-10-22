@@ -8,7 +8,6 @@
 
 #import "UIView+XY.h"
 #import "XYExtension.h"
-#import <objc/runtime.h>
 
 DUMMY_CLASS(UIView_XY);
 

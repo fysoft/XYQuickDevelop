@@ -43,7 +43,8 @@
     return [DataLite readObjectForKey:NSStringify( __name ) defaultObject:__defaultObject defaultObjectPath:__defaultPath]; \
 }
 
-#import <Foundation/Foundation.h>
+#import "XYPrecompile.h"
+#import "XYFoundation.h"
 
 @interface DataLite : NSObject
 //XY_SINGLETON(DataLite)

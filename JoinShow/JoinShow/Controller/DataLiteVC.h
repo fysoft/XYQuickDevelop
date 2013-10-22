@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XYCommon.h"
 
 @interface DataLiteVC : UIViewController
 XY_DataLite_string(TestTitle)

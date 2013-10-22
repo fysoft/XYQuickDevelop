@@ -7,6 +7,7 @@
 //
 
 #import "NetworkVC.h"
+#import "XYCommon.h"
 
 @interface NetworkVC ()
 
