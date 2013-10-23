@@ -7,7 +7,7 @@
 //
 
 #import "UIView+XY.h"
-#import "XYExtension.h"
+#import "XYPrecompile.h"
 
 DUMMY_CLASS(UIView_XY);
 

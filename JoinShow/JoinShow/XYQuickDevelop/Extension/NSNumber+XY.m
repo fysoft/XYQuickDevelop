@@ -7,6 +7,9 @@
 //
 
 #import "NSNumber+XY.h"
+#import "XYPrecompile.h"
+
+DUMMY_CLASS(NSNumber_XY);
 
 @implementation NSNumber (XY)
 

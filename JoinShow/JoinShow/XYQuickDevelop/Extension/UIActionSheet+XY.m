@@ -20,6 +20,9 @@
 #define UIActionSheet_key_didDismiss	"UIActionSheet.sidDismiss"
 
 #import "UIActionSheet+XY.h"
+#import "XYPrecompile.h"
+
+DUMMY_CLASS(UIActionSheet_XY);
 
 @implementation UIActionSheet (XY)
 -(void) handlerClickedButton:(void (^)(NSInteger btnIndex))aBlock{

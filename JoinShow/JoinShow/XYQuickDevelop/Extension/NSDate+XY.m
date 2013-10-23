@@ -7,6 +7,9 @@
 //
 
 #import "NSDate+XY.h"
+#import "XYPrecompile.h"
+
+DUMMY_CLASS(NSDate_XY);
 
 @implementation NSDate (XY)
 

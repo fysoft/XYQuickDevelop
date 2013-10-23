@@ -24,6 +24,8 @@
 #import "UIAlertView+XY.h"
 #import "XYPrecompile.h"
 
+DUMMY_CLASS(UIAlertView_XY);
+
 @implementation UIAlertView (XY)
 
 -(void) handlerClickedButton:(void (^)(NSInteger btnIndex))aBlock{

@@ -7,8 +7,8 @@
 //
 
 
-#import "XYPerformance.h"
 #import "UIImage+XY.h"
+#import "XYPrecompile.h"
 
 DUMMY_CLASS(UIImage_XY);
 

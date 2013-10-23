@@ -7,6 +7,7 @@
 //
 
 #import "NSString+XY.h"
+#import "XYPrecompile.h"
 
 @implementation NSString (XY)
 

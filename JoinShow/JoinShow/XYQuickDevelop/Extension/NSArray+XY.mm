@@ -8,12 +8,15 @@
 //  Copy from bee Framework http://www.bee-framework.com
 
 #import "NSArray+XY.h"
+#import "XYPrecompile.h"
 
 // ----------------------------------
 // Source code
 // ----------------------------------
 
 #pragma mark -
+
+DUMMY_CLASS(NSArray_XY);
 
 @implementation NSArray(XY)
 

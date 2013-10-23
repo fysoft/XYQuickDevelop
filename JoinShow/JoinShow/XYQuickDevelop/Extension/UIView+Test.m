@@ -7,6 +7,7 @@
 //
 
 #import "UIView+Test.h"
+#import "XYPrecompile.h"
 
 DUMMY_CLASS(UIView_Test);
 

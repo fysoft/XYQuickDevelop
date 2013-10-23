@@ -7,7 +7,8 @@
 //
 
 #import "NSObject+XY.h"
-#import "XYExtension.h"
+#import "XYPrecompile.h"
+//#import "XYExtension.h"
 
 #undef	NSObject_key_performSelector
 #define NSObject_key_performSelector	"NSObject.performSelector"
